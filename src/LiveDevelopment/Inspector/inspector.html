@@ -52,7 +52,7 @@ footer p {text-align: center; margin: 0;}
 <a href="#toc" class="brand" title="WebInspector v1.1">WebInspector v1.1</a>
 <ul class="nav nav-pills">
 <li class="dropdown" id="domain-menu">
-<a class="dropdown-toggle" data-toggle="dropdown">Domains<b class="caret"></b></a>
+<a class="dropdown-toggle" data-toggle="dropdown" title="Domains">Domains<b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li><a href='#ApplicationCache' title="ApplicationCache">ApplicationCache</a></li>
 <li><a href='#CSS' title="CSS">CSS</a></li>
@@ -275,20 +275,20 @@ footer p {text-align: center; margin: 0;}
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#DOM.documentUpdated'>DOM.documentUpdated</a>: Fired when Document has been totally updated. Node ids are no longer valid.</li>
-<li><a href='#DOM.inspectNodeRequested'>DOM.inspectNodeRequested</a>: Fired when the node should be inspected. This happens after call to setInspectModeEnabled.</li>
-<li><a href='#DOM.setChildNodes'>DOM.setChildNodes</a>: Fired when backend wants to provide client with the missing DOM structure. This happens upon most of the calls requesting node ids.</li>
-<li><a href='#DOM.attributeModified'>DOM.attributeModified</a>: Fired when Element's attribute is modified.</li>
-<li><a href='#DOM.attributeRemoved'>DOM.attributeRemoved</a>: Fired when Element's attribute is removed.</li>
-<li><a href='#DOM.inlineStyleInvalidated'>DOM.inlineStyleInvalidated</a>: Fired when Element's inline style is modified via a CSS property modification.</li>
-<li><a href='#DOM.characterDataModified'>DOM.characterDataModified</a>: Mirrors DOMCharacterDataModified event.</li>
-<li><a href='#DOM.childNodeCountUpdated'>DOM.childNodeCountUpdated</a>: Fired when Container's child node count has changed.</li>
-<li><a href='#DOM.childNodeInserted'>DOM.childNodeInserted</a>: Mirrors DOMNodeInserted event.</li>
-<li><a href='#DOM.childNodeRemoved'>DOM.childNodeRemoved</a>: Mirrors DOMNodeRemoved event.</li>
-<li><a href='#DOM.shadowRootPushed'>DOM.shadowRootPushed</a>: Called when shadow root is pushed into the element.</li>
-<li><a href='#DOM.shadowRootPopped'>DOM.shadowRootPopped</a>: Called when shadow root is popped from the element.</li>
-<li><a href='#DOM.pseudoElementAdded'>DOM.pseudoElementAdded</a>: Called when a pseudo element is added to an element.</li>
-<li><a href='#DOM.pseudoElementRemoved'>DOM.pseudoElementRemoved</a>: Called when a pseudo element is removed from an element.</li>
+<li><a href='#DOM.documentUpdated' title="DOM.documentUpdated">DOM.documentUpdated</a>: Fired when Document has been totally updated. Node ids are no longer valid.</li>
+<li><a href='#DOM.inspectNodeRequested' title="DOM.inspectNodeRequested">DOM.inspectNodeRequested</a>: Fired when the node should be inspected. This happens after call to setInspectModeEnabled.</li>
+<li><a href='#DOM.setChildNodes' title="DOM.setChildNodes">DOM.setChildNodes</a>: Fired when backend wants to provide client with the missing DOM structure. This happens upon most of the calls requesting node ids.</li>
+<li><a href='#DOM.attributeModified' title="DOM.attributeModified">DOM.attributeModified</a>: Fired when Element's attribute is modified.</li>
+<li><a href='#DOM.attributeRemoved' title="DOM.attributeRemoved">DOM.attributeRemoved</a>: Fired when Element's attribute is removed.</li>
+<li><a href='#DOM.inlineStyleInvalidated' title="DOM.inlineStyleInvalidated">DOM.inlineStyleInvalidated</a>: Fired when Element's inline style is modified via a CSS property modification.</li>
+<li><a href='#DOM.characterDataModified' title="DOM.characterDataModified">DOM.characterDataModified</a>: Mirrors DOMCharacterDataModified event.</li>
+<li><a href='#DOM.childNodeCountUpdated' title="DOM.childNodeCountUpdated">DOM.childNodeCountUpdated</a>: Fired when Container's child node count has changed.</li>
+<li><a href='#DOM.childNodeInserted' title="DOM.childNodeInserted">DOM.childNodeInserted</a>: Mirrors DOMNodeInserted event.</li>
+<li><a href='#DOM.childNodeRemoved' title="DOM.childNodeRemoved">DOM.childNodeRemoved</a>: Mirrors DOMNodeRemoved event.</li>
+<li><a href='#DOM.shadowRootPushed' title="DOM.shadowRootPushed">DOM.shadowRootPushed</a>: Called when shadow root is pushed into the element.</li>
+<li><a href='#DOM.shadowRootPopped' title="DOM.shadowRootPopped">DOM.shadowRootPopped</a>: Called when shadow root is popped from the element.</li>
+<li><a href='#DOM.pseudoElementAdded' title="DOM.pseudoElementAdded">DOM.pseudoElementAdded</a>: Called when a pseudo element is added to an element.</li>
+<li><a href='#DOM.pseudoElementRemoved' title="DOM.pseudoElementRemoved">DOM.pseudoElementRemoved</a>: Called when a pseudo element is removed from an element.</li>
 </ul>
 <h3><a href="#DOMDebugger" title="DOMDebugger">DOMDebugger</a></h3>
 <span class='label'>Type</span>
@@ -297,14 +297,14 @@ footer p {text-align: center; margin: 0;}
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#DOMDebugger.setDOMBreakpoint'>DOMDebugger.setDOMBreakpoint</a>: Sets breakpoint on particular operation with DOM.</li>
-<li><a href='#DOMDebugger.removeDOMBreakpoint'>DOMDebugger.removeDOMBreakpoint</a>: Removes DOM breakpoint that was set using setDOMBreakpoint.</li>
-<li><a href='#DOMDebugger.setEventListenerBreakpoint'>DOMDebugger.setEventListenerBreakpoint</a>: Sets breakpoint on particular DOM event.</li>
-<li><a href='#DOMDebugger.removeEventListenerBreakpoint'>DOMDebugger.removeEventListenerBreakpoint</a>: Removes breakpoint on particular DOM event.</li>
-<li><a href='#DOMDebugger.setInstrumentationBreakpoint'>DOMDebugger.setInstrumentationBreakpoint</a>: Sets breakpoint on particular native event.</li>
-<li><a href='#DOMDebugger.removeInstrumentationBreakpoint'>DOMDebugger.removeInstrumentationBreakpoint</a>: Removes breakpoint on particular native event.</li>
-<li><a href='#DOMDebugger.setXHRBreakpoint'>DOMDebugger.setXHRBreakpoint</a>: Sets breakpoint on XMLHttpRequest.</li>
-<li><a href='#DOMDebugger.removeXHRBreakpoint'>DOMDebugger.removeXHRBreakpoint</a>: Removes breakpoint from XMLHttpRequest.</li>
+<li><a href='#DOMDebugger.setDOMBreakpoint' title="DOMDebugger.setDOMBreakpoint">DOMDebugger.setDOMBreakpoint</a>: Sets breakpoint on particular operation with DOM.</li>
+<li><a href='#DOMDebugger.removeDOMBreakpoint' title="DOMDebugger.removeDOMBreakpoint">DOMDebugger.removeDOMBreakpoint</a>: Removes DOM breakpoint that was set using setDOMBreakpoint.</li>
+<li><a href='#DOMDebugger.setEventListenerBreakpoint' title="DOMDebugger.setEventListenerBreakpoint">DOMDebugger.setEventListenerBreakpoint</a>: Sets breakpoint on particular DOM event.</li>
+<li><a href='#DOMDebugger.removeEventListenerBreakpoint' title="DOMDebugger.removeEventListenerBreakpoint">DOMDebugger.removeEventListenerBreakpoint</a>: Removes breakpoint on particular DOM event.</li>
+<li><a href='#DOMDebugger.setInstrumentationBreakpoint' title="DOMDebugger.setInstrumentationBreakpoint">DOMDebugger.setInstrumentationBreakpoint</a>: Sets breakpoint on particular native event.</li>
+<li><a href='#DOMDebugger.removeInstrumentationBreakpoint' title="DOMDebugger.removeInstrumentationBreakpoint">DOMDebugger.removeInstrumentationBreakpoint</a>: Removes breakpoint on particular native event.</li>
+<li><a href='#DOMDebugger.setXHRBreakpoint' title="DOMDebugger.setXHRBreakpoint">DOMDebugger.setXHRBreakpoint</a>: Sets breakpoint on XMLHttpRequest.</li>
+<li><a href='#DOMDebugger.removeXHRBreakpoint' title="DOMDebugger.removeXHRBreakpoint">DOMDebugger.removeXHRBreakpoint</a>: Removes breakpoint from XMLHttpRequest.</li>
 </ul>
 <h3><a href="#DOMStorage" title="DOMStorage">DOMStorage</a></h3>
 <span class='label'>Type</span>
@@ -348,10 +348,10 @@ footer p {text-align: center; margin: 0;}
 <h3><a href="#Debugger" title="Debugger">Debugger</a></h3>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Debugger.BreakpointId'>Debugger.BreakpointId</a>: Breakpoint identifier.</li>
-<li><a href='#Debugger.ScriptId'>Debugger.ScriptId</a>: Unique script identifier.</li>
-<li><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a>: Call frame identifier.</li>
-<li><a href='#Debugger.Location'>Debugger.Location</a>: Location in the source code.</li>
+<li><a href='#Debugger.BreakpointId' title="Debugger.BreakpointId">Debugger.BreakpointId</a>: Breakpoint identifier.</li>
+<li><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a>: Unique script identifier.</li>
+<li><a href='#Debugger.CallFrameId' title="Debugger.CallFrameId">Debugger.CallFrameId</a>: Call frame identifier.</li>
+<li><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a>: Location in the source code.</li>
 <li><a href='#Debugger.FunctionDetails' title="Debugger.FunctionDetails">Debugger.FunctionDetails</a>: Information about the function.</li>
 <li><a href='#Debugger.CallFrame' title="Debugger.CallFrame">Debugger.CallFrame</a>: JavaScript call frame. Array of call frames form the call stack.</li>
 <li><a href='#Debugger.Scope' title="Debugger.Scope">Debugger.Scope</a>: Scope description.</li>
@@ -421,26 +421,26 @@ footer p {text-align: center; margin: 0;}
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#HeapProfiler.getProfileHeaders'>HeapProfiler.getProfileHeaders</a></li>
-<li><a href='#HeapProfiler.startTrackingHeapObjects'>HeapProfiler.startTrackingHeapObjects</a></li>
-<li><a href='#HeapProfiler.stopTrackingHeapObjects'>HeapProfiler.stopTrackingHeapObjects</a></li>
-<li><a href='#HeapProfiler.getHeapSnapshot'>HeapProfiler.getHeapSnapshot</a></li>
-<li><a href='#HeapProfiler.removeProfile'>HeapProfiler.removeProfile</a></li>
-<li><a href='#HeapProfiler.clearProfiles'>HeapProfiler.clearProfiles</a></li>
-<li><a href='#HeapProfiler.takeHeapSnapshot'>HeapProfiler.takeHeapSnapshot</a></li>
-<li><a href='#HeapProfiler.collectGarbage'>HeapProfiler.collectGarbage</a></li>
-<li><a href='#HeapProfiler.getObjectByHeapObjectId'>HeapProfiler.getObjectByHeapObjectId</a></li>
-<li><a href='#HeapProfiler.getHeapObjectId'>HeapProfiler.getHeapObjectId</a></li>
+<li><a href='#HeapProfiler.getProfileHeaders' title="HeapProfiler.getProfileHeaders">HeapProfiler.getProfileHeaders</a></li>
+<li><a href='#HeapProfiler.startTrackingHeapObjects' title="HeapProfiler.startTrackingHeapObjects">HeapProfiler.startTrackingHeapObjects</a></li>
+<li><a href='#HeapProfiler.stopTrackingHeapObjects' title="HeapProfiler.stopTrackingHeapObjects">HeapProfiler.stopTrackingHeapObjects</a></li>
+<li><a href='#HeapProfiler.getHeapSnapshot' title="HeapProfiler.getHeapSnapshot">HeapProfiler.getHeapSnapshot</a></li>
+<li><a href='#HeapProfiler.removeProfile' title="HeapProfiler.removeProfile">HeapProfiler.removeProfile</a></li>
+<li><a href='#HeapProfiler.clearProfiles' title="HeapProfiler.clearProfiles">HeapProfiler.clearProfiles</a></li>
+<li><a href='#HeapProfiler.takeHeapSnapshot' title="HeapProfiler.takeHeapSnapshot">HeapProfiler.takeHeapSnapshot</a></li>
+<li><a href='#HeapProfiler.collectGarbage' title="HeapProfiler.collectGarbage">HeapProfiler.collectGarbage</a></li>
+<li><a href='#HeapProfiler.getObjectByHeapObjectId' title="HeapProfiler.getObjectByHeapObjectId">HeapProfiler.getObjectByHeapObjectId</a></li>
+<li><a href='#HeapProfiler.getHeapObjectId' title="HeapProfiler.getHeapObjectId">HeapProfiler.getHeapObjectId</a></li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#HeapProfiler.addProfileHeader'>HeapProfiler.addProfileHeader</a></li>
-<li><a href='#HeapProfiler.addHeapSnapshotChunk'>HeapProfiler.addHeapSnapshotChunk</a></li>
-<li><a href='#HeapProfiler.finishHeapSnapshot'>HeapProfiler.finishHeapSnapshot</a></li>
-<li><a href='#HeapProfiler.resetProfiles'>HeapProfiler.resetProfiles</a></li>
-<li><a href='#HeapProfiler.reportHeapSnapshotProgress'>HeapProfiler.reportHeapSnapshotProgress</a></li>
-<li><a href='#HeapProfiler.lastSeenObjectId'>HeapProfiler.lastSeenObjectId</a>: If heap objects tracking has been started then backend regulary sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</li>
-<li><a href='#HeapProfiler.heapStatsUpdate'>HeapProfiler.heapStatsUpdate</a>: If heap objects tracking has been started then backend may send update for one or more fragments</li>
+<li><a href='#HeapProfiler.addProfileHeader' title="HeapProfiler.addProfileHeader">HeapProfiler.addProfileHeader</a></li>
+<li><a href='#HeapProfiler.addHeapSnapshotChunk' title="HeapProfiler.addHeapSnapshotChunk">HeapProfiler.addHeapSnapshotChunk</a></li>
+<li><a href='#HeapProfiler.finishHeapSnapshot' title="HeapProfiler.finishHeapSnapshot">HeapProfiler.finishHeapSnapshot</a></li>
+<li><a href='#HeapProfiler.resetProfiles' title="HeapProfiler.resetProfiles">HeapProfiler.resetProfiles</a></li>
+<li><a href='#HeapProfiler.reportHeapSnapshotProgress' title="HeapProfiler.reportHeapSnapshotProgress">HeapProfiler.reportHeapSnapshotProgress</a></li>
+<li><a href='#HeapProfiler.lastSeenObjectId' title="HeapProfiler.lastSeenObjectId">HeapProfiler.lastSeenObjectId</a>: If heap objects tracking has been started then backend regulary sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</li>
+<li><a href='#HeapProfiler.heapStatsUpdate' title="HeapProfiler.heapStatsUpdate">HeapProfiler.heapStatsUpdate</a>: If heap objects tracking has been started then backend may send update for one or more fragments</li>
 </ul>
 <h3><a href="#IndexedDB" title="IndexedDB">IndexedDB</a></h3>
 <span class='label'>Type</span>
@@ -540,31 +540,31 @@ footer p {text-align: center; margin: 0;}
 <li><a href='#Network.enable' title="Network.enable">Network.enable</a>: Enables network tracking, network events will now be delivered to the client.</li>
 <li><a href='#Network.disable' title="Network.disable">Network.disable</a>: Disables network tracking, prevents network events from being sent to the client.</li>
 <li><a href='#Network.setUserAgentOverride' title="Network.setUserAgentOverride">Network.setUserAgentOverride</a>: Allows overriding user agent with the given string.</li>
-<li><a href='#Network.setExtraHTTPHeaders'>Network.setExtraHTTPHeaders</a>: Specifies whether to always send extra HTTP headers with the requests from this page.</li>
-<li><a href='#Network.getResponseBody'>Network.getResponseBody</a>: Returns content served for the given request.</li>
-<li><a href='#Network.replayXHR'>Network.replayXHR</a>: This method sends a new XMLHttpRequest which is identical to the original one. The following parameters should be identical: method, url, async, request body, extra headers, withCredentials attribute, user, password.</li>
-<li><a href='#Network.canClearBrowserCache'>Network.canClearBrowserCache</a>: Tells whether clearing browser cache is supported.</li>
-<li><a href='#Network.clearBrowserCache'>Network.clearBrowserCache</a>: Clears browser cache.</li>
-<li><a href='#Network.canClearBrowserCookies'>Network.canClearBrowserCookies</a>: Tells whether clearing browser cookies is supported.</li>
-<li><a href='#Network.clearBrowserCookies'>Network.clearBrowserCookies</a>: Clears browser cookies.</li>
-<li><a href='#Network.setCacheDisabled'>Network.setCacheDisabled</a>: Toggles ignoring cache for each request. If true, cache will not be used.</li>
-<li><a href='#Network.loadResourceForFrontend'>Network.loadResourceForFrontend</a>: Loads a resource in the context of a frame on the inspected page without cross origin checks.</li>
+<li><a href='#Network.setExtraHTTPHeaders' title="Network.setExtraHTTPHeaders">Network.setExtraHTTPHeaders</a>: Specifies whether to always send extra HTTP headers with the requests from this page.</li>
+<li><a href='#Network.getResponseBody' title="Network.getResponseBody">Network.getResponseBody</a>: Returns content served for the given request.</li>
+<li><a href='#Network.replayXHR' title="Network.replayXHR">Network.replayXHR</a>: This method sends a new XMLHttpRequest which is identical to the original one. The following parameters should be identical: method, url, async, request body, extra headers, withCredentials attribute, user, password.</li>
+<li><a href='#Network.canClearBrowserCache' title="Network.canClearBrowserCache">Network.canClearBrowserCache</a>: Tells whether clearing browser cache is supported.</li>
+<li><a href='#Network.clearBrowserCache' title="Network.clearBrowserCache">Network.clearBrowserCache</a>: Clears browser cache.</li>
+<li><a href='#Network.canClearBrowserCookies' title="Network.canClearBrowserCookies">Network.canClearBrowserCookies</a>: Tells whether clearing browser cookies is supported.</li>
+<li><a href='#Network.clearBrowserCookies' title="Network.clearBrowserCookies">Network.clearBrowserCookies</a>: Clears browser cookies.</li>
+<li><a href='#Network.setCacheDisabled' title="Network.setCacheDisabled">Network.setCacheDisabled</a>: Toggles ignoring cache for each request. If true, cache will not be used.</li>
+<li><a href='#Network.loadResourceForFrontend' title="Network.loadResourceForFrontend">Network.loadResourceForFrontend</a>: Loads a resource in the context of a frame on the inspected page without cross origin checks.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Network.requestWillBeSent'>Network.requestWillBeSent</a>: Fired when page is about to send HTTP request.</li>
-<li><a href='#Network.requestServedFromCache'>Network.requestServedFromCache</a>: Fired if request ended up loading from cache.</li>
-<li><a href='#Network.responseReceived'>Network.responseReceived</a>: Fired when HTTP response is available.</li>
-<li><a href='#Network.dataReceived'>Network.dataReceived</a>: Fired when data chunk was received over the network.</li>
-<li><a href='#Network.loadingFinished'>Network.loadingFinished</a>: Fired when HTTP request has finished loading.</li>
-<li><a href='#Network.loadingFailed'>Network.loadingFailed</a>: Fired when HTTP request has failed to load.</li>
-<li><a href='#Network.webSocketWillSendHandshakeRequest'>Network.webSocketWillSendHandshakeRequest</a>: Fired when WebSocket is about to initiate handshake.</li>
-<li><a href='#Network.webSocketHandshakeResponseReceived'>Network.webSocketHandshakeResponseReceived</a>: Fired when WebSocket handshake response becomes available.</li>
-<li><a href='#Network.webSocketCreated'>Network.webSocketCreated</a>: Fired upon WebSocket creation.</li>
-<li><a href='#Network.webSocketClosed'>Network.webSocketClosed</a>: Fired when WebSocket is closed.</li>
-<li><a href='#Network.webSocketFrameReceived'>Network.webSocketFrameReceived</a>: Fired when WebSocket frame is received.</li>
+<li><a href='#Network.requestWillBeSent' title="Network.requestWillBeSent">Network.requestWillBeSent</a>: Fired when page is about to send HTTP request.</li>
+<li><a href='#Network.requestServedFromCache' title="Network.requestServedFromCache">Network.requestServedFromCache</a>: Fired if request ended up loading from cache.</li>
+<li><a href='#Network.responseReceived' title="Network.responseReceived">Network.responseReceived</a>: Fired when HTTP response is available.</li>
+<li><a href='#Network.dataReceived' title="Network.dataReceived">Network.dataReceived</a>: Fired when data chunk was received over the network.</li>
+<li><a href='#Network.loadingFinished' title="Network.loadingFinished">Network.loadingFinished</a>: Fired when HTTP request has finished loading.</li>
+<li><a href='#Network.loadingFailed' title="Network.loadingFailed">Network.loadingFailed</a>: Fired when HTTP request has failed to load.</li>
+<li><a href='#Network.webSocketWillSendHandshakeRequest' title="Network.webSocketWillSendHandshakeRequest">Network.webSocketWillSendHandshakeRequest</a>: Fired when WebSocket is about to initiate handshake.</li>
+<li><a href='#Network.webSocketHandshakeResponseReceived' title="Network.webSocketHandshakeResponseReceived">Network.webSocketHandshakeResponseReceived</a>: Fired when WebSocket handshake response becomes available.</li>
+<li><a href='#Network.webSocketCreated' title="Network.webSocketCreated">Network.webSocketCreated</a>: Fired upon WebSocket creation.</li>
+<li><a href='#Network.webSocketClosed' title="Network.webSocketClosed">Network.webSocketClosed</a>: Fired when WebSocket is closed.</li>
+<li><a href='#Network.webSocketFrameReceived' title="Network.webSocketFrameReceived">Network.webSocketFrameReceived</a>: Fired when WebSocket frame is received.</li>
 <li><a href='#Network.webSocketFrameError'>Network.webSocketFrameError</a>: Fired when WebSocket frame error occurs.</li>
-<li><a href='#Network.webSocketFrameSent'>Network.webSocketFrameSent</a>: Fired when WebSocket frame is sent.</li>
+<li><a href='#Network.webSocketFrameSent' title="Network.webSocketFrameSent">Network.webSocketFrameSent</a>: Fired when WebSocket frame is sent.</li>
 </ul>
 <h3><a href="#Page" title="Page">Page</a></h3>
 <span class='label'>Type</span>
@@ -583,39 +583,39 @@ footer p {text-align: center; margin: 0;}
 <ul>
 <li><a href='#Page.enable' title="Page.enable">Page.enable</a>: Enables page domain notifications.</li>
 <li><a href='#Page.disable' title="Page.disable">Page.disable</a>: Disables page domain notifications.</li>
-<li><a href='#Page.addScriptToEvaluateOnLoad'>Page.addScriptToEvaluateOnLoad</a></li>
-<li><a href='#Page.removeScriptToEvaluateOnLoad'>Page.removeScriptToEvaluateOnLoad</a></li>
-<li><a href='#Page.reload' title="Page.reload">Page.reload</a>: Reloads given page optionally ignoring the cache.</li>
-<li><a href='#Page.navigate' title="Page.navigate">Page.navigate</a>: Navigates current page to the given URL.</li>
-<li><a href='#Page.getNavigationHistory'>Page.getNavigationHistory</a>: Returns navigation history for the current page.</li>
-<li><a href='#Page.navigateToHistoryEntry'>Page.navigateToHistoryEntry</a>: Navigates current page to the given history entry.</li>
-<li><a href='#Page.getCookies'>Page.getCookies</a>: Returns all browser cookies. Depending on the backend support, will either return detailed cookie information in the cookie field or string cookie representation using cookieString.</li>
-<li><a href='#Page.deleteCookie'>Page.deleteCookie</a>: Deletes browser cookie with given name, domain and path.</li>
-<li><a href='#Page.getResourceTree'>Page.getResourceTree</a>: Returns present frame / resource tree structure.</li>
-<li><a href='#Page.getResourceContent'>Page.getResourceContent</a>: Returns content of the given resource.</li>
-<li><a href='#Page.searchInResource'>Page.searchInResource</a>: Searches for given string in resource content.</li>
-<li><a href='#Page.searchInResources'>Page.searchInResources</a>: Searches for given string in frame / resource tree structure.</li>
-<li><a href='#Page.setDocumentContent'>Page.setDocumentContent</a>: Sets given markup as the document's HTML.</li>
-<li><a href='#Page.setDeviceMetricsOverride'>Page.setDeviceMetricsOverride</a>: Overrides the values of device screen dimensions (window.screen.width, window.screen.height, window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media query results) and the font scale factor.</li>
-<li><a href='#Page.setShowPaintRects'>Page.setShowPaintRects</a>: Requests that backend shows paint rectangles</li>
-<li><a href='#Page.setShowDebugBorders'>Page.setShowDebugBorders</a>: Requests that backend shows debug borders on layers</li>
-<li><a href='#Page.setShowFPSCounter'>Page.setShowFPSCounter</a>: Requests that backend shows the FPS counter</li>
-<li><a href='#Page.setContinuousPaintingEnabled'>Page.setContinuousPaintingEnabled</a>: Requests that backend enables continuous painting</li>
-<li><a href='#Page.setShowScrollBottleneckRects'>Page.setShowScrollBottleneckRects</a>: Requests that backend shows scroll bottleneck rects</li>
-<li><a href='#Page.getScriptExecutionStatus'>Page.getScriptExecutionStatus</a>: Determines if scripts can be executed in the page.</li>
-<li><a href='#Page.setScriptExecutionDisabled'>Page.setScriptExecutionDisabled</a>: Switches script execution in the page.</li>
-<li><a href='#Page.setGeolocationOverride'>Page.setGeolocationOverride</a>: Overrides the Geolocation Position or Error.</li>
-<li><a href='#Page.clearGeolocationOverride'>Page.clearGeolocationOverride</a>: Clears the overriden Geolocation Position and Error.</li>
-<li><a href='#Page.setDeviceOrientationOverride'>Page.setDeviceOrientationOverride</a>: Overrides the Device Orientation.</li>
-<li><a href='#Page.clearDeviceOrientationOverride'>Page.clearDeviceOrientationOverride</a>: Clears the overridden Device Orientation.</li>
-<li><a href='#Page.setTouchEmulationEnabled'>Page.setTouchEmulationEnabled</a>: Toggles mouse event-based touch event emulation.</li>
-<li><a href='#Page.setEmulatedMedia'>Page.setEmulatedMedia</a>: Emulates the given media for CSS media queries.</li>
-<li><a href='#Page.captureScreenshot'>Page.captureScreenshot</a>: Capture page screenshot.</li>
-<li><a href='#Page.startScreencast'>Page.startScreencast</a>: Starts sending each frame using the screencastFrame event.</li>
-<li><a href='#Page.stopScreencast'>Page.stopScreencast</a>: Stops sending each frame in the screencastFrame.</li>
-<li><a href='#Page.handleJavaScriptDialog'>Page.handleJavaScriptDialog</a>: Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).</li>
-<li><a href='#Page.setShowViewportSizeOnResize'>Page.setShowViewportSizeOnResize</a>: Paints viewport size upon main frame resize.</li>
-<li><a href='#Page.setForceCompositingMode'>Page.setForceCompositingMode</a>: Force accelerated compositing mode for inspected page.</li>
+<li><a href='#Page.addScriptToEvaluateOnLoad' title="Page.addScriptToEvaluateOnLoad">Page.addScriptToEvaluateOnLoad</a></li>
+<li><a href='#Page.removeScriptToEvaluateOnLoad' title="Page.removeScriptToEvaluateOnLoad">Page.removeScriptToEvaluateOnLoad</a></li>
+<li><a href='#Page.reload' title="Page.reload" title="Page.reload">Page.reload</a>: Reloads given page optionally ignoring the cache.</li>
+<li><a href='#Page.navigate' title="Page.navigate" title="Page.navigate">Page.navigate</a>: Navigates current page to the given URL.</li>
+<li><a href='#Page.getNavigationHistory' title="Page.getNavigationHistory">Page.getNavigationHistory</a>: Returns navigation history for the current page.</li>
+<li><a href='#Page.navigateToHistoryEntry' title="Page.navigateToHistoryEvent">Page.navigateToHistoryEntry</a>: Navigates current page to the given history entry.</li>
+<li><a href='#Page.getCookies' title="Page.getCookies">Page.getCookies</a>: Returns all browser cookies. Depending on the backend support, will either return detailed cookie information in the cookie field or string cookie representation using cookieString.</li>
+<li><a href='#Page.deleteCookie' title="Page.deleteCookie">Page.deleteCookie</a>: Deletes browser cookie with given name, domain and path.</li>
+<li><a href='#Page.getResourceTree' title="Page.getResourceTree">Page.getResourceTree</a>: Returns present frame / resource tree structure.</li>
+<li><a href='#Page.getResourceContent' title="Page.getResourceContent">Page.getResourceContent</a>: Returns content of the given resource.</li>
+<li><a href='#Page.searchInResource' title="Page.searchInResource">Page.searchInResource</a>: Searches for given string in resource content.</li>
+<li><a href='#Page.searchInResources' title="Page.searchInResources">Page.searchInResources</a>: Searches for given string in frame / resource tree structure.</li>
+<li><a href='#Page.setDocumentContent' title="Page.setDocumentContent">Page.setDocumentContent</a>: Sets given markup as the document's HTML.</li>
+<li><a href='#Page.setDeviceMetricsOverride' title="Page.setDeviceMetricsOverride">Page.setDeviceMetricsOverride</a>: Overrides the values of device screen dimensions (window.screen.width, window.screen.height, window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media query results) and the font scale factor.</li>
+<li><a href='#Page.setShowPaintRects' title="Page.setShowPaintRects">Page.setShowPaintRects</a>: Requests that backend shows paint rectangles</li>
+<li><a href='#Page.setShowDebugBorders' title="Page.setShowDebugBorders">Page.setShowDebugBorders</a>: Requests that backend shows debug borders on layers</li>
+<li><a href='#Page.setShowFPSCounter' title="Page.setShowFPSCounter">Page.setShowFPSCounter</a>: Requests that backend shows the FPS counter</li>
+<li><a href='#Page.setContinuousPaintingEnabled' title="Page.setContinuousPaintingEnabled">Page.setContinuousPaintingEnabled</a>: Requests that backend enables continuous painting</li>
+<li><a href='#Page.setShowScrollBottleneckRects' title="Page.setShowScrollBottleneckRects">Page.setShowScrollBottleneckRects</a>: Requests that backend shows scroll bottleneck rects</li>
+<li><a href='#Page.getScriptExecutionStatus' title="Page.getScriptExecutionStatus">Page.getScriptExecutionStatus</a>: Determines if scripts can be executed in the page.</li>
+<li><a href='#Page.setScriptExecutionDisabled' title="Page.setScriptExecutionDisabled">Page.setScriptExecutionDisabled</a>: Switches script execution in the page.</li>
+<li><a href='#Page.setGeolocationOverride' title="Page.setGeolocationOverride">Page.setGeolocationOverride</a>: Overrides the Geolocation Position or Error.</li>
+<li><a href='#Page.clearGeolocationOverride' title="Page.clearGeolocationOverride">Page.clearGeolocationOverride</a>: Clears the overriden Geolocation Position and Error.</li>
+<li><a href='#Page.setDeviceOrientationOverride' title="Page.setDeviceOrientationOverride">Page.setDeviceOrientationOverride</a>: Overrides the Device Orientation.</li>
+<li><a href='#Page.clearDeviceOrientationOverride' title="Page.clearDeviceOrientationOverride">Page.clearDeviceOrientationOverride</a>: Clears the overridden Device Orientation.</li>
+<li><a href='#Page.setTouchEmulationEnabled' title="Page.setTouchEmulationEnabled">Page.setTouchEmulationEnabled</a>: Toggles mouse event-based touch event emulation.</li>
+<li><a href='#Page.setEmulatedMedia' title="Page.setEmulatedMedia">Page.setEmulatedMedia</a>: Emulates the given media for CSS media queries.</li>
+<li><a href='#Page.captureScreenshot' title="Page.captureScreenshot">Page.captureScreenshot</a>: Capture page screenshot.</li>
+<li><a href='#Page.startScreencast' title="Page.startScreencast">Page.startScreencast</a>: Starts sending each frame using the screencastFrame event.</li>
+<li><a href='#Page.stopScreencast' title="Page.stopScreencast">Page.stopScreencast</a>: Stops sending each frame in the screencastFrame.</li>
+<li><a href='#Page.handleJavaScriptDialog' title="Page.handleJavaScriptDialog">Page.handleJavaScriptDialog</a>: Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).</li>
+<li><a href='#Page.setShowViewportSizeOnResize' title="Page.setShowViewportSizeOnResize">Page.setShowViewportSizeOnResize</a>: Paints viewport size upon main frame resize.</li>
+<li><a href='#Page.setForceCompositingMode' title="Page.setForceCompositingMode">Page.setForceCompositingMode</a>: Force accelerated compositing mode for inspected page.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
@@ -742,21 +742,21 @@ footer p {text-align: center; margin: 0;}
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#ApplicationCache.ApplicationCacheResource'>ApplicationCache.ApplicationCacheResource</a>: Detailed application cache resource information.</li>
-<li><a href='#ApplicationCache.ApplicationCache'>ApplicationCache.ApplicationCache</a>: Detailed application cache information.</li>
-<li><a href='#ApplicationCache.FrameWithManifest'>ApplicationCache.FrameWithManifest</a>: Frame identifier - manifest URL pair.</li>
+<li><a href='#ApplicationCache.ApplicationCacheResource' title="ApplicationCache.ApplicationCacheResource">ApplicationCache.ApplicationCacheResource</a>: Detailed application cache resource information.</li>
+<li><a href='#ApplicationCache.ApplicationCache' title="ApplicationCache.ApplicationCache">ApplicationCache.ApplicationCache</a>: Detailed application cache information.</li>
+<li><a href='#ApplicationCache.FrameWithManifest' title="ApplicationCache.FrameWithManifest">ApplicationCache.FrameWithManifest</a>: Frame identifier - manifest URL pair.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#ApplicationCache.getFramesWithManifests'>ApplicationCache.getFramesWithManifests</a>: Returns array of frame identifiers with manifest urls for each frame containing a document associated with some application cache.</li>
-<li><a href='#ApplicationCache.enable'>ApplicationCache.enable</a>: Enables application cache domain notifications.</li>
-<li><a href='#ApplicationCache.getManifestForFrame'>ApplicationCache.getManifestForFrame</a>: Returns manifest URL for document in the given frame.</li>
-<li><a href='#ApplicationCache.getApplicationCacheForFrame'>ApplicationCache.getApplicationCacheForFrame</a>: Returns relevant application cache data for the document in given frame.</li>
+<li><a href='#ApplicationCache.getFramesWithManifests' title="ApplicationCache.getFramesWithManifests">ApplicationCache.getFramesWithManifests</a>: Returns array of frame identifiers with manifest urls for each frame containing a document associated with some application cache.</li>
+<li><a href='#ApplicationCache.enable' title="ApplicationCache.enable">ApplicationCache.enable</a>: Enables application cache domain notifications.</li>
+<li><a href='#ApplicationCache.getManifestForFrame' title="ApplicationCache.getManifestForFrame">ApplicationCache.getManifestForFrame</a>: Returns manifest URL for document in the given frame.</li>
+<li><a href='#ApplicationCache.getApplicationCacheForFrame' title="ApplicationCache.getApplicationCacheForFrame">ApplicationCache.getApplicationCacheForFrame</a>: Returns relevant application cache data for the document in given frame.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#ApplicationCache.applicationCacheStatusUpdated'>ApplicationCache.applicationCacheStatusUpdated</a></li>
-<li><a href='#ApplicationCache.networkStateUpdated'>ApplicationCache.networkStateUpdated</a></li>
+<li><a href='#ApplicationCache.applicationCacheStatusUpdated' title="ApplicationCache.applicationCacheStatusUpdated">ApplicationCache.applicationCacheStatusUpdated</a></li>
+<li><a href='#ApplicationCache.networkStateUpdated' title="ApplicationCache.networkStateUpdated">ApplicationCache.networkStateUpdated</a></li>
 </ul>
 <div id='ApplicationCache_ApplicationCacheResource' class='type'>
 <h3>ApplicationCache.ApplicationCacheResource <span class='label'>Type</span></h3>
@@ -1735,32 +1735,32 @@ function onRegionOversetChanged(res) {
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Canvas.ResourceId'>Canvas.ResourceId</a>: Unique resource identifier.</li>
-<li><a href='#Canvas.ResourceStateDescriptor'>Canvas.ResourceStateDescriptor</a>: Resource state descriptor.</li>
-<li><a href='#Canvas.ResourceState'>Canvas.ResourceState</a>: Resource state.</li>
-<li><a href='#Canvas.CallArgument'>Canvas.CallArgument</a></li>
-<li><a href='#Canvas.Call'>Canvas.Call</a></li>
-<li><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a>: Unique trace log identifier.</li>
-<li><a href='#Canvas.TraceLog'>Canvas.TraceLog</a></li>
+<li><a href='#Canvas.ResourceId' title="Canvas.ResourceId">Canvas.ResourceId</a>: Unique resource identifier.</li>
+<li><a href='#Canvas.ResourceStateDescriptor' title="Canvas.ResourceStateDescriptor">Canvas.ResourceStateDescriptor</a>: Resource state descriptor.</li>
+<li><a href='#Canvas.ResourceState' title="Canvas.ResourceState">Canvas.ResourceState</a>: Resource state.</li>
+<li><a href='#Canvas.CallArgument' title="Canvas.CallArgument">Canvas.CallArgument</a></li>
+<li><a href='#Canvas.Call' title="Canvas.Call">Canvas.Call</a></li>
+<li><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a>: Unique trace log identifier.</li>
+<li><a href='#Canvas.TraceLog' title="Canvas.TraceLog">Canvas.TraceLog</a></li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Canvas.enable'>Canvas.enable</a>: Enables Canvas inspection.</li>
-<li><a href='#Canvas.disable'>Canvas.disable</a>: Disables Canvas inspection.</li>
-<li><a href='#Canvas.dropTraceLog'>Canvas.dropTraceLog</a></li>
-<li><a href='#Canvas.hasUninstrumentedCanvases'>Canvas.hasUninstrumentedCanvases</a>: Checks if there is any uninstrumented canvas in the inspected page.</li>
-<li><a href='#Canvas.captureFrame'>Canvas.captureFrame</a>: Starts (or continues) a canvas frame capturing which will be stopped automatically after the next frame is prepared.</li>
-<li><a href='#Canvas.startCapturing'>Canvas.startCapturing</a>: Starts (or continues) consecutive canvas frames capturing. The capturing is stopped by the corresponding stopCapturing command.</li>
-<li><a href='#Canvas.stopCapturing'>Canvas.stopCapturing</a></li>
-<li><a href='#Canvas.getTraceLog'>Canvas.getTraceLog</a></li>
-<li><a href='#Canvas.replayTraceLog'>Canvas.replayTraceLog</a></li>
-<li><a href='#Canvas.getResourceState'>Canvas.getResourceState</a></li>
-<li><a href='#Canvas.evaluateTraceLogCallArgument'>Canvas.evaluateTraceLogCallArgument</a>: Evaluates a given trace call argument or its result.</li>
+<li><a href='#Canvas.enable' title="Canvas.enable">Canvas.enable</a>: Enables Canvas inspection.</li>
+<li><a href='#Canvas.disable' title="Canvas.disable">Canvas.disable</a>: Disables Canvas inspection.</li>
+<li><a href='#Canvas.dropTraceLog' title="Canvas.dropTraceLog">Canvas.dropTraceLog</a></li>
+<li><a href='#Canvas.hasUninstrumentedCanvases' title="Canvas.hasUninstrumentedCanvases">Canvas.hasUninstrumentedCanvases</a>: Checks if there is any uninstrumented canvas in the inspected page.</li>
+<li><a href='#Canvas.captureFrame' title="Canvas.captureFrame">Canvas.captureFrame</a>: Starts (or continues) a canvas frame capturing which will be stopped automatically after the next frame is prepared.</li>
+<li><a href='#Canvas.startCapturing' title="Canvas.startCapturing">Canvas.startCapturing</a>: Starts (or continues) consecutive canvas frames capturing. The capturing is stopped by the corresponding stopCapturing command.</li>
+<li><a href='#Canvas.stopCapturing' title="Canvas.stopCaturing">Canvas.stopCapturing</a></li>
+<li><a href='#Canvas.getTraceLog' title="Canvas.getTraceLog">Canvas.getTraceLog</a></li>
+<li><a href='#Canvas.replayTraceLog' title="Canvas.replayTraceLog">Canvas.replayTraceLog</a></li>
+<li><a href='#Canvas.getResourceState' title="Canvas.getResourceState">Canvas.getResourceState</a></li>
+<li><a href='#Canvas.evaluateTraceLogCallArgument' title="Canvas.evaluateTraceLogCallArgument">Canvas.evaluateTraceLogCallArgument</a>: Evaluates a given trace call argument or its result.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Canvas.contextCreated'>Canvas.contextCreated</a>: Fired when a canvas context has been created in the given frame. The context may not be instrumented (see hasUninstrumentedCanvases command).</li>
-<li><a href='#Canvas.traceLogsRemoved'>Canvas.traceLogsRemoved</a>: Fired when a set of trace logs were removed from the backend. If no parameters are given, all trace logs were removed.</li>
+<li><a href='#Canvas.contextCreated' title="Canvas.contextCreated">Canvas.contextCreated</a>: Fired when a canvas context has been created in the given frame. The context may not be instrumented (see hasUninstrumentedCanvases command).</li>
+<li><a href='#Canvas.traceLogsRemoved' title="Canvas.traceLogsRemoved">Canvas.traceLogsRemoved</a>: Fired when a set of trace logs were removed from the backend. If no parameters are given, all trace logs were removed.</li>
 </ul>
 <div id='Canvas_ResourceId' class='type'>
 <h3>Canvas.ResourceId <span class='label'>Type</span></h3>
@@ -2098,25 +2098,25 @@ function onTraceLogsRemoved(res) {
 <p>Console domain defines methods and events for interaction with the JavaScript console. Console collects messages created by means of the <a href='http://getfirebug.com/wiki/index.php/Console_API'>JavaScript Console API</a>. One needs to enable this domain using <code>enable</code> command in order to start receiving the console messages. Browser collects messages issued while console domain is not enabled as well and reports them using <code>messageAdded</code> notification upon enabling.</p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Console.Timestamp'>Console.Timestamp</a>: Number of seconds since epoch.</li>
-<li><a href='#Console.ConsoleMessage'>Console.ConsoleMessage</a>: Console message.</li>
-<li><a href='#Console.CallFrame'>Console.CallFrame</a>: Stack entry for console errors and assertions.</li>
-<li><a href='#Console.StackTrace'>Console.StackTrace</a>: Call frames for assertions or error messages.</li>
+<li><a href='#Console.Timestamp' title="Console.Timestamp">Console.Timestamp</a>: Number of seconds since epoch.</li>
+<li><a href='#Console.ConsoleMessage' title="Console.ConsoleMessage">Console.ConsoleMessage</a>: Console message.</li>
+<li><a href='#Console.CallFrame' title="Console.CallFrame">Console.CallFrame</a>: Stack entry for console errors and assertions.</li>
+<li><a href='#Console.StackTrace' title="Console.StackTrace">Console.StackTrace</a>: Call frames for assertions or error messages.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Console.enable'>Console.enable</a>: Enables console domain, sends the messages collected so far to the client by means of the messageAdded notification.</li>
-<li><a href='#Console.disable'>Console.disable</a>: Disables console domain, prevents further console messages from being reported to the client.</li>
-<li><a href='#Console.clearMessages'>Console.clearMessages</a>: Clears console messages collected in the browser.</li>
-<li><a href='#Console.setMonitoringXHREnabled'>Console.setMonitoringXHREnabled</a>: Toggles monitoring of XMLHttpRequest. If true, console will receive messages upon each XHR issued.</li>
-<li><a href='#Console.addInspectedNode'>Console.addInspectedNode</a>: Enables console to refer to the node with given id via $x (see Command Line API for more details $x functions).</li>
-<li><a href='#Console.addInspectedHeapObject'>Console.addInspectedHeapObject</a></li>
+<li><a href='#Console.enable' title="Console.disable">Console.enable</a>: Enables console domain, sends the messages collected so far to the client by means of the messageAdded notification.</li>
+<li><a href='#Console.disable' title="Console.disable">Console.disable</a>: Disables console domain, prevents further console messages from being reported to the client.</li>
+<li><a href='#Console.clearMessages' title="Console.clearMessages">Console.clearMessages</a>: Clears console messages collected in the browser.</li>
+<li><a href='#Console.setMonitoringXHREnabled' title="Console.setMonitoringXHREnabled">Console.setMonitoringXHREnabled</a>: Toggles monitoring of XMLHttpRequest. If true, console will receive messages upon each XHR issued.</li>
+<li><a href='#Console.addInspectedNode' title="Console.addInspectedNode">Console.addInspectedNode</a>: Enables console to refer to the node with given id via $x (see Command Line API for more details $x functions).</li>
+<li><a href='#Console.addInspectedHeapObject' title="Console.addInspectedHeapObject">Console.addInspectedHeapObject</a></li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Console.messageAdded'>Console.messageAdded</a>: Issued when new console message is added.</li>
-<li><a href='#Console.messageRepeatCountUpdated'>Console.messageRepeatCountUpdated</a>: Issued when subsequent message(s) are equal to the previous one(s).</li>
-<li><a href='#Console.messagesCleared'>Console.messagesCleared</a>: Issued when console is cleared. This happens either upon clearMessages command or after page navigation.</li>
+<li><a href='#Console.messageAdded' title="Console.messageAdded">Console.messageAdded</a>: Issued when new console message is added.</li>
+<li><a href='#Console.messageRepeatCountUpdated' title="Console.messageRepeatCountUpdated">Console.messageRepeatCountUpdated</a>: Issued when subsequent message(s) are equal to the previous one(s).</li>
+<li><a href='#Console.messagesCleared' title="Console.messagesCleared">Console.messagesCleared</a>: Issued when console is cleared. This happens either upon clearMessages command or after page navigation.</li>
 </ul>
 <div id='Console_Timestamp' class='type'>
 <h3>Console.Timestamp <span class='label'>Type</span></h3>
@@ -3407,18 +3407,18 @@ function onPseudoElementRemoved(res) {
 <p>DOM debugging allows setting breakpoints on particular DOM operations and events. JavaScript execution will stop on these operations as if there was a regular breakpoint set.</p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#DOMDebugger.DOMBreakpointType'>DOMDebugger.DOMBreakpointType</a>: DOM breakpoint type.</li>
+<li><a href='#DOMDebugger.DOMBreakpointType' title="DOMDebugger.DOMBreakpointType">DOMDebugger.DOMBreakpointType</a>: DOM breakpoint type.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#DOMDebugger.setDOMBreakpoint'>DOMDebugger.setDOMBreakpoint</a>: Sets breakpoint on particular operation with DOM.</li>
-<li><a href='#DOMDebugger.removeDOMBreakpoint'>DOMDebugger.removeDOMBreakpoint</a>: Removes DOM breakpoint that was set using setDOMBreakpoint.</li>
-<li><a href='#DOMDebugger.setEventListenerBreakpoint'>DOMDebugger.setEventListenerBreakpoint</a>: Sets breakpoint on particular DOM event.</li>
-<li><a href='#DOMDebugger.removeEventListenerBreakpoint'>DOMDebugger.removeEventListenerBreakpoint</a>: Removes breakpoint on particular DOM event.</li>
-<li><a href='#DOMDebugger.setInstrumentationBreakpoint'>DOMDebugger.setInstrumentationBreakpoint</a>: Sets breakpoint on particular native event.</li>
-<li><a href='#DOMDebugger.removeInstrumentationBreakpoint'>DOMDebugger.removeInstrumentationBreakpoint</a>: Removes breakpoint on particular native event.</li>
-<li><a href='#DOMDebugger.setXHRBreakpoint'>DOMDebugger.setXHRBreakpoint</a>: Sets breakpoint on XMLHttpRequest.</li>
-<li><a href='#DOMDebugger.removeXHRBreakpoint'>DOMDebugger.removeXHRBreakpoint</a>: Removes breakpoint from XMLHttpRequest.</li>
+<li><a href='#DOMDebugger.setDOMBreakpoint' title="DOMDebugger.setDOMBreakpoint">DOMDebugger.setDOMBreakpoint</a>: Sets breakpoint on particular operation with DOM.</li>
+<li><a href='#DOMDebugger.removeDOMBreakpoint' title="DOMDebugger.removeDOMBreakpoint">DOMDebugger.removeDOMBreakpoint</a>: Removes DOM breakpoint that was set using setDOMBreakpoint.</li>
+<li><a href='#DOMDebugger.setEventListenerBreakpoint' title="DOMDebugger.setEventListenerBreakpoint">DOMDebugger.setEventListenerBreakpoint</a>: Sets breakpoint on particular DOM event.</li>
+<li><a href='#DOMDebugger.removeEventListenerBreakpoint' title="DOMDebugger.removeEventListenerBreakpoint">DOMDebugger.removeEventListenerBreakpoint</a>: Removes breakpoint on particular DOM event.</li>
+<li><a href='#DOMDebugger.setInstrumentationBreakpoint' title="DOMDebugger.setInstrumentationBreakpoint">DOMDebugger.setInstrumentationBreakpoint</a>: Sets breakpoint on particular native event.</li>
+<li><a href='#DOMDebugger.removeInstrumentationBreakpoint' title="DOMDebugger.removeInstrumentationBreakpoint">DOMDebugger.removeInstrumentationBreakpoint</a>: Removes breakpoint on particular native event.</li>
+<li><a href='#DOMDebugger.setXHRBreakpoint' title="DOMDebugger.setXHRBreakpoint">DOMDebugger.setXHRBreakpoint</a>: Sets breakpoint on XMLHttpRequest.</li>
+<li><a href='#DOMDebugger.removeXHRBreakpoint' title="DOMDebugger.removeXHRBreakpoint">DOMDebugger.removeXHRBreakpoint</a>: Removes breakpoint from XMLHttpRequest.</li>
 </ul>
 <div id='DOMDebugger_DOMBreakpointType' class='type'>
 <h3>DOMDebugger.DOMBreakpointType <span class='label'>Type</span></h3>
@@ -7547,18 +7547,18 @@ function onResetProfiles(res) {
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Runtime.evaluate'>Runtime.evaluate</a>: Evaluates expression on global object.</li>
-<li><a href='#Runtime.callFunctionOn'>Runtime.callFunctionOn</a>: Calls function with given declaration on the given object. Object group of the result is inherited from the target object.</li>
-<li><a href='#Runtime.getProperties'>Runtime.getProperties</a>: Returns properties of a given object. Object group of the result is inherited from the target object.</li>
-<li><a href='#Runtime.releaseObject'>Runtime.releaseObject</a>: Releases remote object with given id.</li>
-<li><a href='#Runtime.releaseObjectGroup'>Runtime.releaseObjectGroup</a>: Releases all remote objects that belong to a given group.</li>
-<li><a href='#Runtime.run'>Runtime.run</a>: Tells inspected instance(worker or page) that it can run in case it was started paused.</li>
-<li><a href='#Runtime.enable'>Runtime.enable</a>: Enables reporting of execution contexts creation by means of executionContextCreated event. When the reporting gets enabled the event will be sent immediately for each existing execution context.</li>
-<li><a href='#Runtime.disable'>Runtime.disable</a>: Disables reporting of execution contexts creation.</li>
+<li><a href='#Runtime.evaluate' title="Runtime.evaluate">Runtime.evaluate</a>: Evaluates expression on global object.</li>
+<li><a href='#Runtime.callFunctionOn' title="Runtime.callFunctionOn">Runtime.callFunctionOn</a>: Calls function with given declaration on the given object. Object group of the result is inherited from the target object.</li>
+<li><a href='#Runtime.getProperties' title="Runtime.getProperties">Runtime.getProperties</a>: Returns properties of a given object. Object group of the result is inherited from the target object.</li>
+<li><a href='#Runtime.releaseObject' title="Runtime.releaseObject">Runtime.releaseObject</a>: Releases remote object with given id.</li>
+<li><a href='#Runtime.releaseObjectGroup' title="Runtime.releaseObjectGroup">Runtime.releaseObjectGroup</a>: Releases all remote objects that belong to a given group.</li>
+<li><a href='#Runtime.run' title="Runtime.run">Runtime.run</a>: Tells inspected instance(worker or page) that it can run in case it was started paused.</li>
+<li><a href='#Runtime.enable' title="Runtime.enable">Runtime.enable</a>: Enables reporting of execution contexts creation by means of executionContextCreated event. When the reporting gets enabled the event will be sent immediately for each existing execution context.</li>
+<li><a href='#Runtime.disable' title="Runtime.disable">Runtime.disable</a>: Disables reporting of execution contexts creation.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Runtime.executionContextCreated'>Runtime.executionContextCreated</a>: Issued when new execution context is created.</li>
+<li><a href='#Runtime.executionContextCreated' title="Runtime.executionContextCreated">Runtime.executionContextCreated</a>: Issued when new execution context is created.</li>
 </ul>
 <div id='Runtime_RemoteObjectId' class='type'>
 <h3>Runtime.RemoteObjectId <span class='label'>Type</span></h3>
@@ -7845,21 +7845,21 @@ function onExecutionContextCreated(res) {
 <p>Timeline provides its clients with instrumentation records that are generated during the page runtime. Timeline instrumentation can be started and stopped using corresponding commands. While timeline is started, it is generating timeline event records.</p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Timeline.DOMCounters'>Timeline.DOMCounters</a>: Current values of DOM counters.</li>
-<li><a href='#Timeline.TimelineEvent'>Timeline.TimelineEvent</a>: Timeline record contains information about the recorded activity.</li>
+<li><a href='#Timeline.DOMCounters' title="Timeline.DOMCounters">Timeline.DOMCounters</a>: Current values of DOM counters.</li>
+<li><a href='#Timeline.TimelineEvent' title="Timeline.TimelineEvent">Timeline.TimelineEvent</a>: Timeline record contains information about the recorded activity.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Timeline.enable'>Timeline.enable</a>: Enables timeline. After this call, timeline can be started from within the page (for example upon console.timeline).</li>
-<li><a href='#Timeline.disable'>Timeline.disable</a>: Disables timeline.</li>
-<li><a href='#Timeline.start'>Timeline.start</a>: Starts capturing instrumentation events.</li>
-<li><a href='#Timeline.stop'>Timeline.stop</a>: Stops capturing instrumentation events.</li>
+<li><a href='#Timeline.enable' title="Timeline.enable">Timeline.enable</a>: Enables timeline. After this call, timeline can be started from within the page (for example upon console.timeline).</li>
+<li><a href='#Timeline.disable' title="Timeline.disable>Timeline.disable</a>: Disables timeline.</li>
+<li><a href='#Timeline.start' title="Timeline.start">Timeline.start</a>: Starts capturing instrumentation events.</li>
+<li><a href='#Timeline.stop' title="Timeline.stop">Timeline.stop</a>: Stops capturing instrumentation events.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Timeline.eventRecorded'>Timeline.eventRecorded</a>: Fired for every instrumentation event while timeline is started.</li>
-<li><a href='#Timeline.started'>Timeline.started</a>: Fired when timeline is started.</li>
-<li><a href='#Timeline.stopped'>Timeline.stopped</a>: Fired when timeline is stopped.</li>
+<li><a href='#Timeline.eventRecorded' title="Timeline.eventRecorded">Timeline.eventRecorded</a>: Fired for every instrumentation event while timeline is started.</li>
+<li><a href='#Timeline.started' title="Timeline.started">Timeline.started</a>: Fired when timeline is started.</li>
+<li><a href='#Timeline.stopped' title="Timelime.stopped">Timeline.stopped</a>: Fired when timeline is stopped.</li>
 </ul>
 <div id='Timeline_DOMCounters' class='type'>
 <h3>Timeline.DOMCounters <span class='label'>Type</span></h3>
@@ -8057,20 +8057,20 @@ function onTracingComplete(res) {
 <p></p>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Worker.enable'>Worker.enable</a></li>
-<li><a href='#Worker.disable'>Worker.disable</a></li>
-<li><a href='#Worker.sendMessageToWorker'>Worker.sendMessageToWorker</a></li>
-<li><a href='#Worker.canInspectWorkers'>Worker.canInspectWorkers</a>: Tells whether browser supports workers inspection.</li>
-<li><a href='#Worker.connectToWorker'>Worker.connectToWorker</a></li>
-<li><a href='#Worker.disconnectFromWorker'>Worker.disconnectFromWorker</a></li>
-<li><a href='#Worker.setAutoconnectToWorkers'>Worker.setAutoconnectToWorkers</a></li>
+<li><a href='#Worker.enable' title="Worker.enable">Worker.enable</a></li>
+<li><a href='#Worker.disable' title="Worker.disable">Worker.disable</a></li>
+<li><a href='#Worker.sendMessageToWorker' title="Worker.sendMessageToWorker">Worker.sendMessageToWorker</a></li>
+<li><a href='#Worker.canInspectWorkers' title="Worker.canInspectWorkers">Worker.canInspectWorkers</a>: Tells whether browser supports workers inspection.</li>
+<li><a href='#Worker.connectToWorker' title="Worker.connectToWorker">Worker.connectToWorker</a></li>
+<li><a href='#Worker.disconnectFromWorker' title="Worker.disconnectFromWorker">Worker.disconnectFromWorker</a></li>
+<li><a href='#Worker.setAutoconnectToWorkers' title="Worker.setAutoconnectToWorkers">Worker.setAutoconnectToWorkers</a></li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Worker.workerCreated'>Worker.workerCreated</a></li>
-<li><a href='#Worker.workerTerminated'>Worker.workerTerminated</a></li>
-<li><a href='#Worker.dispatchMessageFromWorker'>Worker.dispatchMessageFromWorker</a></li>
-<li><a href='#Worker.disconnectedFromWorker'>Worker.disconnectedFromWorker</a></li>
+<li><a href='#Worker.workerCreated' title="Worker.woerkCreated">Worker.workerCreated</a></li>
+<li><a href='#Worker.workerTerminated' title="Worker.workerTerminated">Worker.workerTerminated</a></li>
+<li><a href='#Worker.dispatchMessageFromWorker' title="Worker.dispatchMessageFromWorker">Worker.dispatchMessageFromWorker</a></li>
+<li><a href='#Worker.disconnectedFromWorker' title="Worker.disconnectedFromWorker">Worker.disconnectedFromWorker</a></li>
 </ul>
 <div id='Worker_enable' class='command'>
 <h3>Worker.enable <span class='label label-success'>Command</span></h3>
