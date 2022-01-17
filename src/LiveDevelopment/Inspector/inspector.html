@@ -898,21 +898,21 @@ function onNetworkStateUpdated(res) {
 </section>
 <section id='CSS' class='domain'>
 <h1>CSS</h1>
-<p>This domain exposes CSS read/write operations. All CSS objects (stylesheets, rules, and styles) have an associated <code>id</code> used in subsequent operations on the related object. Each object type has a specific <code>id</code> structure, and those are not interchangeable between objects of different kinds. CSS objects can be loaded using the <code>get*ForNode()</code> calls (which accept a DOM node id). A client can also discover all the existing stylesheets with the <code>getAllStyleSheets()</code> method (or keeping track of the <code>styleSheetAdded</code>/<code>styleSheetRemoved</code> events) and subsequently load the required stylesheet contents using the <code>getStyleSheet[Text]()</code> methods.</p>
+<p>This domain exposes CSS read/write operations. All CSS objects (stylesheets, rules, and styles) have an associated <code>ID</code> used in subsequent operations on the related object. Each object type has a specific <code>ID</code> structure, and those are not interchangeable between objects of different kinds. CSS objects can be loaded using the <code>get*ForNode()</code> calls (which accept a DOM node ID). A client can also discover all the existing stylesheets with the <code>getAllStyleSheets()</code> method (or keeping track of the <code>styleSheetAdded</code>/<code>styleSheetRemoved</code> events) and subsequently load the required stylesheet contents using the <code>getStyleSheet[Text]()</code> methods.</p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a></li>
+<li><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a></li>
 <li><a href='#CSS.CSSStyleId'>CSS.CSSStyleId</a>: This object identifies a CSS style in a unique way.</li>
 <li><a href='#CSS.StyleSheetOrigin'>CSS.StyleSheetOrigin</a>: Stylesheet type: "user" for user stylesheets, "user-agent" for user-agent stylesheets, "inspector" for stylesheets created by the inspector (i.e. those holding the "via inspector" rules), "regular" for regular stylesheets.</li>
 <li><a href='#CSS.CSSRuleId'>CSS.CSSRuleId</a>: This object identifies a CSS rule in a unique way.</li>
 <li><a href='#CSS.PseudoIdMatches'>CSS.PseudoIdMatches</a>: CSS rule collection for a single pseudo style.</li>
 <li><a href='#CSS.InheritedStyleEntry'>CSS.InheritedStyleEntry</a>: CSS rule collection for a single pseudo style.</li>
-<li><a href='#CSS.RuleMatch'>CSS.RuleMatch</a>: Match data for a CSS rule.</li>
+<li><a href='#CSS.RuleMatch' title="CSS.RuleMatch">CSS.RuleMatch</a>: Match data for a CSS rule.</li>
 <li><a href='#CSS.SelectorList'>CSS.SelectorList</a>: Selector list data.</li>
 <li><a href='#CSS.CSSStyleAttribute'>CSS.CSSStyleAttribute</a>: CSS style information for a DOM style attribute.</li>
 <li><a href='#CSS.CSSStyleSheetHeader'>CSS.CSSStyleSheetHeader</a>: CSS stylesheet metainformation.</li>
 <li><a href='#CSS.CSSStyleSheetBody'>CSS.CSSStyleSheetBody</a>: CSS stylesheet contents.</li>
-<li><a href='#CSS.CSSRule'>CSS.CSSRule</a>: CSS rule representation.</li>
+<li><a href='#CSS.CSSRule' tirle="CSS.CSSRule">CSS.CSSRule</a>: CSS rule representation.</li>
 <li><a href='#CSS.SourceRange'>CSS.SourceRange</a>: Text range within a resource. All numbers are zero-based.</li>
 <li><a href='#CSS.ShorthandEntry'>CSS.ShorthandEntry</a></li>
 <li><a href='#CSS.CSSPropertyInfo'>CSS.CSSPropertyInfo</a></li>
@@ -921,10 +921,10 @@ function onNetworkStateUpdated(res) {
 <li><a href='#CSS.CSSProperty'>CSS.CSSProperty</a>: CSS property declaration data.</li>
 <li><a href='#CSS.CSSMedia'>CSS.CSSMedia</a>: CSS media query descriptor.</li>
 <li><a href='#CSS.SelectorProfileEntry'>CSS.SelectorProfileEntry</a>: CSS selector profile entry.</li>
-<li><a href='#CSS.SelectorProfile'>CSS.SelectorProfile</a></li>
-<li><a href='#CSS.Region'>CSS.Region</a>: This object represents a region that flows from a Named Flow.</li>
-<li><a href='#CSS.NamedFlow'>CSS.NamedFlow</a>: This object represents a Named Flow.</li>
-<li><a href='#CSS.PlatformFontUsage'>CSS.PlatformFontUsage</a>: Information about amount of glyphs that were rendered with given font.</li>
+<li><a href='#CSS.SelectorProfile' title="CSS.SelectorProfile">CSS.SelectorProfile</a></li>
+<li><a href='#CSS.Region' title="CSS.Region">CSS.Region</a>: This object represents a region that flows from a Named Flow.</li>
+<li><a href='#CSS.NamedFlow' title="CSS.NamedFlow">CSS.NamedFlow</a>: This object represents a Named Flow.</li>
+<li><a href='#CSS.PlatformFontUsage' title="CSS.PlatformFontUsage">CSS.PlatformFontUsage</a>: Information about amount of glyphs that were rendered with given font.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
@@ -934,8 +934,8 @@ function onNetworkStateUpdated(res) {
 <li><a href='#CSS.getInlineStylesForNode'>CSS.getInlineStylesForNode</a>: Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM attributes) for a DOM node identified by nodeId.</li>
 <li><a href='#CSS.getComputedStyleForNode'>CSS.getComputedStyleForNode</a>: Returns the computed style for a DOM node identified by nodeId.</li>
 <li><a href='#CSS.getPlatformFontsForNode'>CSS.getPlatformFontsForNode</a>: Requests information about platform fonts which we used to render child TextNodes in the given node.</li>
-<li><a href='#CSS.getAllStyleSheets'>CSS.getAllStyleSheets</a>: Returns metainfo entries for all known stylesheets.</li>
-<li><a href='#CSS.getStyleSheet'>CSS.getStyleSheet</a>: Returns stylesheet data for the specified styleSheetId.</li>
+<li><a href='#CSS.getAllStyleSheets' title="CSS.getAllStyleSheets">CSS.getAllStyleSheets</a>: Returns metainfo entries for all known stylesheets.</li>
+<li><a href='#CSS.getStyleSheet' title="CSS.getStyleSheet">CSS.getStyleSheet</a>: Returns stylesheet data for the specified styleSheetId.</li>
 <li><a href='#CSS.getStyleSheetText'>CSS.getStyleSheetText</a>: Returns the current textual content and the URL for a stylesheet.</li>
 <li><a href='#CSS.setStyleSheetText'>CSS.setStyleSheetText</a>: Sets the new stylesheet text, thereby invalidating all existing CSSStyleId's and CSSRuleId's contained by this stylesheet.</li>
 <li><a href='#CSS.setStyleText'>CSS.setStyleText</a>: Updates the CSSStyleDeclaration text.</li>
@@ -944,8 +944,8 @@ function onNetworkStateUpdated(res) {
 <li><a href='#CSS.setRuleSelector'>CSS.setRuleSelector</a>: Modifies the rule selector.</li>
 <li><a href='#CSS.addRule' title="CSS.addRule">CSS.addRule</a>: Creates a new empty rule with the given selector in a special "inspector" stylesheet in the owner document of the context node.</li>
 <li><a href='#CSS.getSupportedCSSProperties'>CSS.getSupportedCSSProperties</a>: Returns all supported CSS property names.</li>
-<li><a href='#CSS.forcePseudoState'>CSS.forcePseudoState</a>: Ensures that the given node will have specified pseudo-classes whenever its style is computed by the browser.</li>
-<li><a href='#CSS.getNamedFlowCollection'>CSS.getNamedFlowCollection</a>: Returns the Named Flows from the document.</li>
+<li><a href='#CSS.forcePseudoState' title="CSS.forcePseudoState">CSS.forcePseudoState</a>: Ensures that the given node will have specified pseudo-classes whenever its style is computed by the browser.</li>
+<li><a href='#CSS.getNamedFlowCollection' title="CSS.getNamedFlowCollection">CSS.getNamedFlowCollection</a>: Returns the Named Flows from the document.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
@@ -955,7 +955,7 @@ function onNetworkStateUpdated(res) {
 <li><a href='#CSS.styleSheetRemoved' title="CSS.styleSheetRemoved">CSS.styleSheetRemoved</a>: Fired whenever an active document stylesheet is removed.</li>
 <li><a href='#CSS.namedFlowCreated' title="CSS.namedFlowCreated">CSS.namedFlowCreated</a>: Fires when a Named Flow is created.</li>
 <li><a href='#CSS.namedFlowRemoved' title="CSS.namedFlowRemoved">CSS.namedFlowRemoved</a>: Fires when a Named Flow is removed: has no associated content nodes and regions.</li>
-<li><a href='#CSS.regionLayoutUpdated' title="CSS.regiobLayoutUpdated">CSS.regionLayoutUpdated</a>: Fires when a Named Flow's layout may have changed.</li>
+<li><a href='#CSS.regionLayoutUpdated' title="CSS.regionLayoutUpdated">CSS.regionLayoutUpdated</a>: Fires when a Named Flow's layout may have changed.</li>
 <li><a href='#CSS.regionOversetChanged' title="CSS.regionOversetChanged">CSS.regionOversetChanged</a>: Fires if any of the regionOverset values changed in a Named Flow's region chain.</li>
 </ul>
 <div id='CSS_StyleSheetId' class='type'>
