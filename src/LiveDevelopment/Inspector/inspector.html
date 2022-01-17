@@ -2146,13 +2146,13 @@ function onTraceLogsRemoved(res) {
 <dt>repeatCount (optional)</dt>
 <dd>Integer <span class='text'>Repeat count for repeated messages.</span></dd>
 <dt>parameters (optional)</dt>
-<dd>[<a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a>] <span class='text'>Message parameters in case of the formatted message.</span></dd>
+<dd>[<a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a>] <span class='text'>Message parameters in case of the formatted message.</span></dd>
 <dt>stackTrace (optional)</dt>
-<dd><a href='#Console.StackTrace'>Console.StackTrace</a> <span class='text'>JavaScript stack trace for assertions and error messages.</span></dd>
+<dd><a href='#Console.StackTrace' title="Console.StackTrace">Console.StackTrace</a> <span class='text'>JavaScript stack trace for assertions and error messages.</span></dd>
 <dt>networkRequestId (optional)</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Identifier of the network request associated with this message.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Identifier of the network request associated with this message.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Console.Timestamp'>Console.Timestamp</a> <span class='text'>Timestamp, when this message was fired.</span></dd>
+<dd><a href='#Console.Timestamp' title="Console.Timestamp">Console.Timestamp</a> <span class='text'>Timestamp, when this message was fired.</span></dd>
 </dl>
 </div>
 <div id='Console_CallFrame' class='type'>
@@ -2470,7 +2470,7 @@ function onMessagesCleared(res) {
 </div>
 <div id='DOM_Quad' class='type'>
 <h3>DOM.Quad <span class='label'>Type</span></h3>
-<p>An array of quad vertices, x immediately followed by y for each point, points clock-wise.</p>
+<p>An array of quad vertices, X immediately followed by T for each point, points clock-wise.</p>
 <dl>
 <dd>[Number]</dd>
 </dl>
@@ -2480,13 +2480,13 @@ function onMessagesCleared(res) {
 <p>Box model.</p>
 <dl>
 <dt>content</dt>
-<dd><a href='#DOM.Quad'>DOM.Quad</a> <span class='text'>Content box</span></dd>
+<dd><a href='#DOM.Quad' title="DOM.Quad">DOM.Quad</a> <span class='text'>Content box</span></dd>
 <dt>padding</dt>
-<dd><a href='#DOM.Quad'>DOM.Quad</a> <span class='text'>Padding box</span></dd>
+<dd><a href='#DOM.Quad' title="DOM.Quad">DOM.Quad</a> <span class='text'>Padding box</span></dd>
 <dt>border</dt>
-<dd><a href='#DOM.Quad'>DOM.Quad</a> <span class='text'>Border box</span></dd>
+<dd><a href='#DOM.Quad' title="DOM.Quad">DOM.Quad</a> <span class='text'>Border box</span></dd>
 <dt>margin</dt>
-<dd><a href='#DOM.Quad'>DOM.Quad</a> <span class='text'>Margin box</span></dd>
+<dd><a href='#DOM.Quad' title="DOM.Quad">DOM.Quad</a> <span class='text'>Margin box</span></dd>
 <dt>width</dt>
 <dd>Integer <span class='text'>Node width</span></dd>
 <dt>height</dt>
@@ -2514,15 +2514,15 @@ function onMessagesCleared(res) {
 <dt>showInfo (optional)</dt>
 <dd>Boolean <span class='text'>Whether the node info tooltip should be shown (default: false).</span></dd>
 <dt>contentColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The content box highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The content box highlight fill color (default: transparent).</span></dd>
 <dt>paddingColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The padding highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The padding highlight fill color (default: transparent).</span></dd>
 <dt>borderColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The border highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The border highlight fill color (default: transparent).</span></dd>
 <dt>marginColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The margin highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The margin highlight fill color (default: transparent).</span></dd>
 <dt>eventTargetColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The event target element highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The event target element highlight fill color (default: transparent).</span></dd>
 </dl>
 </div>
 <div id='DOM_enable' class='command'>
@@ -2838,7 +2838,7 @@ DOM.discardSearchResults(searchId);
 <p>Requests that the node is sent to the caller given the JavaScript node object reference. All nodes that form the path from the node to the root are also sent to the client as a series of <code>setChildNodes</code> notifications.</p>
 <dl>
 <dt>objectId</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>JavaScript object id to convert into node.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>JavaScript object id to convert into node.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -2862,7 +2862,7 @@ DOM.requestNode(objectId, function callback(res) {
 <dt>inspectShadowDOM (optional)</dt>
 <dd>Boolean <span class='text'>True to enable inspection mode for shadow DOM.</span></dd>
 <dt>highlightConfig (optional)</dt>
-<dd><a href='#DOM.HighlightConfig'>DOM.HighlightConfig</a> <span class='text'>A descriptor for the highlight appearance of hovered-over nodes. May be omitted if <code>enabled == false</code>.</span></dd>
+<dd><a href='#DOM.HighlightConfig' title="DOM.HighlightConfig">DOM.HighlightConfig</a> <span class='text'>A descriptor for the highlight appearance of hovered-over nodes. May be omitted if <code>enabled == false</code>.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2883,9 +2883,9 @@ DOM.setInspectModeEnabled(enabled, inspectShadowDOM, highlightConfig);
 <dt>height</dt>
 <dd>Integer <span class='text'>Rectangle height</span></dd>
 <dt>color (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The highlight fill color (default: transparent).</span></dd>
 <dt>outlineColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The highlight outline color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The highlight outline color (default: transparent).</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3104,7 +3104,7 @@ DOM.markUndoableState();
 <p>Focuses the given element.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to focus.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node to focus.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3541,23 +3541,23 @@ DOMDebugger.removeXHRBreakpoint(url);
 <p>Query and modify DOM storage.</p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a>: DOM Storage identifier.</li>
-<li><a href='#DOMStorage.Item'>DOMStorage.Item</a>: DOM Storage item.</li>
+<li><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a>: DOM Storage identifier.</li>
+<li><a href='#DOMStorage.Item' title="DOMStorage.Item">DOMStorage.Item</a>: DOM Storage item.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#DOMStorage.enable'>DOMStorage.enable</a>: Enables storage tracking, storage events will now be delivered to the client.</li>
-<li><a href='#DOMStorage.disable'>DOMStorage.disable</a>: Disables storage tracking, prevents storage events from being sent to the client.</li>
-<li><a href='#DOMStorage.getDOMStorageItems'>DOMStorage.getDOMStorageItems</a></li>
-<li><a href='#DOMStorage.setDOMStorageItem'>DOMStorage.setDOMStorageItem</a></li>
-<li><a href='#DOMStorage.removeDOMStorageItem'>DOMStorage.removeDOMStorageItem</a></li>
+<li><a href='#DOMStorage.enable' title="DOMStorage.disable">DOMStorage.enable</a>: Enables storage tracking, storage events will now be delivered to the client.</li>
+<li><a href='#DOMStorage.disable' title="DOMStorage.disable">DOMStorage.disable</a>: Disables storage tracking, prevents storage events from being sent to the client.</li>
+<li><a href='#DOMStorage.getDOMStorageItems' title="DOMStorage.getDOMStorageItems">DOMStorage.getDOMStorageItems</a></li>
+<li><a href='#DOMStorage.setDOMStorageItem' title="DOMStorage.setDOMStorageItem">DOMStorage.setDOMStorageItem</a></li>
+<li><a href='#DOMStorage.removeDOMStorageItem' title="DOMStorage.removeDOMStorageItem">DOMStorage.removeDOMStorageItem</a></li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#DOMStorage.domStorageItemsCleared'>DOMStorage.domStorageItemsCleared</a></li>
-<li><a href='#DOMStorage.domStorageItemRemoved'>DOMStorage.domStorageItemRemoved</a></li>
-<li><a href='#DOMStorage.domStorageItemAdded'>DOMStorage.domStorageItemAdded</a></li>
-<li><a href='#DOMStorage.domStorageItemUpdated'>DOMStorage.domStorageItemUpdated</a></li>
+<li><a href='#DOMStorage.domStorageItemsCleared' title="DOMStorage.domStorageItemsCleared">DOMStorage.domStorageItemsCleared</a></li>
+<li><a href='#DOMStorage.domStorageItemRemoved' title="DOMStorage.domStorageItemRemoved">DOMStorage.domStorageItemRemoved</a></li>
+<li><a href='#DOMStorage.domStorageItemAdded' title="DOMStorage.domStorageItemAdded">DOMStorage.domStorageItemAdded</a></li>
+<li><a href='#DOMStorage.domStorageItemUpdated' title="DOMStorage.domStorageItemUpdated">DOMStorage.domStorageItemUpdated</a></li>
 </ul>
 <div id='DOMStorage_StorageId' class='type'>
 <h3>DOMStorage.StorageId <span class='label'>Type</span></h3>
@@ -3717,16 +3717,16 @@ function onDomStorageItemUpdated(res) {
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Database.DatabaseId'>Database.DatabaseId</a>: Unique identifier of Database object.</li>
-<li><a href='#Database.Database'>Database.Database</a>: Database object.</li>
-<li><a href='#Database.Error'>Database.Error</a>: Database error.</li>
+<li><a href='#Database.DatabaseId' title="Database.DatabaseId">Database.DatabaseId</a>: Unique identifier of Database object.</li>
+<li><a href='#Database.Database' title="Database.Database">Database.Database</a>: Database object.</li>
+<li><a href='#Database.Error' title="Database.Error">Database.Error</a>: Database error.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Database.enable'>Database.enable</a>: Enables database tracking, database events will now be delivered to the client.</li>
-<li><a href='#Database.disable'>Database.disable</a>: Disables database tracking, prevents database events from being sent to the client.</li>
-<li><a href='#Database.getDatabaseTableNames'>Database.getDatabaseTableNames</a></li>
-<li><a href='#Database.executeSQL'>Database.executeSQL</a></li>
+<li><a href='#Database.enable' title="Database.enable">Database.enable</a>: Enables database tracking, database events will now be delivered to the client.</li>
+<li><a href='#Database.disable' title="Database.disable">Database.disable</a>: Disables database tracking, prevents database events from being sent to the client.</li>
+<li><a href='#Database.getDatabaseTableNames' title="Database.getDatabaseTableNames">Database.getDatabaseTableNames</a></li>
+<li><a href='#Database.executeSQL' title="Database.executeSQL">Database.executeSQL</a></li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
@@ -3887,12 +3887,12 @@ function onAddDatabase(res) {
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Debugger.globalObjectCleared'>Debugger.globalObjectCleared</a>: Called when global has been cleared and debugger client should reset its state. Happens upon navigation or reload.</li>
-<li><a href='#Debugger.scriptParsed'>Debugger.scriptParsed</a>: Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.</li>
-<li><a href='#Debugger.scriptFailedToParse'>Debugger.scriptFailedToParse</a>: Fired when virtual machine fails to parse the script.</li>
-<li><a href='#Debugger.breakpointResolved'>Debugger.breakpointResolved</a>: Fired when breakpoint is resolved to an actual script and location.</li>
-<li><a href='#Debugger.paused'>Debugger.paused</a>: Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</li>
-<li><a href='#Debugger.resumed'>Debugger.resumed</a>: Fired when the virtual machine resumed execution.</li>
+<li><a href='#Debugger.globalObjectCleared' title="Debugger.globalObjectCleared">Debugger.globalObjectCleared</a>: Called when global has been cleared and debugger client should reset its state. Happens upon navigation or reload.</li>
+<li><a href='#Debugger.scriptParsed' title="Debugger.scriptParsed">Debugger.scriptParsed</a>: Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.</li>
+<li><a href='#Debugger.scriptFailedToParse' title="Debugger.scriptFailedToParse">Debugger.scriptFailedToParse</a>: Fired when virtual machine fails to parse the script.</li>
+<li><a href='#Debugger.breakpointResolved' title="Debugger.breakpointResolved">Debugger.breakpointResolved</a>: Fired when breakpoint is resolved to an actual script and location.</li>
+<li><a href='#Debugger.paused' title="Debugger.paused">Debugger.paused</a>: Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</li>
+<li><a href='#Debugger.resumed' title="Debugger.resumed">Debugger.resumed</a>: Fired when the virtual machine resumed execution.</li>
 </ul>
 <div id='Debugger_BreakpointId' class='type'>
 <h3>Debugger.BreakpointId <span class='label'>Type</span></h3>
@@ -4244,10 +4244,10 @@ Debugger.restartFrame(callFrameId, function callback(res) {
 </div>
 <div id='Debugger_getScriptSource' class='command'>
 <h3>Debugger.getScriptSource <span class='label label-success'>Command</span></h3>
-<p>Returns source for the script with given id.</p>
+<p>Returns source for the script with given ID.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Id of the script to get source for.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>ID of the script to get source for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -4336,12 +4336,12 @@ Debugger.evaluateOnCallFrame(callFrameId, expression, objectGroup, includeComman
 <dt>expression</dt>
 <dd>String <span class='text'>Expression to compile.</span></dd>
 <dt>sourceURL</dt>
-<dd>String <span class='text'>Source url to be set for the script.</span></dd>
+<dd>String <span class='text'>Source URL to be set for the script.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>scriptId (optional)</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Id of the script.</span></dd>
+<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>ID of the script.</span></dd>
 <dt>syntaxErrorMessage (optional)</dt>
 <dd>String <span class='text'>Syntax error message if compilation failed.</span></dd>
 </dl>
@@ -4358,7 +4358,7 @@ Debugger.compileScript(expression, sourceURL, function callback(res) {
 <p>Runs script with given id in a given context.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Id of the script to run.</span></dd>
+<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>ID of the script to run.</span></dd>
 <dt>contextId (optional)</dt>
 <dd><a href='#Runtime.ExecutionContextId'>Runtime.ExecutionContextId</a> <span class='text'>Specifies in which isolated context to perform script run. Each content script lives in an isolated context and this parameter may be used to specify one of those contexts. If the parameter is omitted or 0 the evaluation will be performed in the context of the inspected page.</span></dd>
 <dt>objectGroup (optional)</dt>
@@ -4584,18 +4584,18 @@ function onResumed(res) {
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#FileSystem.Entry'>FileSystem.Entry</a>: Represents a browser side file or directory.</li>
-<li><a href='#FileSystem.Metadata'>FileSystem.Metadata</a>: Represents metadata of a file or entry.</li>
+<li><a href='#FileSystem.Entry' title="FileSystem.Entry">FileSystem.Entry</a>: Represents a browser side file or directory.</li>
+<li><a href='#FileSystem.Metadata' title="FileSystem.Metadata">FileSystem.Metadata</a>: Represents metadata of a file or entry.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#FileSystem.enable'>FileSystem.enable</a>: Enables events from backend.</li>
-<li><a href='#FileSystem.disable'>FileSystem.disable</a>: Disables events from backend.</li>
-<li><a href='#FileSystem.requestFileSystemRoot'>FileSystem.requestFileSystemRoot</a>: Returns root directory of the FileSystem, if exists.</li>
-<li><a href='#FileSystem.requestDirectoryContent'>FileSystem.requestDirectoryContent</a>: Returns content of the directory.</li>
-<li><a href='#FileSystem.requestMetadata'>FileSystem.requestMetadata</a>: Returns metadata of the entry.</li>
-<li><a href='#FileSystem.requestFileContent'>FileSystem.requestFileContent</a>: Returns content of the file. Result should be sliced into [start, end).</li>
-<li><a href='#FileSystem.deleteEntry'>FileSystem.deleteEntry</a>: Deletes specified entry. If the entry is a directory, the agent deletes children recursively.</li>
+<li><a href='#FileSystem.enable' title="FileSystem.enable">FileSystem.enable</a>: Enables events from backend.</li>
+<li><a href='#FileSystem.disable' title="FileSystem.disable">FileSystem.disable</a>: Disables events from backend.</li>
+<li><a href='#FileSystem.requestFileSystemRoot' title="FileSystem.requestFileSystemRoot">FileSystem.requestFileSystemRoot</a>: Returns root directory of the FileSystem, if exists.</li>
+<li><a href='#FileSystem.requestDirectoryContent' title="FileSystem.requestDirectoryContent">FileSystem.requestDirectoryContent</a>: Returns content of the directory.</li>
+<li><a href='#FileSystem.requestMetadata' title="FileSystem.requestMetadata">FileSystem.requestMetadata</a>: Returns metadata of the entry.</li>
+<li><a href='#FileSystem.requestFileContent' title="FileSystem.requestFileContent">FileSystem.requestFileContent</a>: Returns content of the file. Result should be sliced into [start, end).</li>
+<li><a href='#FileSystem.deleteEntry' title="FileSystem.deleteEntry">FileSystem.deleteEntry</a>: Deletes specified entry. If the entry is a directory, the agent deletes children recursively.</li>
 </ul>
 <div id='FileSystem_Entry' class='type'>
 <h3>FileSystem.Entry <span class='label'>Type</span></h3>
@@ -4769,8 +4769,8 @@ FileSystem.deleteEntry(url, function callback(res) {
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#HeapProfiler.ProfileHeader'>HeapProfiler.ProfileHeader</a>: Profile header.</li>
-<li><a href='#HeapProfiler.HeapSnapshotObjectId'>HeapProfiler.HeapSnapshotObjectId</a>: Heap snashot object id.</li>
+<li><a href='#HeapProfiler.ProfileHeader' title="HeapProfiler.ProfileHeader">HeapProfiler.ProfileHeader</a>: Profile header.</li>
+<li><a href='#HeapProfiler.HeapSnapshotObjectId' title="HeapProfiler.HeapSnapshotObjectId">HeapProfiler.HeapSnapshotObjectId</a>: Heap snashot object id.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
@@ -4804,7 +4804,7 @@ FileSystem.deleteEntry(url, function callback(res) {
 <dt>uid</dt>
 <dd>Integer <span class='text'>Unique identifier of the profile.</span></dd>
 <dt>maxJSObjectId (optional)</dt>
-<dd>Integer <span class='text'>Last seen JS object Id.</span></dd>
+<dd>Integer <span class='text'>Last seen JS object ID.</span></dd>
 </dl>
 </div>
 <div id='HeapProfiler_HeapSnapshotObjectId' class='type'>
@@ -5045,22 +5045,22 @@ function onHeapStatsUpdate(res) {
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#IndexedDB.DatabaseWithObjectStores'>IndexedDB.DatabaseWithObjectStores</a>: Database with an array of object stores.</li>
-<li><a href='#IndexedDB.ObjectStore'>IndexedDB.ObjectStore</a>: Object store.</li>
-<li><a href='#IndexedDB.ObjectStoreIndex'>IndexedDB.ObjectStoreIndex</a>: Object store index.</li>
-<li><a href='#IndexedDB.Key'>IndexedDB.Key</a>: Key.</li>
-<li><a href='#IndexedDB.KeyRange'>IndexedDB.KeyRange</a>: Key range.</li>
-<li><a href='#IndexedDB.DataEntry'>IndexedDB.DataEntry</a>: Data entry.</li>
-<li><a href='#IndexedDB.KeyPath'>IndexedDB.KeyPath</a>: Key path.</li>
+<li><a href='#IndexedDB.DatabaseWithObjectStores' title="IndexedDB.DatabaseWithObjectStores">IndexedDB.DatabaseWithObjectStores</a>: Database with an array of object stores.</li>
+<li><a href='#IndexedDB.ObjectStore' title="IndexedDB.ObjectStore">IndexedDB.ObjectStore</a>: Object store.</li>
+<li><a href='#IndexedDB.ObjectStoreIndex' title="IndexedDB.ObjectStoreIndex">IndexedDB.ObjectStoreIndex</a>: Object store index.</li>
+<li><a href='#IndexedDB.Key' title="IndexedDB.Key">IndexedDB.Key</a>: Key.</li>
+<li><a href='#IndexedDB.KeyRange' title="IndexedDB.KeyRange">IndexedDB.KeyRange</a>: Key range.</li>
+<li><a href='#IndexedDB.DataEntry' title="IndexedDB.DataEntry">IndexedDB.DataEntry</a>: Data entry.</li>
+<li><a href='#IndexedDB.KeyPath' title="IndexedDB.KeyPath">IndexedDB.KeyPath</a>: Key path.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#IndexedDB.enable'>IndexedDB.enable</a>: Enables events from backend.</li>
-<li><a href='#IndexedDB.disable'>IndexedDB.disable</a>: Disables events from backend.</li>
-<li><a href='#IndexedDB.requestDatabaseNames'>IndexedDB.requestDatabaseNames</a>: Requests database names for given security origin.</li>
-<li><a href='#IndexedDB.requestDatabase'>IndexedDB.requestDatabase</a>: Requests database with given name in given frame.</li>
-<li><a href='#IndexedDB.requestData'>IndexedDB.requestData</a>: Requests data from object store or index.</li>
-<li><a href='#IndexedDB.clearObjectStore'>IndexedDB.clearObjectStore</a>: Clears all entries from an object store.</li>
+<li><a href='#IndexedDB.enable' title="IndexedDB.enable">IndexedDB.enable</a>: Enables events from backend.</li>
+<li><a href='#IndexedDB.disable' title="IndexedDB.disable">IndexedDB.disable</a>: Disables events from backend.</li>
+<li><a href='#IndexedDB.requestDatabaseNames' title="IndexedDB.requestDatabaseNames">IndexedDB.requestDatabaseNames</a>: Requests database names for given security origin.</li>
+<li><a href='#IndexedDB.requestDatabase' title="IndexedDB.requestDatabase">IndexedDB.requestDatabase</a>: Requests database with given name in given frame.</li>
+<li><a href='#IndexedDB.requestData' title="IndexedDB.requestData">IndexedDB.requestData</a>: Requests data from object store or index.</li>
+<li><a href='#IndexedDB.clearObjectStore' title="IndexedDB.clearObjectStore">IndexedDB.clearObjectStore</a>: Clears all entries from an object store.</li>
 </ul>
 <div id='IndexedDB_DatabaseWithObjectStores' class='type'>
 <h3>IndexedDB.DatabaseWithObjectStores <span class='label'>Type</span></h3>
@@ -5422,16 +5422,16 @@ Input.dispatchGestureEvent(type, x, y, timestamp, deltaX, deltaY, pinchScale);
 <p></p>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Inspector.enable'>Inspector.enable</a>: Enables inspector domain notifications.</li>
-<li><a href='#Inspector.disable'>Inspector.disable</a>: Disables inspector domain notifications.</li>
-<li><a href='#Inspector.reset'>Inspector.reset</a>: Resets all domains.</li>
+<li><a href='#Inspector.enable' title="Inspector.enable">Inspector.enable</a>: Enables inspector domain notifications.</li>
+<li><a href='#Inspector.disable' title="Inspector.disable">Inspector.disable</a>: Disables inspector domain notifications.</li>
+<li><a href='#Inspector.reset' title="Inspector.reset">Inspector.reset</a>: Resets all domains.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Inspector.evaluateForTestInFrontend'>Inspector.evaluateForTestInFrontend</a></li>
-<li><a href='#Inspector.inspect'>Inspector.inspect</a></li>
-<li><a href='#Inspector.detached'>Inspector.detached</a>: Fired when remote debugging connection is about to be terminated. Contains detach reason.</li>
-<li><a href='#Inspector.targetCrashed'>Inspector.targetCrashed</a>: Fired when debugging target has crashed</li>
+<li><a href='#Inspector.evaluateForTestInFrontend' title="Inspector.evaluateForTestInFrontend">Inspector.evaluateForTestInFrontend</a></li>
+<li><a href='#Inspector.inspect' title="Inspector.inspect">Inspector.inspect</a></li>
+<li><a href='#Inspector.detached' title="Inspector.detached">Inspector.detached</a>: Fired when remote debugging connection is about to be terminated. Contains detach reason.</li>
+<li><a href='#Inspector.targetCrashed' title="Inspector.targetCrashed">Inspector.targetCrashed</a>: Fired when debugging target has crashed</li>
 </ul>
 <div id='Inspector_enable' class='command'>
 <h3>Inspector.enable <span class='label label-success'>Command</span></h3>
