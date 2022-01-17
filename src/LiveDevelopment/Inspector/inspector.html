@@ -783,7 +783,7 @@ footer p {text-align: center; margin: 0;}
 <dt>updateTime</dt>
 <dd>Number <span class='text'>Application cache update time.</span></dd>
 <dt>resources</dt>
-<dd>[<a href='#ApplicationCache.ApplicationCacheResource'>ApplicationCache.ApplicationCacheResource</a>] <span class='text'>Application cache resources.</span></dd>
+<dd>[<a href='#ApplicationCache.ApplicationCacheResource' title="ApplicationCache.ApplicationCacheResource">ApplicationCache.ApplicationCacheResource</a>] <span class='text'>Application cache resources.</span></dd>
 </dl>
 </div>
 <div id='ApplicationCache_FrameWithManifest' class='type'>
@@ -791,7 +791,7 @@ footer p {text-align: center; margin: 0;}
 <p>Frame identifier - manifest URL pair.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Frame identifier.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Frame identifier.</span></dd>
 <dt>manifestURL</dt>
 <dd>String <span class='text'>Manifest URL.</span></dd>
 <dt>status</dt>
@@ -804,7 +804,7 @@ footer p {text-align: center; margin: 0;}
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>frameIds</dt>
-<dd>[<a href='#ApplicationCache.FrameWithManifest'>ApplicationCache.FrameWithManifest</a>] <span class='text'>Array of frame identifiers with manifest urls for each frame containing a document associated with some application cache.</span></dd>
+<dd>[<a href='#ApplicationCache.FrameWithManifest' title="ApplicationCache.FrameWithManifest">ApplicationCache.FrameWithManifest</a>] <span class='text'>Array of frame identifiers with manifest urls for each frame containing a document associated with some application cache.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -928,8 +928,8 @@ function onNetworkStateUpdated(res) {
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#CSS.enable'>CSS.enable</a>: Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been enabled until the result of this command is received.</li>
-<li><a href='#CSS.disable'>CSS.disable</a>: Disables the CSS agent for the given page.</li>
+<li><a href='#CSS.enable' title="CSS.enable">CSS.enable</a>: Enables the CSS agent for the given page. Clients should not assume that the CSS agent has been enabled until the result of this command is received.</li>
+<li><a href='#CSS.disable' title="CSS.disable">CSS.disable</a>: Disables the CSS agent for the given page.</li>
 <li><a href='#CSS.getMatchedStylesForNode'>CSS.getMatchedStylesForNode</a>: Returns requested styles for a DOM node identified by nodeId.</li>
 <li><a href='#CSS.getInlineStylesForNode'>CSS.getInlineStylesForNode</a>: Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM attributes) for a DOM node identified by nodeId.</li>
 <li><a href='#CSS.getComputedStyleForNode'>CSS.getComputedStyleForNode</a>: Returns the computed style for a DOM node identified by nodeId.</li>
@@ -942,21 +942,21 @@ function onNetworkStateUpdated(res) {
 <li><a href='#CSS.setPropertyText'>CSS.setPropertyText</a>: Sets the new text for a property in the respective style, at offset propertyIndex. If overwrite is true, a property at the given offset is overwritten, otherwise inserted. text entirely replaces the property name: value.</li>
 <li><a href='#CSS.toggleProperty'>CSS.toggleProperty</a>: Toggles the property in the respective style, at offset propertyIndex. The disable parameter denotes whether the property should be disabled (i.e. removed from the style declaration). If disable == false, the property gets put back into its original place in the style declaration.</li>
 <li><a href='#CSS.setRuleSelector'>CSS.setRuleSelector</a>: Modifies the rule selector.</li>
-<li><a href='#CSS.addRule'>CSS.addRule</a>: Creates a new empty rule with the given selector in a special "inspector" stylesheet in the owner document of the context node.</li>
+<li><a href='#CSS.addRule' title="CSS.addRule">CSS.addRule</a>: Creates a new empty rule with the given selector in a special "inspector" stylesheet in the owner document of the context node.</li>
 <li><a href='#CSS.getSupportedCSSProperties'>CSS.getSupportedCSSProperties</a>: Returns all supported CSS property names.</li>
 <li><a href='#CSS.forcePseudoState'>CSS.forcePseudoState</a>: Ensures that the given node will have specified pseudo-classes whenever its style is computed by the browser.</li>
 <li><a href='#CSS.getNamedFlowCollection'>CSS.getNamedFlowCollection</a>: Returns the Named Flows from the document.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#CSS.mediaQueryResultChanged'>CSS.mediaQueryResultChanged</a>: Fires whenever a MediaQuery result changes (for example, after a browser window has been resized.) The current implementation considers only viewport-dependent media features.</li>
-<li><a href='#CSS.styleSheetChanged'>CSS.styleSheetChanged</a>: Fired whenever a stylesheet is changed as a result of the client operation.</li>
-<li><a href='#CSS.styleSheetAdded'>CSS.styleSheetAdded</a>: Fired whenever an active document stylesheet is added.</li>
-<li><a href='#CSS.styleSheetRemoved'>CSS.styleSheetRemoved</a>: Fired whenever an active document stylesheet is removed.</li>
-<li><a href='#CSS.namedFlowCreated'>CSS.namedFlowCreated</a>: Fires when a Named Flow is created.</li>
-<li><a href='#CSS.namedFlowRemoved'>CSS.namedFlowRemoved</a>: Fires when a Named Flow is removed: has no associated content nodes and regions.</li>
-<li><a href='#CSS.regionLayoutUpdated'>CSS.regionLayoutUpdated</a>: Fires when a Named Flow's layout may have changed.</li>
-<li><a href='#CSS.regionOversetChanged'>CSS.regionOversetChanged</a>: Fires if any of the regionOverset values changed in a Named Flow's region chain.</li>
+<li><a href='#CSS.mediaQueryResultChanged' title="CSS.mediaQueryResultChanged">CSS.mediaQueryResultChanged</a>: Fires whenever a MediaQuery result changes (for example, after a browser window has been resized.) The current implementation considers only viewport-dependent media features.</li>
+<li><a href='#CSS.styleSheetChanged' title="CSS.styleSheetChanged">CSS.styleSheetChanged</a>: Fired whenever a stylesheet is changed as a result of the client operation.</li>
+<li><a href='#CSS.styleSheetAdded' title="CSS.styleSheetAdded">CSS.styleSheetAdded</a>: Fired whenever an active document stylesheet is added.</li>
+<li><a href='#CSS.styleSheetRemoved' title="CSS.styleSheetRemoved">CSS.styleSheetRemoved</a>: Fired whenever an active document stylesheet is removed.</li>
+<li><a href='#CSS.namedFlowCreated' title="CSS.namedFlowCreated">CSS.namedFlowCreated</a>: Fires when a Named Flow is created.</li>
+<li><a href='#CSS.namedFlowRemoved' title="CSS.namedFlowRemoved">CSS.namedFlowRemoved</a>: Fires when a Named Flow is removed: has no associated content nodes and regions.</li>
+<li><a href='#CSS.regionLayoutUpdated' title="CSS.regiobLayoutUpdated">CSS.regionLayoutUpdated</a>: Fires when a Named Flow's layout may have changed.</li>
+<li><a href='#CSS.regionOversetChanged' title="CSS.regionOversetChanged">CSS.regionOversetChanged</a>: Fires if any of the regionOverset values changed in a Named Flow's region chain.</li>
 </ul>
 <div id='CSS_StyleSheetId' class='type'>
 <h3>CSS.StyleSheetId <span class='label'>Type</span></h3>
@@ -2292,22 +2292,22 @@ function onMessagesCleared(res) {
 <p>This domain exposes DOM read/write operations. Each DOM Node is represented with its mirror object that has an <code>id</code>. This <code>id</code> can be used to get additional information on the Node, resolve it into the JavaScript object wrapper, etc. It is important that client receives DOM events only for the nodes that are known to the client. Backend keeps track of the nodes that were sent to the client and never sends the same node twice. It is client's responsibility to collect information about the nodes that were sent to the client.<p>Note that <code>iframe</code> owner elements will return corresponding document elements as their child nodes.</p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#DOM.NodeId'>DOM.NodeId</a>: Unique DOM node identifier.</li>
-<li><a href='#DOM.BackendNodeId'>DOM.BackendNodeId</a>: Unique DOM node identifier used to reference a node that may not have been pushed to the front-end.</li>
-<li><a href='#DOM.PseudoType'>DOM.PseudoType</a>: Pseudo element type.</li>
-<li><a href='#DOM.Node'>DOM.Node</a>: DOM interaction is implemented in terms of mirror objects that represent the actual DOM nodes. DOMNode is a base node mirror type.</li>
-<li><a href='#DOM.EventListener'>DOM.EventListener</a>: DOM interaction is implemented in terms of mirror objects that represent the actual DOM nodes. DOMNode is a base node mirror type.</li>
-<li><a href='#DOM.RGBA'>DOM.RGBA</a>: A structure holding an RGBA color.</li>
-<li><a href='#DOM.Quad'>DOM.Quad</a>: An array of quad vertices, x immediately followed by y for each point, points clock-wise.</li>
-<li><a href='#DOM.BoxModel'>DOM.BoxModel</a>: Box model.</li>
-<li><a href='#DOM.Rect'>DOM.Rect</a>: Rectangle.</li>
-<li><a href='#DOM.HighlightConfig'>DOM.HighlightConfig</a>: Configuration data for the highlighting of page elements.</li>
+<li><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a>: Unique DOM node identifier.</li>
+<li><a href='#DOM.BackendNodeId' title="DOM.BackendNodeId">DOM.BackendNodeId</a>: Unique DOM node identifier used to reference a node that may not have been pushed to the front-end.</li>
+<li><a href='#DOM.PseudoType' title="DOM.PseudoType">DOM.PseudoType</a>: Pseudo element type.</li>
+<li><a href='#DOM.Node' title="DOM.Node">DOM.Node</a>: DOM interaction is implemented in terms of mirror objects that represent the actual DOM nodes. DOMNode is a base node mirror type.</li>
+<li><a href='#DOM.EventListener' title="DOM.EventListener">DOM.EventListener</a>: DOM interaction is implemented in terms of mirror objects that represent the actual DOM nodes. DOMNode is a base node mirror type.</li>
+<li><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a>: A structure holding an RGBA color.</li>
+<li><a href='#DOM.Quad' title="DOM.Quad">DOM.Quad</a>: An array of quad vertices, x immediately followed by y for each point, points clock-wise.</li>
+<li><a href='#DOM.BoxModel' title="DOM.BoxModel">DOM.BoxModel</a>: Box model.</li>
+<li><a href='#DOM.Rect' title="DOM.Rect">DOM.Rect</a>: Rectangle.</li>
+<li><a href='#DOM.HighlightConfig' title="DOM.HighlightConfig">DOM.HighlightConfig</a>: Configuration data for the highlighting of page elements.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#DOM.enable'>DOM.enable</a>: Enables DOM agent for the given page.</li>
-<li><a href='#DOM.disable'>DOM.disable</a>: Disables DOM agent for the given page.</li>
-<li><a href='#DOM.getDocument'>DOM.getDocument</a>: Returns the root DOM node to the caller.</li>
+<li><a href='#DOM.enable' title="DOM.enable">DOM.enable</a>: Enables DOM agent for the given page.</li>
+<li><a href='#DOM.disable' title="DOM.disable">DOM.disable</a>: Disables DOM agent for the given page.</li>
+<li><a href='#DOM.getDocument' title="DOM.getDocument">DOM.getDocument</a>: Returns the root DOM node to the caller.</li>
 <li><a href='#DOM.requestChildNodes'>DOM.requestChildNodes</a>: Requests that children of the node with given id are returned to the caller in form of setChildNodes events where not only immediate children are retrieved, but all children down to the specified depth.</li>
 <li><a href='#DOM.querySelector'>DOM.querySelector</a>: Executes querySelector on a given node.</li>
 <li><a href='#DOM.querySelectorAll'>DOM.querySelectorAll</a>: Executes querySelectorAll on a given node.</li>
@@ -2443,7 +2443,7 @@ function onMessagesCleared(res) {
 <dt>isAttribute</dt>
 <dd>Boolean <span class='text'><code>EventListener</code>'s isAttribute.</span></dd>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Target <code>DOMNode</code> id.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Target <code>DOMNode</code> ID.</span></dd>
 <dt>handlerBody</dt>
 <dd>String <span class='text'>Event handler function body.</span></dd>
 <dt>location (optional)</dt>
@@ -2601,7 +2601,7 @@ DOM.querySelector(nodeId, selector, function callback(res) {
 <p>Executes <code>querySelectorAll</code> on a given node.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to query upon.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node to query upon.</span></dd>
 <dt>selector</dt>
 <dd>String <span class='text'>Selector string.</span></dd>
 </dl>
