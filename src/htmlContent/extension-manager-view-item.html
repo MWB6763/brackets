@@ -56,7 +56,7 @@
     <td class="ext-action">
         <div>
         {{#showInstallButton}}
-            <button class="btn btn-mini install" data-extension-id="{{metadata.name}}" {{^allowInstall}}disabled{{/allowInstall}}>
+            <button title="{{^isInstalled}}{{Strings.INSTALL}}{{/isInstalled}}{{#isInstalled}}{{Strings.EXTENSION_INSTALLED}}{{/isInstalled}}" class="btn btn-mini install" data-extension-id="{{metadata.name}}" {{^allowInstall}}disabled{{/allowInstall}}>
                 {{^isInstalled}}{{Strings.INSTALL}}{{/isInstalled}}
                 {{#isInstalled}}{{Strings.EXTENSION_INSTALLED}}{{/isInstalled}}
             </button>
@@ -71,12 +71,12 @@
                 {{#showUpdateButton}}
                 </div><div>
                 {{/showUpdateButton}}
-                <button class="btn btn-mini disable" data-extension-id="{{metadata.name}}">
+                <button class="btn btn-mini disable" data-extension-id="{{metadata.name}}" title="{{Strings.DISABLE}}">
                     {{Strings.DISABLE}}
                 </button>
             {{/disablingAllowed}}
             {{#enablingAllowed}}
-                <button class="btn btn-mini enable" data-extension-id="{{metadata.name}}">
+                <button class="btn btn-mini enable" data-extension-id="{{metadata.name}}" title="{{Strings.ENABLE}}">
                     {{Strings.ENABLE}}
                 </button>
             {{/enablingAllowed}}
@@ -87,17 +87,17 @@
             {{/removalAllowed}}
             {{#failedToStart}}
                 {{^isMarkedForRemoval}}
-                    {{Strings.EXTENSION_ERROR}} {{#allowRemove}}(<a class="remove" data-extension-id="{{metadata.name}}">{{Strings.REMOVE}}</a>){{/allowRemove}}
+                    {{Strings.EXTENSION_ERROR}} {{#allowRemove}}(<a class="remove" data-extension-id="{{metadata.name}}" title="{{Strings.REMOVE}}">{{Strings.REMOVE}}</a>){{/allowRemove}}
                 {{/isMarkedForRemoval}}
             {{/failedToStart}}
             {{#isMarkedForRemoval}}
-                {{Strings.MARKED_FOR_REMOVAL}} (<a class="undo-remove" data-extension-id="{{metadata.name}}" href="#">{{Strings.UNDO_REMOVE}}</a>)
+                {{Strings.MARKED_FOR_REMOVAL}} (<a class="undo-remove" data-extension-id="{{metadata.name}}" href="#" title="{{Strings.UNDO_REMOVE}}">{{Strings.UNDO_REMOVE}}</a>)
             {{/isMarkedForRemoval}}
             {{#isMarkedForDisabling}}
-                {{Strings.MARKED_FOR_DISABLING}} (<a class="undo-disable" data-extension-id="{{metadata.name}}" href="#">{{Strings.UNDO_DISABLE}}</a>)
+                {{Strings.MARKED_FOR_DISABLING}} (<a class="undo-disable" data-extension-id="{{metadata.name}}" href="#" title="{{Strings.UNDO_DISABLE}}">{{Strings.UNDO_DISABLE}}</a>)
             {{/isMarkedForDisabling}}
             {{#isMarkedForUpdate}}
-                {{Strings.MARKED_FOR_UPDATE}} (<a class="undo-update" data-extension-id="{{metadata.name}}" href="#">{{Strings.UNDO_UPDATE}}</a>)
+                {{Strings.MARKED_FOR_UPDATE}} (<a class="undo-update" data-extension-id="{{metadata.name}}" href="#" title="{{Strings.UNDO_UPDATE}}">{{Strings.UNDO_UPDATE}}</a>)
             {{/isMarkedForUpdate}}
         {{/isInstalled}}
         </div>
