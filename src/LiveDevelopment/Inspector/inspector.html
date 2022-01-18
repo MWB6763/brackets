@@ -848,12 +848,12 @@ ApplicationCache.getManifestForFrame(frameId, function callback(res) {
 <p>Returns relevant application cache data for the document in given frame.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose application cache is retrieved.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose application cache is retrieved.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>applicationCache</dt>
-<dd><a href='#ApplicationCache.ApplicationCache'>ApplicationCache.ApplicationCache</a> <span class='text'>Relevant application cache data for the document in given frame.</span></dd>
+<dd><a href='#ApplicationCache.ApplicationCache' title="ApplicationCache.ApplicationCache">ApplicationCache.ApplicationCache</a> <span class='text'>Relevant application cache data for the document in given frame.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -867,7 +867,7 @@ ApplicationCache.getApplicationCacheForFrame(frameId, function callback(res) {
 <h3>ApplicationCache.applicationCacheStatusUpdated <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose application cache updated status.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose application cache updated status.</span></dd>
 <dt>manifestURL</dt>
 <dd>String <span class='text'>Manifest URL.</span></dd>
 <dt>status</dt>
@@ -969,7 +969,7 @@ function onNetworkStateUpdated(res) {
 <p>This object identifies a CSS style in a unique way.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a> <span class='text'>Enclosing stylesheet identifier.</span></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a> <span class='text'>Enclosing stylesheet identifier.</span></dd>
 <dt>ordinal</dt>
 <dd>Integer <span class='text'>The style ordinal within the stylesheet.</span></dd>
 </dl>
@@ -986,7 +986,7 @@ function onNetworkStateUpdated(res) {
 <p>This object identifies a CSS rule in a unique way.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a> <span class='text'>Enclosing stylesheet identifier.</span></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a> <span class='text'>Enclosing stylesheet identifier.</span></dd>
 <dt>ordinal</dt>
 <dd>Integer <span class='text'>The rule ordinal within the stylesheet.</span></dd>
 </dl>
@@ -998,7 +998,7 @@ function onNetworkStateUpdated(res) {
 <dt>pseudoId</dt>
 <dd>Integer <span class='text'>Pseudo style identifier (see <code>enum PseudoId</code> in <code>RenderStyleConstants.h</code>).</span></dd>
 <dt>matches</dt>
-<dd>[<a href='#CSS.RuleMatch'>CSS.RuleMatch</a>] <span class='text'>Matches of CSS rules applicable to the pseudo style.</span></dd>
+<dd>[<a href='#CSS.RuleMatch' title="CSS.RuleMatch">CSS.RuleMatch</a>] <span class='text'>Matches of CSS rules applicable to the pseudo style.</span></dd>
 </dl>
 </div>
 <div id='CSS_InheritedStyleEntry' class='type'>
@@ -1006,9 +1006,9 @@ function onNetworkStateUpdated(res) {
 <p>CSS rule collection for a single pseudo style.</p>
 <dl>
 <dt>inlineStyle (optional)</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>The ancestor node's inline style, if any, in the style inheritance chain.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>The ancestor node's inline style, if any, in the style inheritance chain.</span></dd>
 <dt>matchedCSSRules</dt>
-<dd>[<a href='#CSS.RuleMatch'>CSS.RuleMatch</a>] <span class='text'>Matches of CSS rules matching the ancestor node in the style inheritance chain.</span></dd>
+<dd>[<a href='#CSS.RuleMatch' title="CSS.RuleMatch">CSS.RuleMatch</a>] <span class='text'>Matches of CSS rules matching the ancestor node in the style inheritance chain.</span></dd>
 </dl>
 </div>
 <div id='CSS_RuleMatch' class='type'>
@@ -1016,7 +1016,7 @@ function onNetworkStateUpdated(res) {
 <p>Match data for a CSS rule.</p>
 <dl>
 <dt>rule</dt>
-<dd><a href='#CSS.CSSRule'>CSS.CSSRule</a> <span class='text'>CSS rule in the match.</span></dd>
+<dd><a href='#CSS.CSSRule' title="CSS.CSSRule">CSS.CSSRule</a> <span class='text'>CSS rule in the match.</span></dd>
 <dt>matchingSelectors</dt>
 <dd>[Integer] <span class='text'>Matching selector indices in the rule's selectorList selectors (0-based).</span></dd>
 </dl>
@@ -1030,7 +1030,7 @@ function onNetworkStateUpdated(res) {
 <dt>text</dt>
 <dd>String <span class='text'>Rule selector text.</span></dd>
 <dt>range (optional)</dt>
-<dd><a href='#CSS.SourceRange'>CSS.SourceRange</a> <span class='text'>Rule selector range in the underlying resource (if available).</span></dd>
+<dd><a href='#CSS.SourceRange' title="CSS.SourceRange">CSS.SourceRange</a> <span class='text'>Rule selector range in the underlying resource (if available).</span></dd>
 </dl>
 </div>
 <div id='CSS_CSSStyleAttribute' class='type'>
@@ -1040,7 +1040,7 @@ function onNetworkStateUpdated(res) {
 <dt>name</dt>
 <dd>String <span class='text'>DOM attribute name (e.g. "width").</span></dd>
 <dt>style</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>CSS style generated by the respective DOM attribute.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>CSS style generated by the respective DOM attribute.</span></dd>
 </dl>
 </div>
 <div id='CSS_CSSStyleSheetHeader' class='type'>
@@ -1048,15 +1048,15 @@ function onNetworkStateUpdated(res) {
 <p>CSS stylesheet metainformation.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a> <span class='text'>The stylesheet identifier.</span></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a> <span class='text'>The stylesheet identifier.</span></dd>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Owner frame identifier.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Owner frame identifier.</span></dd>
 <dt>sourceURL</dt>
 <dd>String <span class='text'>Stylesheet resource URL.</span></dd>
 <dt>sourceMapURL (optional)</dt>
 <dd>String <span class='text'>URL of source map associated with the stylesheet (if any).</span></dd>
 <dt>origin</dt>
-<dd><a href='#CSS.StyleSheetOrigin'>CSS.StyleSheetOrigin</a> <span class='text'>Stylesheet origin.</span></dd>
+<dd><a href='#CSS.StyleSheetOrigin' title="CSS.StyleSheetOrigin">CSS.StyleSheetOrigin</a> <span class='text'>Stylesheet origin.</span></dd>
 <dt>title</dt>
 <dd>String <span class='text'>Stylesheet title.</span></dd>
 <dt>disabled</dt>
@@ -1076,9 +1076,9 @@ function onNetworkStateUpdated(res) {
 <p>CSS stylesheet contents.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a> <span class='text'>The stylesheet identifier.</span></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a> <span class='text'>The stylesheet identifier.</span></dd>
 <dt>rules</dt>
-<dd>[<a href='#CSS.CSSRule'>CSS.CSSRule</a>] <span class='text'>Stylesheet resource URL.</span></dd>
+<dd>[<a href='#CSS.CSSRule' title="CSS.CSSRule">CSS.CSSRule</a>] <span class='text'>Stylesheet resource URL.</span></dd>
 <dt>text (optional)</dt>
 <dd>String <span class='text'>Stylesheet resource contents (if available).</span></dd>
 </dl>
@@ -1088,17 +1088,17 @@ function onNetworkStateUpdated(res) {
 <p>CSS rule representation.</p>
 <dl>
 <dt>ruleId (optional)</dt>
-<dd><a href='#CSS.CSSRuleId'>CSS.CSSRuleId</a> <span class='text'>The CSS rule identifier (absent for user agent stylesheet and user-specified stylesheet rules).</span></dd>
+<dd><a href='#CSS.CSSRuleId' title="CSS.CSSRuleId">CSS.CSSRuleId</a> <span class='text'>The CSS rule identifier (absent for user agent stylesheet and user-specified stylesheet rules).</span></dd>
 <dt>selectorList</dt>
-<dd><a href='#CSS.SelectorList'>CSS.SelectorList</a> <span class='text'>Rule selector data.</span></dd>
+<dd><a href='#CSS.SelectorList' title="CSS.SelectorList">CSS.SelectorList</a> <span class='text'>Rule selector data.</span></dd>
 <dt>sourceURL (optional)</dt>
 <dd>String <span class='text'>Parent stylesheet resource URL (for regular rules).</span></dd>
 <dt>origin</dt>
-<dd><a href='#CSS.StyleSheetOrigin'>CSS.StyleSheetOrigin</a> <span class='text'>Parent stylesheet's origin.</span></dd>
+<dd><a href='#CSS.StyleSheetOrigin' title="CSS.StyleSheetOrigin">CSS.StyleSheetOrigin</a> <span class='text'>Parent stylesheet's origin.</span></dd>
 <dt>style</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>Associated style declaration.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>Associated style declaration.</span></dd>
 <dt>media (optional)</dt>
-<dd>[<a href='#CSS.CSSMedia'>CSS.CSSMedia</a>] <span class='text'>Media list array (for rules involving media queries). The array enumerates media queries starting with the innermost one, going outwards.</span></dd>
+<dd>[<a href='#CSS.CSSMedia' title="CSS.CSSMedia">CSS.CSSMedia</a>] <span class='text'>Media list array (for rules involving media queries). The array enumerates media queries starting with the innermost one, going outwards.</span></dd>
 </dl>
 </div>
 <div id='CSS_SourceRange' class='type'>
@@ -1147,15 +1147,15 @@ function onNetworkStateUpdated(res) {
 <p>CSS style representation.</p>
 <dl>
 <dt>styleId (optional)</dt>
-<dd><a href='#CSS.CSSStyleId'>CSS.CSSStyleId</a> <span class='text'>The CSS style identifier (absent for attribute styles).</span></dd>
+<dd><a href='#CSS.CSSStyleId' title="CSS.CSSStyleId">CSS.CSSStyleId</a> <span class='text'>The CSS style identifier (absent for attribute styles).</span></dd>
 <dt>cssProperties</dt>
-<dd>[<a href='#CSS.CSSProperty'>CSS.CSSProperty</a>] <span class='text'>CSS properties in the style.</span></dd>
+<dd>[<a href='#CSS.CSSProperty' title="CSS.CSSProperty">CSS.CSSProperty</a>] <span class='text'>CSS properties in the style.</span></dd>
 <dt>shorthandEntries</dt>
-<dd>[<a href='#CSS.ShorthandEntry'>CSS.ShorthandEntry</a>] <span class='text'>Computed values for all shorthands found in the style.</span></dd>
+<dd>[<a href='#CSS.ShorthandEntry' title="CSS.ShorthandEntry">CSS.ShorthandEntry</a>] <span class='text'>Computed values for all shorthands found in the style.</span></dd>
 <dt>cssText (optional)</dt>
 <dd>String <span class='text'>Style declaration text (if available).</span></dd>
 <dt>range (optional)</dt>
-<dd><a href='#CSS.SourceRange'>CSS.SourceRange</a> <span class='text'>Style declaration range in the enclosing stylesheet (if available).</span></dd>
+<dd><a href='#CSS.SourceRange' title="CSS.SourceRange">CSS.SourceRange</a> <span class='text'>Style declaration range in the enclosing stylesheet (if available).</span></dd>
 <dt>width (optional)</dt>
 <dd>String <span class='text'>The effective "width" property value from this style.</span></dd>
 <dt>height (optional)</dt>
@@ -1181,7 +1181,7 @@ function onNetworkStateUpdated(res) {
 <dt>status (optional)</dt>
 <dd>( active | inactive | disabled | style ) <span class='text'>The property status: "active" if the property is effective in the style, "inactive" if the property is overridden by a same-named property in this style later on, "disabled" if the property is disabled by the user, "style" (implied if absent) if the property is reported by the browser rather than by the CSS source parser.</span></dd>
 <dt>range (optional)</dt>
-<dd><a href='#CSS.SourceRange'>CSS.SourceRange</a> <span class='text'>The entire property range in the enclosing style declaration (if available).</span></dd>
+<dd><a href='#CSS.SourceRange' title="CSS.SourceRange">CSS.SourceRange</a> <span class='text'>The entire property range in the enclosing style declaration (if available).</span></dd>
 </dl>
 </div>
 <div id='CSS_CSSMedia' class='type'>
@@ -1195,9 +1195,9 @@ function onNetworkStateUpdated(res) {
 <dt>sourceURL (optional)</dt>
 <dd>String <span class='text'>URL of the document containing the media query description.</span></dd>
 <dt>range (optional)</dt>
-<dd><a href='#CSS.SourceRange'>CSS.SourceRange</a> <span class='text'>The associated rule (@media or @import) header range in the enclosing stylesheet (if available).</span></dd>
+<dd><a href='#CSS.SourceRange' title="CSS.SourceRange">CSS.SourceRange</a> <span class='text'>The associated rule (@media or @import) header range in the enclosing stylesheet (if available).</span></dd>
 <dt>parentStyleSheetId (optional)</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a> <span class='text'>Identifier of the stylesheet containing this object (if exists).</span></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a> <span class='text'>Identifier of the stylesheet containing this object (if exists).</span></dd>
 </dl>
 </div>
 <div id='CSS_SelectorProfileEntry' class='type'>
@@ -1224,7 +1224,7 @@ function onNetworkStateUpdated(res) {
 <dt>totalTime</dt>
 <dd>Number <span class='text'>Total processing time for all selectors in the profile (in milliseconds).</span></dd>
 <dt>data</dt>
-<dd>[<a href='#CSS.SelectorProfileEntry'>CSS.SelectorProfileEntry</a>] <span class='text'>CSS selector profile entries.</span></dd>
+<dd>[<a href='#CSS.SelectorProfileEntry' title="CSS.SelectorProfileEntry">CSS.SelectorProfileEntry</a>] <span class='text'>CSS selector profile entries.</span></dd>
 </dl>
 </div>
 <div id='CSS_Region' class='type'>
@@ -1234,7 +1234,7 @@ function onNetworkStateUpdated(res) {
 <dt>regionOverset</dt>
 <dd>( overset | fit | empty ) <span class='text'>The "overset" attribute of a Named Flow.</span></dd>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The corresponding DOM node id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The corresponding DOM node ID.</span></dd>
 </dl>
 </div>
 <div id='CSS_NamedFlow' class='type'>
@@ -1242,7 +1242,7 @@ function onNetworkStateUpdated(res) {
 <p>This object represents a Named Flow.</p>
 <dl>
 <dt>documentNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The document node id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The document node ID.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Named Flow identifier.</span></dd>
 <dt>overset</dt>
@@ -1341,7 +1341,7 @@ CSS.getInlineStylesForNode(nodeId, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>computedStyle</dt>
-<dd>[<a href='#CSS.CSSComputedStyleProperty'>CSS.CSSComputedStyleProperty</a>] <span class='text'>Computed style for the specified DOM node.</span></dd>
+<dd>[<a href='#CSS.CSSComputedStyleProperty' title="CSS.CSSComputedStyleProperty">CSS.CSSComputedStyleProperty</a>] <span class='text'>Computed style for the specified DOM node.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
