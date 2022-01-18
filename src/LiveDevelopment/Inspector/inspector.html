@@ -8,32 +8,30 @@
 <script>
 $(function () {
 var _domain = $(window.location.hash);
-if (_domain.length === 0) _domain = $("#toc");
+if (_domain.length === 0)_domain = $("#toc");
 $(".domain").hide();
 _domain.show();
 $(".dropdown-toggle").dropdown();
 $("a[href^=#]").click(function (e) {
-e.preventDefault();
-var domainAndName = e.currentTarget.hash.split(".");
-window.location = domainAndName[0];
-var symbol = $(domainAndName.join("_"));
-var speed;
-if (_domain !== domainAndName[0]) {
-$(_domain).hide();
-_domain = domainAndName[0];
-$(_domain).show();
-speed = 0;
-} else {
-speed = "fast";
-}
-$("html, body").animate({
-scrollTop: symbol.offset().top - 70 + "px"
-}, speed);
-if (domainAndName.length > 1) symbol.effect("highlight", { color: "#ffc"}, 1000);
-});
+    e.preventDefault();
+    var domainAndName = e.currentTarget.hash.split(".");
+    window.location = domainAndName[0];
+    var symbol = $(domainAndName.join("_"));
+    var speed;
+	if (_domain !== domainAndName[0]) {
+    	$(_domain).hide();
+    	_domain = domainAndName[0];
+    	$(_domain).show();
+    	speed = 0;
+	} else {
+    	speed = "fast";
+	}
+	$("html, body").animate({scrollTop: symbol.offset().top - 70 + "px"}, speed);
+    	if(domainAndName.length > 1)symbol.effect("highlight", {color: "#ffc"}, 1000);
+	});
 });
 </script>
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
 <style>
 body {padding: 70px 0 20px 0;}
 h3, dl {font-family: Menlo, Monaco, "Courier New", monospace;}
@@ -1248,9 +1246,9 @@ function onNetworkStateUpdated(res) {
 <dt>overset</dt>
 <dd>Boolean <span class='text'>The "overset" attribute of a Named Flow.</span></dd>
 <dt>content</dt>
-<dd>[<a href='#DOM.NodeId'>DOM.NodeId</a>] <span class='text'>An array of nodes that flow into the Named Flow.</span></dd>
+<dd>[<a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a>] <span class='text'>An array of nodes that flow into the Named Flow.</span></dd>
 <dt>regions</dt>
-<dd>[<a href='#CSS.Region'>CSS.Region</a>] <span class='text'>An array of regions associated with the Named Flow.</span></dd>
+<dd>[<a href='#CSS.Region' title="CSS.Region">CSS.Region</a>] <span class='text'>An array of regions associated with the Named Flow.</span></dd>
 </dl>
 </div>
 <div id='CSS_PlatformFontUsage' class='type'>
@@ -1286,7 +1284,7 @@ CSS.disable();
 <p>Returns requested styles for a DOM node identified by <code>nodeId</code>.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a></dd>
 <dt>includePseudo (optional)</dt>
 <dd>Boolean <span class='text'>Whether to include pseudo styles (default: true).</span></dd>
 <dt>includeInherited (optional)</dt>
@@ -1295,11 +1293,11 @@ CSS.disable();
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>matchedCSSRules (optional)</dt>
-<dd>[<a href='#CSS.RuleMatch'>CSS.RuleMatch</a>] <span class='text'>CSS rules matching this node, from all applicable stylesheets.</span></dd>
+<dd>[<a href='#CSS.RuleMatch' title="CSS.RuleMatch">CSS.RuleMatch</a>] <span class='text'>CSS rules matching this node, from all applicable stylesheets.</span></dd>
 <dt>pseudoElements (optional)</dt>
-<dd>[<a href='#CSS.PseudoIdMatches'>CSS.PseudoIdMatches</a>] <span class='text'>Pseudo style matches for this node.</span></dd>
+<dd>[<a href='#CSS.PseudoIdMatches' title="CSS.PseudoIdMatches">CSS.PseudoIdMatches</a>] <span class='text'>Pseudo style matches for this node.</span></dd>
 <dt>inherited (optional)</dt>
-<dd>[<a href='#CSS.InheritedStyleEntry'>CSS.InheritedStyleEntry</a>] <span class='text'>A chain of inherited styles (from the immediate node parent up to the DOM tree root).</span></dd>
+<dd>[<a href='#CSS.InheritedStyleEntry' title="CSS.InheritedStyleEntry">CSS.InheritedStyleEntry</a>] <span class='text'>A chain of inherited styles (from the immediate node parent up to the DOM tree root).</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1314,14 +1312,14 @@ CSS.getMatchedStylesForNode(nodeId, includePseudo, includeInherited, function ca
 <p>Returns the styles defined inline (explicitly in the "style" attribute and implicitly, using DOM attributes) for a DOM node identified by <code>nodeId</code>.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>inlineStyle (optional)</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>Inline style for the specified DOM node.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>Inline style for the specified DOM node.</span></dd>
 <dt>attributesStyle (optional)</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>Attribute-defined element style (e.g. resulting from "width=20 height=100%").</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>Attribute-defined element style (e.g. resulting from "width=20 height=100%").</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1363,7 +1361,7 @@ CSS.getComputedStyleForNode(nodeId, function callback(res) {
 <dt>cssFamilyName</dt>
 <dd>String <span class='text'>Font family name which is determined by computed style.</span></dd>
 <dt>fonts</dt>
-<dd>[<a href='#CSS.PlatformFontUsage'>CSS.PlatformFontUsage</a>] <span class='text'>Usage statistics for every employed platform font.</span></dd>
+<dd>[<a href='#CSS.PlatformFontUsage' title="CSS.PlatformFontUsage">CSS.PlatformFontUsage</a>] <span class='text'>Usage statistics for every employed platform font.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1379,7 +1377,7 @@ CSS.getPlatformFontsForNode(nodeId, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>headers</dt>
-<dd>[<a href='#CSS.CSSStyleSheetHeader'>CSS.CSSStyleSheetHeader</a>] <span class='text'>Descriptor entries for all available stylesheets.</span></dd>
+<dd>[<a href='#CSS.CSSStyleSheetHeader' title="CSS.CSSStyleSheetHeader">CSS.CSSStyleSheetHeader</a>] <span class='text'>Descriptor entries for all available stylesheets.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1399,7 +1397,7 @@ CSS.getAllStyleSheets(function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>styleSheet</dt>
-<dd><a href='#CSS.CSSStyleSheetBody'>CSS.CSSStyleSheetBody</a> <span class='text'>Stylesheet contents for the specified <code>styleSheetId</code>.</span></dd>
+<dd><a href='#CSS.CSSStyleSheetBody' title="CSS.CSSStyleSheetBody">CSS.CSSStyleSheetBody</a> <span class='text'>Stylesheet contents for the specified <code>styleSheetId</code>.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1414,7 +1412,7 @@ CSS.getStyleSheet(styleSheetId, function callback(res) {
 <p>Returns the current textual content and the URL for a stylesheet.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -1449,14 +1447,14 @@ CSS.setStyleSheetText(styleSheetId, text);
 <p>Updates the CSSStyleDeclaration text.</p>
 <dl>
 <dt>styleId</dt>
-<dd><a href='#CSS.CSSStyleId'>CSS.CSSStyleId</a></dd>
+<dd><a href='#CSS.CSSStyleId' title="CSS.CSSStyleId">CSS.CSSStyleId</a></dd>
 <dt>text</dt>
 <dd>String</dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>style</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>The resulting style after the text modification.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>The resulting style after the text modification.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1471,7 +1469,7 @@ CSS.setStyleText(styleId, text, function callback(res) {
 <p>Sets the new <code>text</code> for a property in the respective style, at offset <code>propertyIndex</code>. If <code>overwrite</code> is <code>true</code>, a property at the given offset is overwritten, otherwise inserted. <code>text</code> entirely replaces the property <code>name: value</code>.</p>
 <dl>
 <dt>styleId</dt>
-<dd><a href='#CSS.CSSStyleId'>CSS.CSSStyleId</a></dd>
+<dd><a href='#CSS.CSSStyleId' title="CSS.CSSStyleId">CSS.CSSStyleId</a></dd>
 <dt>propertyIndex</dt>
 <dd>Integer</dd>
 <dt>text</dt>
@@ -1482,7 +1480,7 @@ CSS.setStyleText(styleId, text, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>style</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>The resulting style after the property text modification.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>The resulting style after the property text modification.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1497,7 +1495,7 @@ CSS.setPropertyText(styleId, propertyIndex, text, overwrite, function callback(r
 <p>Toggles the property in the respective style, at offset <code>propertyIndex</code>. The <code>disable</code> parameter denotes whether the property should be disabled (i.e. removed from the style declaration). If <code>disable == false</code>, the property gets put back into its original place in the style declaration.</p>
 <dl>
 <dt>styleId</dt>
-<dd><a href='#CSS.CSSStyleId'>CSS.CSSStyleId</a></dd>
+<dd><a href='#CSS.CSSStyleId' title="CSS.CSSStyleId">CSS.CSSStyleId</a></dd>
 <dt>propertyIndex</dt>
 <dd>Integer</dd>
 <dt>disable</dt>
@@ -1506,7 +1504,7 @@ CSS.setPropertyText(styleId, propertyIndex, text, overwrite, function callback(r
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>style</dt>
-<dd><a href='#CSS.CSSStyle'>CSS.CSSStyle</a> <span class='text'>The resulting style after the property toggling.</span></dd>
+<dd><a href='#CSS.CSSStyle' title="CSS.CSSStyle">CSS.CSSStyle</a> <span class='text'>The resulting style after the property toggling.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1521,14 +1519,14 @@ CSS.toggleProperty(styleId, propertyIndex, disable, function callback(res) {
 <p>Modifies the rule selector.</p>
 <dl>
 <dt>ruleId</dt>
-<dd><a href='#CSS.CSSRuleId'>CSS.CSSRuleId</a></dd>
+<dd><a href='#CSS.CSSRuleId' title="CSS.CSSRuleId">CSS.CSSRuleId</a></dd>
 <dt>selector</dt>
 <dd>String</dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>rule</dt>
-<dd><a href='#CSS.CSSRule'>CSS.CSSRule</a> <span class='text'>The resulting rule after the selector modification.</span></dd>
+<dd><a href='#CSS.CSSRule' title="CSS.CSSRule">CSS.CSSRule</a> <span class='text'>The resulting rule after the selector modification.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1543,14 +1541,14 @@ CSS.setRuleSelector(ruleId, selector, function callback(res) {
 <p>Creates a new empty rule with the given <code>selector</code> in a special "inspector" stylesheet in the owner document of the context node.</p>
 <dl>
 <dt>contextNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a></dd>
 <dt>selector</dt>
 <dd>String</dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>rule</dt>
-<dd><a href='#CSS.CSSRule'>CSS.CSSRule</a> <span class='text'>The newly created rule.</span></dd>
+<dd><a href='#CSS.CSSRule' title="CSS.CSSRule">CSS.CSSRule</a> <span class='text'>The newly created rule.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1566,7 +1564,7 @@ CSS.addRule(contextNodeId, selector, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>cssProperties</dt>
-<dd>[<a href='#CSS.CSSPropertyInfo'>CSS.CSSPropertyInfo</a>] <span class='text'>Supported property metainfo.</span></dd>
+<dd>[<a href='#CSS.CSSPropertyInfo' title="CSS.CSSPropertyInfo">CSS.CSSPropertyInfo</a>] <span class='text'>Supported property metainfo.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1581,7 +1579,7 @@ CSS.getSupportedCSSProperties(function callback(res) {
 <p>Ensures that the given node will have specified pseudo-classes whenever its style is computed by the browser.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The element id for which to force the pseudo state.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The element ID for which to force the pseudo state.</span></dd>
 <dt>forcedPseudoClasses</dt>
 <dd>[( active | focus | hover | visited )] <span class='text'>Element pseudo classes to force when computing the element's style.</span></dd>
 </dl>
@@ -1596,12 +1594,12 @@ CSS.forcePseudoState(nodeId, forcedPseudoClasses);
 <p>Returns the Named Flows from the document.</p>
 <dl>
 <dt>documentNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The document node id for which to get the Named Flow Collection.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The document node ID for which to get the Named Flow Collection.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>namedFlows</dt>
-<dd>[<a href='#CSS.NamedFlow'>CSS.NamedFlow</a>] <span class='text'>An array containing the Named Flows in the document.</span></dd>
+<dd>[<a href='#CSS.NamedFlow' title="CSS.NamedFlow">CSS.NamedFlow</a>] <span class='text'>An array containing the Named Flows in the document.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1642,7 +1640,7 @@ function onStyleSheetChanged(res) {
 <p>Fired whenever an active document stylesheet is added.</p>
 <dl>
 <dt>header</dt>
-<dd><a href='#CSS.CSSStyleSheetHeader'>CSS.CSSStyleSheetHeader</a> <span class='text'>Added stylesheet metainfo.</span></dd>
+<dd><a href='#CSS.CSSStyleSheetHeader' title="CSS.CSSStyleSheetHeader">CSS.CSSStyleSheetHeader</a> <span class='text'>Added stylesheet metainfo.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1657,7 +1655,7 @@ function onStyleSheetAdded(res) {
 <p>Fired whenever an active document stylesheet is removed.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a> <span class='text'>Identifier of the removed stylesheet.</span></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a> <span class='text'>Identifier of the removed stylesheet.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
