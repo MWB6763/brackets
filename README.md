@@ -42,7 +42,7 @@ You can choose a different folder to edit using *File > Open Folder*.
 
 Most of Brackets should be pretty self-explanatory, but for information on how
 to use its unique features, like Quick Edit and Live Preview, please read
-[How to Use Brackets](http://github.com/adobe/brackets/wiki/How-to-Use-Brackets). 
+[How To Use Brackets](http://github.com/adobe/brackets/wiki/How-to-Use-Brackets). 
 Also, see the [release notes](http://github.com/adobe/brackets/wiki/Release-Notes)
 for a list of new features and known issues in each build.
 
@@ -72,7 +72,7 @@ Brackets version number. Disable all extensions to verify the issue is a core Br
 
 #### I have a new suggestion, but don't know how to program!
 
-For feature requests please first check our [Trello board](http://bit.ly/BracketsBacklog) to
+For feature requests please first check our [Trello Board](http://bit.ly/BracketsBacklog) to
 see if it's already there; you can upvote it if so. If not, feel free to file it as an issue as above; we'll
 move it to the feature backlog for you.
 
@@ -81,12 +81,12 @@ move it to the feature backlog for you.
 
 Awesome! _There are lots of ways you can help._ First read 
 [CONTRIBUTING.md](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md), 
-then learn how to [pull the repo and hack on Brackets](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets).
+then learn how to [pull the repository and hack on Brackets](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets).
 
 The text editor inside Brackets is based on 
 [CodeMirror](http://github.com/codemirror/CodeMirror)&mdash;thanks to Marijn for
 taking our pull requests, implementing feature requests and fixing bugs! See 
-[Notes on CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror)
+[Notes On CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror)
 for info on how we're using CodeMirror.
 
 Although Brackets is built in HTML/CSS/JS, it currently runs as a desktop 
@@ -106,18 +106,18 @@ Not sure you needed the exclamation point there, but we like your enthusiasm.
 * In our [feature backlog](http://bit.ly/BracketsBacklog), the columns to the right
   (starting from "Development") list the features that we're currently working on.
   "Ready" shows what we'll be working on next.
-* Watch our [GitHub activity stream](https://github.com/adobe/brackets/pulse).
-* Watch our [Waffle Kanban board](https://waffle.io/adobe/brackets): Work items in [![Stories in Ready](https://badge.waffle.io/adobe/brackets.svg?label=ready&title=Ready)](http://waffle.io/adobe/brackets) are next. The entire development process is outlined in the [Developer Guide](https://github.com/adobe/brackets/wiki/Brackets-Developers-Guide).
+* Watch our [GitHub Activity Stream](https://github.com/adobe/brackets/pulse).
+* Watch our [Waffle Kanban Board](https://waffle.io/adobe/brackets): Work items in [![Stories In Ready](https://badge.waffle.io/adobe/brackets.svg?label=ready&title=Ready)](http://waffle.io/adobe/brackets) are next. The entire development process is outlined in the [Developer Guide](https://github.com/adobe/brackets/wiki/Brackets-Developers-Guide).
 
 #### Contact info
 
 * **E-mail:** [admin@brackets.io](mailto:admin@brackets.io)
-* **Slack:** [Brackets on Slack](https://brackets.slack.com) (You can join by sending a mail to [admin@brackets.io](mailto:admin@brackets.io) with the subject line `slack registration request` specifying the email addresses you would like to register).
+* **Slack:** [Brackets On Slack](https://brackets.slack.com) (You can join by sending a mail to [admin@brackets.io](mailto:admin@brackets.io) with the subject line `slack registration request` specifying the email addresses you would like to register).
 * **Developers mailing list:** http://groups.google.com/group/brackets-dev
 * **Twitter:** [@brackets](https://twitter.com/brackets)
 * **Blog:** http://blog.brackets.io/
-* **IRC:** [#brackets on freenode](http://webchat.freenode.net/?channels=brackets)
+* **IRC:** [#brackets on Freenode](http://webchat.freenode.net/?channels=brackets)
 
 ---
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/adobe/brackets/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code Of Conduct](https://github.com/adobe/brackets/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
