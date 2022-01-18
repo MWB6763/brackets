@@ -2387,7 +2387,7 @@ function onMessagesCleared(res) {
 <p>DOM interaction is implemented in terms of mirror objects that represent the actual DOM nodes. DOMNode is a base node mirror type.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Node identifier that is passed into the rest of the DOM messages as the <code>nodeId</code>. Backend will only push node with given <code>id</code> once. It is aware of all requested nodes and will only fire DOM events for nodes known to the client.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Node identifier that is passed into the rest of the DOM messages as the <code>nodeId</code>. Backend will only push node with given <code>id</code> once. It is aware of all requested nodes and will only fire DOM events for nodes known to the client.</span></dd>
 <dt>nodeType</dt>
 <dd>Integer <span class='text'><code>Node</code>'s nodeType.</span></dd>
 <dt>nodeName</dt>
@@ -2399,7 +2399,7 @@ function onMessagesCleared(res) {
 <dt>childNodeCount (optional)</dt>
 <dd>Integer <span class='text'>Child count for <code>Container</code> nodes.</span></dd>
 <dt>children (optional)</dt>
-<dd>[<a href='#DOM.Node'>DOM.Node</a>] <span class='text'>Child nodes of this node when requested with children.</span></dd>
+<dd>[<a href='#DOM.Node' title="DOM.Node">DOM.Node</a>] <span class='text'>Child nodes of this node when requested with children.</span></dd>
 <dt>attributes (optional)</dt>
 <dd>[String] <span class='text'>Attributes of the <code>Element</code> node in the form of flat array <code>[name1, value1, name2, value2]</code>.</span></dd>
 <dt>documentURL (optional)</dt>
@@ -2419,17 +2419,17 @@ function onMessagesCleared(res) {
 <dt>value (optional)</dt>
 <dd>String <span class='text'><code>Attr</code>'s value.</span></dd>
 <dt>pseudoType (optional)</dt>
-<dd><a href='#DOM.PseudoType'>DOM.PseudoType</a> <span class='text'>Pseudo element type for this node.</span></dd>
+<dd><a href='#DOM.PseudoType' title="DOM.PseudoType">DOM.PseudoType</a> <span class='text'>Pseudo element type for this node.</span></dd>
 <dt>frameId (optional)</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Frame ID for frame owner elements.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Frame ID for frame owner elements.</span></dd>
 <dt>contentDocument (optional)</dt>
-<dd><a href='#DOM.Node'>DOM.Node</a> <span class='text'>Content document for frame owner elements.</span></dd>
+<dd><a href='#DOM.Node' title="DOM.Node">DOM.Node</a> <span class='text'>Content document for frame owner elements.</span></dd>
 <dt>shadowRoots (optional)</dt>
-<dd>[<a href='#DOM.Node'>DOM.Node</a>] <span class='text'>Shadow root list for given element host.</span></dd>
+<dd>[<a href='#DOM.Node' title="DOM.Node">DOM.Node</a>] <span class='text'>Shadow root list for given element host.</span></dd>
 <dt>templateContent (optional)</dt>
-<dd><a href='#DOM.Node'>DOM.Node</a> <span class='text'>Content document fragment for template elements.</span></dd>
+<dd><a href='#DOM.Node' title="DOM.Node">DOM.Node</a> <span class='text'>Content document fragment for template elements.</span></dd>
 <dt>pseudoElements (optional)</dt>
-<dd>[<a href='#DOM.Node'>DOM.Node</a>] <span class='text'>Pseudo elements associated with this node.</span></dd>
+<dd>[<a href='#DOM.Node' title="DOM.Node">DOM.Node</a>] <span class='text'>Pseudo elements associated with this node.</span></dd>
 </dl>
 </div>
 <div id='DOM_EventListener' class='type'>
@@ -2443,15 +2443,15 @@ function onMessagesCleared(res) {
 <dt>isAttribute</dt>
 <dd>Boolean <span class='text'><code>EventListener</code>'s isAttribute.</span></dd>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Target <code>DOMNode</code> ID.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Target <code>DOMNode</code> ID.</span></dd>
 <dt>handlerBody</dt>
 <dd>String <span class='text'>Event handler function body.</span></dd>
 <dt>location (optional)</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Handler code location.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Handler code location.</span></dd>
 <dt>sourceName (optional)</dt>
 <dd>String <span class='text'>Source script URL.</span></dd>
 <dt>handler (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Event handler function value.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Event handler function value.</span></dd>
 </dl>
 </div>
 <div id='DOM_RGBA' class='type'>
@@ -2470,7 +2470,7 @@ function onMessagesCleared(res) {
 </div>
 <div id='DOM_Quad' class='type'>
 <h3>DOM.Quad <span class='label'>Type</span></h3>
-<p>An array of quad vertices, X immediately followed by T for each point, points clock-wise.</p>
+<p>An array of quad vertices, X immediately followed by Y for each point, points clock-wise.</p>
 <dl>
 <dd>[Number]</dd>
 </dl>
@@ -2549,7 +2549,7 @@ DOM.disable();
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>root</dt>
-<dd><a href='#DOM.Node'>DOM.Node</a> <span class='text'>Resulting node.</span></dd>
+<dd><a href='#DOM.Node' title="DOM.Node">DOM.Node</a> <span class='text'>Resulting node.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2579,14 +2579,14 @@ DOM.requestChildNodes(nodeId, depth);
 <p>Executes <code>querySelector</code> on a given node.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to query upon.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Id of the node to query upon.</span></dd>
 <dt>selector</dt>
 <dd>String <span class='text'>Selector string.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Query selector result.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Query selector result.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2601,14 +2601,14 @@ DOM.querySelector(nodeId, selector, function callback(res) {
 <p>Executes <code>querySelectorAll</code> on a given node.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node to query upon.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to query upon.</span></dd>
 <dt>selector</dt>
 <dd>String <span class='text'>Selector string.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeIds</dt>
-<dd>[<a href='#DOM.NodeId'>DOM.NodeId</a>] <span class='text'>Query selector result.</span></dd>
+<dd>[<a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a>] <span class='text'>Query selector result.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2623,14 +2623,14 @@ DOM.querySelectorAll(nodeId, selector, function callback(res) {
 <p>Sets node name for a node with given ID.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to set name for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to set name for.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>New node's name.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>New node's id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>New node's ID.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2645,7 +2645,7 @@ DOM.setNodeName(nodeId, name, function callback(res) {
 <p>Sets node value for a node with given ID.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to set value for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to set value for.</span></dd>
 <dt>value</dt>
 <dd>String <span class='text'>New node's value.</span></dd>
 </dl>
@@ -2657,10 +2657,10 @@ DOM.setNodeValue(nodeId, value);
 </div>
 <div id='DOM_removeNode' class='command'>
 <h3>DOM.removeNode <span class='label label-success'>Command</span></h3>
-<p>Removes node with given id.</p>
+<p>Removes node with given ID.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to remove.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to remove.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2673,7 +2673,7 @@ DOM.removeNode(nodeId);
 <p>Sets attribute for an element with given id.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the element to set attribute for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Id of the element to set attribute for.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Attribute name.</span></dd>
 <dt>value</dt>
@@ -2687,10 +2687,10 @@ DOM.setAttributeValue(nodeId, name, value);
 </div>
 <div id='DOM_setAttributesAsText' class='command'>
 <h3>DOM.setAttributesAsText <span class='label label-success'>Command</span></h3>
-<p>Sets attributes on element with given id. This method is useful when user edits some existing attribute value and types in several attribute name/value pairs.</p>
+<p>Sets attributes on element with given ID. This method is useful when user edits some existing attribute value and types in several attribute name/value pairs.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the element to set attributes for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the element to set attributes for.</span></dd>
 <dt>text</dt>
 <dd>String <span class='text'>Text with a number of attributes. Will parse this text using HTML parser.</span></dd>
 <dt>name (optional)</dt>
@@ -2707,7 +2707,7 @@ DOM.setAttributesAsText(nodeId, text, name);
 <p>Removes attribute with given name from an element with given ID.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the element to remove attribute from.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the element to remove attribute from.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Name of the attribute to remove.</span></dd>
 </dl>
@@ -2722,14 +2722,14 @@ DOM.removeAttribute(nodeId, name);
 <p>Returns event listeners relevant to the node.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to get listeners for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to get listeners for.</span></dd>
 <dt>objectGroup (optional)</dt>
 <dd>String <span class='text'>Symbolic group name for handler value. Handler value is not returned without this parameter specified.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>listeners</dt>
-<dd>[<a href='#DOM.EventListener'>DOM.EventListener</a>] <span class='text'>Array of relevant listeners.</span></dd>
+<dd>[<a href='#DOM.EventListener' title="DOM.EventListener">DOM.EventListener</a>] <span class='text'>Array of relevant listeners.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2744,7 +2744,7 @@ DOM.getEventListenersForNode(nodeId, objectGroup, function callback(res) {
 <p>Returns node's HTML markup.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to get markup for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to get markup for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -2761,10 +2761,10 @@ DOM.getOuterHTML(nodeId, function callback(res) {
 </div>
 <div id='DOM_setOuterHTML' class='command'>
 <h3>DOM.setOuterHTML <span class='label label-success'>Command</span></h3>
-<p>Sets node HTML markup, returns new node id.</p>
+<p>Sets node HTML markup, returns new node ID.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to set markup for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to set markup for.</span></dd>
 <dt>outerHTML</dt>
 <dd>String <span class='text'>Outer HTML markup to set.</span></dd>
 </dl>
@@ -2838,12 +2838,12 @@ DOM.discardSearchResults(searchId);
 <p>Requests that the node is sent to the caller given the JavaScript node object reference. All nodes that form the path from the node to the root are also sent to the client as a series of <code>setChildNodes</code> notifications.</p>
 <dl>
 <dt>objectId</dt>
-<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>JavaScript object id to convert into node.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>JavaScript object ID to convert into node.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Node id for given object.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Node id for given object.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2912,14 +2912,14 @@ DOM.highlightQuad(quad, color, outlineColor);
 </div>
 <div id='DOM_highlightNode' class='command'>
 <h3>DOM.highlightNode <span class='label label-success'>Command</span></h3>
-<p>Highlights DOM node with given id or with the given JavaScript object wrapper. Either nodeId or objectId must be specified.</p>
+<p>Highlights DOM node with given ID or with the given JavaScript object wrapper. Either nodeId or objectId must be specified.</p>
 <dl>
 <dt>highlightConfig</dt>
-<dd><a href='#DOM.HighlightConfig'>DOM.HighlightConfig</a> <span class='text'>A descriptor for the highlight appearance.</span></dd>
+<dd><a href='#DOM.HighlightConfig' title="DOM.HighlightConfig">DOM.HighlightConfig</a> <span class='text'>A descriptor for the highlight appearance.</span></dd>
 <dt>nodeId (optional)</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Identifier of the node to highlight.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Identifier of the node to highlight.</span></dd>
 <dt>objectId (optional)</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>JavaScript object id of the node to be highlighted.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>JavaScript object ID of the node to be highlighted.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2938,7 +2938,7 @@ DOM.hideHighlight();
 </div>
 <div id='DOM_highlightFrame' class='command'>
 <h3>DOM.highlightFrame <span class='label label-success'>Command</span></h3>
-<p>Highlights owner element of the frame with given id.</p>
+<p>Highlights owner element of the frame with given ID.</p>
 <dl>
 <dt>frameId</dt>
 <dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame to highlight.</span></dd>
@@ -2963,7 +2963,7 @@ DOM.highlightFrame(frameId, contentColor, contentOutlineColor);
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node for given path.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node for given path.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2978,12 +2978,12 @@ DOM.pushNodeByPathToFrontend(path, function callback(res) {
 <p>Requests that the node is sent to the caller given its backend node ID.</p>
 <dl>
 <dt>backendNodeId</dt>
-<dd><a href='#DOM.BackendNodeId'>DOM.BackendNodeId</a> <span class='text'>The backend node ID of the node.</span></dd>
+<dd><a href='#DOM.BackendNodeId' title="DOM.BackendNodeId">DOM.BackendNodeId</a> <span class='text'>The backend node ID of the node.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The pushed node's ID.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The pushed node's ID.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3033,7 +3033,7 @@ DOM.resolveNode(nodeId, objectGroup, function callback(res) {
 <p>Returns attributes for the specified node.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to retrieve attibutes for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Id of the node to retrieve attibutes for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -3053,16 +3053,16 @@ DOM.getAttributes(nodeId, function callback(res) {
 <p>Moves node into the new container, places it before the given anchor.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to drop.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to drop.</span></dd>
 <dt>targetNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the element to drop into.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the element to drop into.</span></dd>
 <dt>insertBeforeNodeId (optional)</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Drop node before given one.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Drop node before given one.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>New id of the moved node.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>New ID of the moved node.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3104,7 +3104,7 @@ DOM.markUndoableState();
 <p>Focuses the given element.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node to focus.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to focus.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3117,7 +3117,7 @@ DOM.focus(nodeId);
 <p>Sets files for the given file input element.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the file input node to set files for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the file input node to set files for.</span></dd>
 <dt>files</dt>
 <dd>[String] <span class='text'>Array of file paths to set.</span></dd>
 </dl>
@@ -3132,7 +3132,7 @@ DOM.setFileInputFiles(nodeId, files);
 <p>Returns boxes for the currently selected nodes.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Id of the node to get box model for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to get box model for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -3159,7 +3159,7 @@ DOM.getBoxModel(nodeId, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node at given coordinates.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node at given coordinates.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3171,7 +3171,7 @@ DOM.getNodeForLocation(x, y, function callback(res) {
 </div>
 <div id='DOM_documentUpdated' class='command'>
 <h3>DOM.documentUpdated <span class='label label-info'>Event</span></h3>
-<p>Fired when <code>Document</code> has been totally updated. Node ids are no longer valid.</p>
+<p>Fired when <code>Document</code> has been totally updated. Node IDs are no longer valid.</p>
 <h4>Code Example:</h4>
 <pre>
 // WebInspector Event: DOM.documentUpdated
@@ -3185,7 +3185,7 @@ function onDocumentUpdated(res) {
 <p>Fired when the node should be inspected. This happens after call to <code>setInspectModeEnabled</code>.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to inspect.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node to inspect.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3197,12 +3197,12 @@ function onInspectNodeRequested(res) {
 </div>
 <div id='DOM_setChildNodes' class='command'>
 <h3>DOM.setChildNodes <span class='label label-info'>Event</span></h3>
-<p>Fired when backend wants to provide client with the missing DOM structure. This happens upon most of the calls requesting node ids.</p>
+<p>Fired when backend wants to provide client with the missing DOM structure. This happens upon most of the calls requesting node IDs.</p>
 <dl>
 <dt>parentId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Parent node id to populate with children.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Parent node ID to populate with children.</span></dd>
 <dt>nodes</dt>
-<dd>[<a href='#DOM.Node'>DOM.Node</a>] <span class='text'>Child nodes array.</span></dd>
+<dd>[<a href='#DOM.Node' title="DOM.Node">DOM.Node</a>] <span class='text'>Child nodes array.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3217,7 +3217,7 @@ function onSetChildNodes(res) {
 <p>Fired when <code>Element</code>'s attribute is modified.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Attribute name.</span></dd>
 <dt>value</dt>
@@ -3236,7 +3236,7 @@ function onAttributeModified(res) {
 <p>Fired when <code>Element</code>'s attribute is removed.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>A ttribute name.</span></dd>
 </dl>
@@ -3253,7 +3253,7 @@ function onAttributeRemoved(res) {
 <p>Fired when <code>Element</code>'s inline style is modified via a CSS property modification.</p>
 <dl>
 <dt>nodeIds</dt>
-<dd>[<a href='#DOM.NodeId'>DOM.NodeId</a>] <span class='text'>Ids of the nodes for which the inline styles have been invalidated.</span></dd>
+<dd>[<a href='#DOM.NodeId'>DOM.NodeId</a>] <span class='text'>IDs of the nodes for which the inline styles have been invalidated.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3268,7 +3268,7 @@ function onInlineStyleInvalidated(res) {
 <p>Mirrors <code>DOMCharacterDataModified</code> event.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>characterData</dt>
 <dd>String <span class='text'>New text value.</span></dd>
 </dl>
@@ -3285,7 +3285,7 @@ function onCharacterDataModified(res) {
 <p>Fired when <code>Container</code>'s child node count has changed.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>childNodeCount</dt>
 <dd>Integer <span class='text'>New node count.</span></dd>
 </dl>
@@ -3302,7 +3302,7 @@ function onChildNodeCountUpdated(res) {
 <p>Mirrors <code>DOMNodeInserted</code> event.</p>
 <dl>
 <dt>parentNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>previousNodeId</dt>
 <dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>If of the previous siblint.</span></dd>
 <dt>node</dt>
@@ -3845,45 +3845,45 @@ function onAddDatabase(res) {
 <p>Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.</p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Debugger.BreakpointId'>Debugger.BreakpointId</a>: Breakpoint identifier.</li>
-<li><a href='#Debugger.ScriptId'>Debugger.ScriptId</a>: Unique script identifier.</li>
-<li><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a>: Call frame identifier.</li>
-<li><a href='#Debugger.Location'>Debugger.Location</a>: Location in the source code.</li>
-<li><a href='#Debugger.FunctionDetails'>Debugger.FunctionDetails</a>: Information about the function.</li>
-<li><a href='#Debugger.CallFrame'>Debugger.CallFrame</a>: JavaScript call frame. Array of call frames form the call stack.</li>
-<li><a href='#Debugger.Scope'>Debugger.Scope</a>: Scope description.</li>
-<li><a href='#Debugger.SetScriptSourceError'>Debugger.SetScriptSourceError</a>: Error data for setScriptSource command. compileError is a case type for uncompilable script source error.</li>
+<li><a href='#Debugger.BreakpointId' title="Debugger.BreakpointId">Debugger.BreakpointId</a>: Breakpoint identifier.</li>
+<li><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a>: Unique script identifier.</li>
+<li><a href='#Debugger.CallFrameId' title="Debugger.CallFrameId">Debugger.CallFrameId</a>: Call frame identifier.</li>
+<li><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a>: Location in the source code.</li>
+<li><a href='#Debugger.FunctionDetails' title="Debugger.FunctionDetails">Debugger.FunctionDetails</a>: Information about the function.</li>
+<li><a href='#Debugger.CallFrame' title="Debugger.CallFrame">Debugger.CallFrame</a>: JavaScript call frame. Array of call frames form the call stack.</li>
+<li><a href='#Debugger.Scope' title="Debugger.Scope">Debugger.Scope</a>: Scope description.</li>
+<li><a href='#Debugger.SetScriptSourceError' title="Debugger.SetScriptSourceError">Debugger.SetScriptSourceError</a>: Error data for setScriptSource command. compileError is a case type for uncompilable script source error.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Debugger.enable'>Debugger.enable</a>: Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.</li>
-<li><a href='#Debugger.disable'>Debugger.disable</a>: Disables debugger for given page.</li>
-<li><a href='#Debugger.setBreakpointsActive'>Debugger.setBreakpointsActive</a>: Activates / deactivates all breakpoints on the page.</li>
-<li><a href='#Debugger.setSkipAllPauses'>Debugger.setSkipAllPauses</a>: Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).</li>
-<li><a href='#Debugger.setBreakpointByUrl'>Debugger.setBreakpointByUrl</a>: Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in locations property. Further matching script parsing will result in subsequent breakpointResolved events issued. This logical breakpoint will survive page reloads.</li>
-<li><a href='#Debugger.setBreakpoint'>Debugger.setBreakpoint</a>: Sets JavaScript breakpoint at a given location.</li>
-<li><a href='#Debugger.removeBreakpoint'>Debugger.removeBreakpoint</a>: Removes JavaScript breakpoint.</li>
-<li><a href='#Debugger.continueToLocation'>Debugger.continueToLocation</a>: Continues execution until specific location is reached.</li>
-<li><a href='#Debugger.stepOver'>Debugger.stepOver</a>: Steps over the statement.</li>
-<li><a href='#Debugger.stepInto'>Debugger.stepInto</a>: Steps into the function call.</li>
-<li><a href='#Debugger.stepOut'>Debugger.stepOut</a>: Steps out of the function call.</li>
-<li><a href='#Debugger.pause'>Debugger.pause</a>: Stops on the next JavaScript statement.</li>
-<li><a href='#Debugger.resume'>Debugger.resume</a>: Resumes JavaScript execution.</li>
-<li><a href='#Debugger.searchInContent'>Debugger.searchInContent</a>: Searches for given string in script content.</li>
-<li><a href='#Debugger.canSetScriptSource'>Debugger.canSetScriptSource</a>: Always returns true.</li>
-<li><a href='#Debugger.setScriptSource'>Debugger.setScriptSource</a>: Edits JavaScript source live.</li>
-<li><a href='#Debugger.restartFrame'>Debugger.restartFrame</a>: Restarts particular call frame from the beginning.</li>
-<li><a href='#Debugger.getScriptSource'>Debugger.getScriptSource</a>: Returns source for the script with given id.</li>
-<li><a href='#Debugger.getFunctionDetails'>Debugger.getFunctionDetails</a>: Returns detailed informtation on given function.</li>
-<li><a href='#Debugger.setPauseOnExceptions'>Debugger.setPauseOnExceptions</a>: Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is none.</li>
-<li><a href='#Debugger.evaluateOnCallFrame'>Debugger.evaluateOnCallFrame</a>: Evaluates expression on a given call frame.</li>
-<li><a href='#Debugger.compileScript'>Debugger.compileScript</a>: Compiles expression.</li>
-<li><a href='#Debugger.runScript'>Debugger.runScript</a>: Runs script with given id in a given context.</li>
-<li><a href='#Debugger.setOverlayMessage'>Debugger.setOverlayMessage</a>: Sets overlay message.</li>
-<li><a href='#Debugger.setVariableValue'>Debugger.setVariableValue</a>: Changes value of variable in a callframe or a closure. Either callframe or function must be specified. Object-based scopes are not supported and must be mutated manually.</li>
-<li><a href='#Debugger.getStepInPositions'>Debugger.getStepInPositions</a>: Lists all positions where step-in is possible for a current statement in a specified call frame</li>
-<li><a href='#Debugger.getBacktrace'>Debugger.getBacktrace</a>: Returns call stack including variables changed since VM was paused. VM must be paused.</li>
-<li><a href='#Debugger.skipStackFrames'>Debugger.skipStackFrames</a>: Makes backend skip steps in the sources with names matching given pattern. VM will try leave blacklisted scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.</li>
+<li><a href='#Debugger.enable' title="Debugger.enable">Debugger.enable</a>: Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.</li>
+<li><a href='#Debugger.disable' title="Debugger.disable">Debugger.disable</a>: Disables debugger for given page.</li>
+<li><a href='#Debugger.setBreakpointsActive' title="Debugger.setBreakpointsActive">Debugger.setBreakpointsActive</a>: Activates / deactivates all breakpoints on the page.</li>
+<li><a href='#Debugger.setSkipAllPauses' title="Debugger.setSkipAllPauses">Debugger.setSkipAllPauses</a>: Makes page not interrupt on any pauses (breakpoint, exception, dom exception etc).</li>
+<li><a href='#Debugger.setBreakpointByUrl' title="Debugger.setBreakpointByUrl">Debugger.setBreakpointByUrl</a>: Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in locations property. Further matching script parsing will result in subsequent breakpointResolved events issued. This logical breakpoint will survive page reloads.</li>
+<li><a href='#Debugger.setBreakpoint' title="Debugger.setBreakpoint">Debugger.setBreakpoint</a>: Sets JavaScript breakpoint at a given location.</li>
+<li><a href='#Debugger.removeBreakpoint' title="Debugger.removeBreakpoint">Debugger.removeBreakpoint</a>: Removes JavaScript breakpoint.</li>
+<li><a href='#Debugger.continueToLocation' title="Debugger.continueToLocation">Debugger.continueToLocation</a>: Continues execution until specific location is reached.</li>
+<li><a href='#Debugger.stepOver' title="Debugger.stepOver">Debugger.stepOver</a>: Steps over the statement.</li>
+<li><a href='#Debugger.stepInto' title="Debugger.stepInto">Debugger.stepInto</a>: Steps into the function call.</li>
+<li><a href='#Debugger.stepOut' title="Debugger.stepOut">Debugger.stepOut</a>: Steps out of the function call.</li>
+<li><a href='#Debugger.pause' title="Debugger.pause">Debugger.pause</a>: Stops on the next JavaScript statement.</li>
+<li><a href='#Debugger.resume' title="Debugger.resume">Debugger.resume</a>: Resumes JavaScript execution.</li>
+<li><a href='#Debugger.searchInContent' title="Debugger.searchInContent">Debugger.searchInContent</a>: Searches for given string in script content.</li>
+<li><a href='#Debugger.canSetScriptSource' title="Debugger.canSetScriptSource">Debugger.canSetScriptSource</a>: Always returns true.</li>
+<li><a href='#Debugger.setScriptSource' title="Debugger.setScriptSource">Debugger.setScriptSource</a>: Edits JavaScript source live.</li>
+<li><a href='#Debugger.restartFrame' title="Debugger.restartFrame">Debugger.restartFrame</a>: Restarts particular call frame from the beginning.</li>
+<li><a href='#Debugger.getScriptSource' title="Debugger.getScriptSource">Debugger.getScriptSource</a>: Returns source for the script with given id.</li>
+<li><a href='#Debugger.getFunctionDetails' title="Debugger.getFunctionDetails">Debugger.getFunctionDetails</a>: Returns detailed informtation on given function.</li>
+<li><a href='#Debugger.setPauseOnExceptions' title="Debugger.setPauseOnExceptions">Debugger.setPauseOnExceptions</a>: Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is none.</li>
+<li><a href='#Debugger.evaluateOnCallFrame' title="Debugger.evaluateOnCallFrame">Debugger.evaluateOnCallFrame</a>: Evaluates expression on a given call frame.</li>
+<li><a href='#Debugger.compileScript' title="Debugger.compileScript">Debugger.compileScript</a>: Compiles expression.</li>
+<li><a href='#Debugger.runScript' title="Debugger.runScript">Debugger.runScript</a>: Runs script with given id in a given context.</li>
+<li><a href='#Debugger.setOverlayMessage' title="Debugger.setOverlayMessage">Debugger.setOverlayMessage</a>: Sets overlay message.</li>
+<li><a href='#Debugger.setVariableValue' title="Debugger.setVariableValue">Debugger.setVariableValue</a>: Changes value of variable in a callframe or a closure. Either callframe or function must be specified. Object-based scopes are not supported and must be mutated manually.</li>
+<li><a href='#Debugger.getStepInPositions' title="Debugger.getStepInPositions">Debugger.getStepInPositions</a>: Lists all positions where step-in is possible for a current statement in a specified call frame</li>
+<li><a href='#Debugger.getBacktrace' title="Debugger.getBacktrace">Debugger.getBacktrace</a>: Returns call stack including variables changed since VM was paused. VM must be paused.</li>
+<li><a href='#Debugger.skipStackFrames' title="Debugger.skipStackFrames">Debugger.skipStackFrames</a>: Makes backend skip steps in the sources with names matching given pattern. VM will try leave blacklisted scripts by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.</li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
@@ -4199,7 +4199,7 @@ Debugger.canSetScriptSource(function callback(res) {
 <p>Edits JavaScript source live.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Id of the script to edit.</span></dd>
+<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>ID of the script to edit.</span></dd>
 <dt>scriptSource</dt>
 <dd>String <span class='text'>New content of the script.</span></dd>
 <dt>preview (optional)</dt>
@@ -4405,9 +4405,9 @@ Debugger.setOverlayMessage(message);
 <dt>newValue</dt>
 <dd><a href='#Runtime.CallArgument'>Runtime.CallArgument</a> <span class='text'>New variable value.</span></dd>
 <dt>callFrameId (optional)</dt>
-<dd><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a> <span class='text'>Id of callframe that holds variable.</span></dd>
+<dd><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a> <span class='text'>ID of callframe that holds variable.</span></dd>
 <dt>functionObjectId (optional)</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Object id of closure (function) that holds variable.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Object ID of closure (function) that holds variable.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -5620,7 +5620,7 @@ LayerTree.getLayers(nodeId, function callback(res) {
 <p>Provides the reasons why the given layer was composited.</p>
 <dl>
 <dt>layerId</dt>
-<dd><a href='#LayerTree.LayerId'>LayerTree.LayerId</a> <span class='text'>The id of the layer for which we want to get the reasons it was composited.</span></dd>
+<dd><a href='#LayerTree.LayerId'>LayerTree.LayerId</a> <span class='text'>The ID of the layer for which we want to get the reasons it was composited.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -5651,16 +5651,16 @@ function onLayerTreeDidChange(res) {
 <p></p>
 <span class='label'>Type</span>
 <ul>
-<li><a href='#Memory.MemoryBlock'>Memory.MemoryBlock</a></li>
-<li><a href='#Memory.HeapSnapshotChunk'>Memory.HeapSnapshotChunk</a></li>
+<li><a href='#Memory.MemoryBlock' title="Memory.MemoryBlock">Memory.MemoryBlock</a></li>
+<li><a href='#Memory.HeapSnapshotChunk' title="Memory.HeapSnapshotChunk">Memory.HeapSnapshotChunk</a></li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
-<li><a href='#Memory.getDOMCounters'>Memory.getDOMCounters</a></li>
+<li><a href='#Memory.getDOMCounters' title="Memory.getDOMCounters">Memory.getDOMCounters</a></li>
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Memory.addNativeSnapshotChunk'>Memory.addNativeSnapshotChunk</a></li>
+<li><a href='#Memory.addNativeSnapshotChunk' title="Memory.addNativeSnapshotChunk">Memory.addNativeSnapshotChunk</a></li>
 </ul>
 <div id='Memory_MemoryBlock' class='type'>
 <h3>Memory.MemoryBlock <span class='label'>Type</span></h3>
@@ -5670,7 +5670,7 @@ function onLayerTreeDidChange(res) {
 <dt>name</dt>
 <dd>String <span class='text'>Unique name used to identify the component that allocated this block</span></dd>
 <dt>children (optional)</dt>
-<dd>[<a href='#Memory.MemoryBlock'>Memory.MemoryBlock</a>]</dd>
+<dd>[<a href='#Memory.MemoryBlock' title="Memory.MemoryBlock">Memory.MemoryBlock</a>]</dd>
 </dl>
 </div>
 <div id='Memory_HeapSnapshotChunk' class='type'>
@@ -5709,7 +5709,7 @@ Memory.getDOMCounters(function callback(res) {
 <h3>Memory.addNativeSnapshotChunk <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>chunk</dt>
-<dd><a href='#Memory.HeapSnapshotChunk'>Memory.HeapSnapshotChunk</a> <span class='text'>A chunk of the serialized the snapshot.</span></dd>
+<dd><a href='#Memory.HeapSnapshotChunk' title="Memory.HeapSnapshotChunk">Memory.HeapSnapshotChunk</a> <span class='text'>A chunk of the serialized the snapshot.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -5873,7 +5873,7 @@ function onAddNativeSnapshotChunk(res) {
 <p>WebSocket request data.</p>
 <dl>
 <dt>headers</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>HTTP response headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>HTTP response headers.</span></dd>
 </dl>
 </div>
 <div id='Network_WebSocketResponse' class='type'>
@@ -5885,7 +5885,7 @@ function onAddNativeSnapshotChunk(res) {
 <dt>statusText</dt>
 <dd>String <span class='text'>HTTP response status text.</span></dd>
 <dt>headers</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>HTTP response headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>HTTP response headers.</span></dd>
 </dl>
 </div>
 <div id='Network_WebSocketFrame' class='type'>
@@ -5895,9 +5895,9 @@ function onAddNativeSnapshotChunk(res) {
 <dt>opcode</dt>
 <dd>Number <span class='text'>WebSocket frame opcode.</span></dd>
 <dt>mask</dt>
-<dd>Boolean <span class='text'>WebSocke frame mask.</span></dd>
+<dd>Boolean <span class='text'>WebSocket frame mask.</span></dd>
 <dt>payloadData</dt>
-<dd>String <span class='text'>WebSocke frame payload data.</span></dd>
+<dd>String <span class='text'>WebSocket frame payload data.</span></dd>
 </dl>
 </div>
 <div id='Network_CachedResource' class='type'>
@@ -5907,9 +5907,9 @@ function onAddNativeSnapshotChunk(res) {
 <dt>url</dt>
 <dd>String <span class='text'>Resource URL. This is the url of the original network request.</span></dd>
 <dt>type</dt>
-<dd><a href='#Page.ResourceType'>Page.ResourceType</a> <span class='text'>Type of this resource.</span></dd>
+<dd><a href='#Page.ResourceType' title="Page.ResourceType">Page.ResourceType</a> <span class='text'>Type of this resource.</span></dd>
 <dt>response (optional)</dt>
-<dd><a href='#Network.Response'>Network.Response</a> <span class='text'>Cached response data.</span></dd>
+<dd><a href='#Network.Response' title="Network.Response">Network.Response</a> <span class='text'>Cached response data.</span></dd>
 <dt>bodySize</dt>
 <dd>Number <span class='text'>Cached response body size.</span></dd>
 </dl>
@@ -5921,7 +5921,7 @@ function onAddNativeSnapshotChunk(res) {
 <dt>type</dt>
 <dd>( parser | script | other ) <span class='text'>Type of this initiator.</span></dd>
 <dt>stackTrace (optional)</dt>
-<dd><a href='#Console.StackTrace'>Console.StackTrace</a> <span class='text'>Initiator JavaScript stack trace, set for Script only.</span></dd>
+<dd><a href='#Console.StackTrace' title="Console.StackTrace">Console.StackTrace</a> <span class='text'>Initiator JavaScript stack trace, set for Script only.</span></dd>
 <dt>url (optional)</dt>
 <dd>String <span class='text'>Initiator URL, set for Parser type only.</span></dd>
 <dt>lineNumber (optional)</dt>
@@ -5977,7 +5977,7 @@ Network.setExtraHTTPHeaders(headers);
 <p>Returns content served for the given request.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Identifier of the network request to get content for.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Identifier of the network request to get content for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -5999,7 +5999,7 @@ Network.getResponseBody(requestId, function callback(res) {
 <p>This method sends a new XMLHttpRequest which is identical to the original one. The following parameters should be identical: method, url, async, request body, extra headers, withCredentials attribute, user, password.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Identifier of XHR to replay.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Identifier of XHR to replay.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6075,18 +6075,18 @@ Network.setCacheDisabled(cacheDisabled);
 <p>Loads a resource in the context of a frame on the inspected page without cross origin checks.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Frame to load the resource from.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameID</a> <span class='text'>Frame to load the resource from.</span></dd>
 <dt>url</dt>
 <dd>String <span class='text'>URL of the resource to load.</span></dd>
 <dt>requestHeaders (optional)</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>Request headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>Request headers.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>statusCode</dt>
 <dd>Number <span class='text'>HTTP status code.</span></dd>
 <dt>responseHeaders</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>Response headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>Response headers.</span></dd>
 <dt>content</dt>
 <dd>String <span class='text'>Resource content.</span></dd>
 </dl>
@@ -6103,21 +6103,21 @@ Network.loadResourceForFrontend(frameId, url, requestHeaders, function callback(
 <p>Fired when page is about to send HTTP request.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Frame identifier.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Frame identifier.</span></dd>
 <dt>loaderId</dt>
-<dd><a href='#Network.LoaderId'>Network.LoaderId</a> <span class='text'>Loader identifier.</span></dd>
+<dd><a href='#Network.LoaderId' title="Network.LoaderId">Network.LoaderId</a> <span class='text'>Loader identifier.</span></dd>
 <dt>documentURL</dt>
 <dd>String <span class='text'>URL of the document this request is loaded for.</span></dd>
 <dt>request</dt>
-<dd><a href='#Network.Request'>Network.Request</a> <span class='text'>Request data.</span></dd>
+<dd><a href='#Network.Request' title="Network.Request">Network.Request</a> <span class='text'>Request data.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>initiator</dt>
-<dd><a href='#Network.Initiator'>Network.Initiator</a> <span class='text'>Request initiator.</span></dd>
+<dd><a href='#Network.Initiator' title="Network.Initiator">Network.Initiator</a> <span class='text'>Request initiator.</span></dd>
 <dt>redirectResponse (optional)</dt>
-<dd><a href='#Network.Response'>Network.Response</a> <span class='text'>Redirect response data.</span></dd>
+<dd><a href='#Network.Response' title="Network.Response">Network.Response</a> <span class='text'>Redirect response data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6132,7 +6132,7 @@ function onRequestWillBeSent(res) {
 <p>Fired if request ended up loading from cache.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6147,17 +6147,17 @@ function onRequestServedFromCache(res) {
 <p>Fired when HTTP response is available.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Frame identifier.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Frame identifier.</span></dd>
 <dt>loaderId</dt>
-<dd><a href='#Network.LoaderId'>Network.LoaderId</a> <span class='text'>Loader identifier.</span></dd>
+<dd><a href='#Network.LoaderId' title="Network.LoaderId">Network.LoaderId</a> <span class='text'>Loader identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>type</dt>
-<dd><a href='#Page.ResourceType'>Page.ResourceType</a> <span class='text'>Resource type.</span></dd>
+<dd><a href='#Page.ResourceType' title="Page.ResourceType">Page.ResourceType</a> <span class='text'>Resource type.</span></dd>
 <dt>response</dt>
-<dd><a href='#Network.Response'>Network.Response</a> <span class='text'>Response data.</span></dd>
+<dd><a href='#Network.Response' title="Network.Response">Network.Response</a> <span class='text'>Response data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6172,9 +6172,9 @@ function onResponseReceived(res) {
 <p>Fired when data chunk was received over the network.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>dataLength</dt>
 <dd>Integer <span class='text'>Data chunk length.</span></dd>
 <dt>encodedDataLength</dt>
@@ -6193,9 +6193,9 @@ function onDataReceived(res) {
 <p>Fired when HTTP request has finished loading.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6210,9 +6210,9 @@ function onLoadingFinished(res) {
 <p>Fired when HTTP request has failed to load.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>errorText</dt>
 <dd>String <span class='text'>User friendly error message.</span></dd>
 <dt>canceled (optional)</dt>
@@ -6231,11 +6231,11 @@ function onLoadingFailed(res) {
 <p>Fired when WebSocket is about to initiate handshake.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>request</dt>
-<dd><a href='#Network.WebSocketRequest'>Network.WebSocketRequest</a> <span class='text'>WebSocket request data.</span></dd>
+<dd><a href='#Network.WebSocketRequest' title="Network.WebSocketRequest">Network.WebSocketRequest</a> <span class='text'>WebSocket request data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6250,11 +6250,11 @@ function onWebSocketWillSendHandshakeRequest(res) {
 <p>Fired when WebSocket handshake response becomes available.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>response</dt>
-<dd><a href='#Network.WebSocketResponse'>Network.WebSocketResponse</a> <span class='text'>WebSocket response data.</span></dd>
+<dd><a href='#Network.WebSocketResponse' title="Network.WebSocketResponse">Network.WebSocketResponse</a> <span class='text'>WebSocket response data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6269,7 +6269,7 @@ function onWebSocketHandshakeResponseReceived(res) {
 <p>Fired upon WebSocket creation.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>url</dt>
 <dd>String <span class='text'>WebSocket request URL.</span></dd>
 </dl>
@@ -6286,9 +6286,9 @@ function onWebSocketCreated(res) {
 <p>Fired when WebSocket is closed.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6303,11 +6303,11 @@ function onWebSocketClosed(res) {
 <p>Fired when WebSocket frame is received.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>response</dt>
-<dd><a href='#Network.WebSocketFrame'>Network.WebSocketFrame</a> <span class='text'>WebSocket response data.</span></dd>
+<dd><a href='#Network.WebSocketFrame' title="Network.WebSocketFrame">Network.WebSocketFrame</a> <span class='text'>WebSocket response data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6322,9 +6322,9 @@ function onWebSocketFrameReceived(res) {
 <p>Fired when WebSocket frame error occurs.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>errorMessage</dt>
 <dd>String <span class='text'>WebSocket frame error message.</span></dd>
 </dl>
@@ -6341,11 +6341,11 @@ function onWebSocketFrameError(res) {
 <p>Fired when WebSocket frame is sent.</p>
 <dl>
 <dt>requestId</dt>
-<dd><a href='#Network.RequestId'>Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
+<dd><a href='#Network.RequestId' title="Network.RequestId">Network.RequestId</a> <span class='text'>Request identifier.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Network.Timestamp'>Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
+<dd><a href='#Network.Timestamp' title="Network.Timestamp">Network.Timestamp</a> <span class='text'>Timestamp.</span></dd>
 <dt>response</dt>
-<dd><a href='#Network.WebSocketFrame'>Network.WebSocketFrame</a> <span class='text'>WebSocket response data.</span></dd>
+<dd><a href='#Network.WebSocketFrame' title="Network.WebSocketFrame">Network.WebSocketFrame</a> <span class='text'>WebSocket response data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6388,7 +6388,7 @@ function onWebSocketFrameSent(res) {
 <li><a href='#Page.searchInResource' title="Page.searchInResource">Page.searchInResource</a>: Searches for given string in resource content.</li>
 <li><a href='#Page.searchInResources' title="Page.searchInResources">Page.searchInResources</a>: Searches for given string in frame / resource tree structure.</li>
 <li><a href='#Page.setDocumentContent' title="Page.setDocumentContent">Page.setDocumentContent</a>: Sets given markup as the document's HTML.</li>
-<li><a href='#Page.setDeviceMetricsOverride'>Page.setDeviceMetricsOverride</a>: Overrides the values of device screen dimensions (window.screen.width, window.screen.height, window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media query results) and the font scale factor.</li>
+<li><a href='#Page.setDeviceMetricsOverride' title="Page.setDeviceMetricsOverride">Page.setDeviceMetricsOverride</a>: Overrides the values of device screen dimensions (window.screen.width, window.screen.height, window.innerWidth, window.innerHeight, and "device-width"/"device-height"-related CSS media query results) and the font scale factor.</li>
 <li><a href='#Page.setShowPaintRects' title="Page.setShowPaintRects">Page.setShowPaintRects</a>: Requests that backend shows paint rectangles</li>
 <li><a href='#Page.setShowDebugBorders' title="Page.setShowDebugBorders">Page.setShowDebugBorders</a>: Requests that backend shows debug borders on layers</li>
 <li><a href='#Page.setShowFPSCounter' title="Page.setShowFPSCounter">Page.setShowFPSCounter</a>: Requests that backend shows the FPS counter</li>
@@ -6424,7 +6424,7 @@ function onWebSocketFrameSent(res) {
 <li><a href='#Page.javascriptDialogClosed' title="Page.javascriptDialogClosed">Page.javascriptDialogClosed</a>: Fired when a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload) has been closed.</li>
 <li><a href='#Page.scriptsEnabled' title="Page.scriptsEnabled">Page.scriptsEnabled</a>: Fired when the JavaScript is enabled/disabled on the page</li>
 <li><a href='#Page.screencastFrame' title="Page.screencastFrame">Page.screencastFrame</a>: Compressed image data requested by the startScreencast.</li>
-<li><a href='#Page.screencastVisibilityChanged'>Page.screencastVisibilityChanged</a>: Fired when the page with currently enabled screencast was shown or hidden .</li>
+<li><a href='#Page.screencastVisibilityChanged' title="Page.screencastVisibilityChanged">Page.screencastVisibilityChanged</a>: Fired when the page with currently enabled screencast was shown or hidden .</li>
 </ul>
 <div id='Page_ResourceType' class='type'>
 <h3>Page.ResourceType <span class='label'>Type</span></h3>
@@ -6449,7 +6449,7 @@ function onWebSocketFrameSent(res) {
 <dt>parentId (optional)</dt>
 <dd>String <span class='text'>Parent frame identifier.</span></dd>
 <dt>loaderId</dt>
-<dd><a href='#Network.LoaderId'>Network.LoaderId</a> <span class='text'>Identifier of the loader associated with this frame.</span></dd>
+<dd><a href='#Network.LoaderId' title="Network.LoaderId">Network.LoaderId</a> <span class='text'>Identifier of the loader associated with this frame.</span></dd>
 <dt>name (optional)</dt>
 <dd>String <span class='text'>Frame's name as specified in the tag.</span></dd>
 <dt>url</dt>
@@ -6465,9 +6465,9 @@ function onWebSocketFrameSent(res) {
 <p>Information about the Frame hierarchy along with their cached resources.</p>
 <dl>
 <dt>frame</dt>
-<dd><a href='#Page.Frame'>Page.Frame</a> <span class='text'>Frame information for this tree item.</span></dd>
+<dd><a href='#Page.Frame' title="Page.Frame">Page.Frame</a> <span class='text'>Frame information for this tree item.</span></dd>
 <dt>childFrames (optional)</dt>
-<dd>[<a href='#Page.FrameResourceTree'>Page.FrameResourceTree</a>] <span class='text'>Child frames.</span></dd>
+<dd>[<a href='#Page.FrameResourceTree' title="Page.FrameResourceTree">Page.FrameResourceTree</a>] <span class='text'>Child frames.</span></dd>
 <dt>resources</dt>
 <dd>[Object] <span class='text'>Information about frame resources.</span></dd>
 </dl>
@@ -6489,7 +6489,7 @@ function onWebSocketFrameSent(res) {
 <dt>url</dt>
 <dd>String <span class='text'>Resource URL.</span></dd>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Resource frame id.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Resource frame ID.</span></dd>
 <dt>matchesCount</dt>
 <dd>Number <span class='text'>Number of matches in the resource content.</span></dd>
 </dl>
@@ -6564,7 +6564,7 @@ Page.disable();
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>identifier</dt>
-<dd><a href='#Page.ScriptIdentifier'>Page.ScriptIdentifier</a> <span class='text'>Identifier of the added script.</span></dd>
+<dd><a href='#Page.ScriptIdentifier' title="Page.ScriptIdentifier">Page.ScriptIdentifier</a> <span class='text'>Identifier of the added script.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6764,7 +6764,7 @@ Page.searchInResource(frameId, url, query, caseSensitive, isRegex, function call
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>result</dt>
-<dd>[<a href='#Page.SearchResult'>Page.SearchResult</a>] <span class='text'>List of search results.</span></dd>
+<dd>[<a href='#Page.SearchResult' title="Page.SearchResult">Page.SearchResult</a>] <span class='text'>List of search results.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7116,7 +7116,7 @@ function onLoadEventFired(res) {
 <p>Fired when frame has been attached to its parent.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the frame that has been attached.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>ID of the frame that has been attached.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7131,7 +7131,7 @@ function onFrameAttached(res) {
 <p>Fired once navigation of the frame has completed. Frame is now associated with the new loader.</p>
 <dl>
 <dt>frame</dt>
-<dd><a href='#Page.Frame'>Page.Frame</a> <span class='text'>Frame object.</span></dd>
+<dd><a href='#Page.Frame' title="Page.Frame">Page.Frame</a> <span class='text'>Frame object.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7146,7 +7146,7 @@ function onFrameNavigated(res) {
 <p>Fired when frame has been detached from its parent.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the frame that has been detached.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Id of the frame that has been detached.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7161,7 +7161,7 @@ function onFrameDetached(res) {
 <p>Fired when frame has started loading.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the frame that has started loading.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>ID of the frame that has started loading.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7176,7 +7176,7 @@ function onFrameStartedLoading(res) {
 <p>Fired when frame has stopped loading.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the frame that has stopped loading.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>ID of the frame that has stopped loading.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7191,7 +7191,7 @@ function onFrameStoppedLoading(res) {
 <p>Fired when frame schedules a potential navigation.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the frame that has scheduled a navigation.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>ID of the frame that has scheduled a navigation.</span></dd>
 <dt>delay</dt>
 <dd>Number <span class='text'>Delay (in seconds) until the navigation is scheduled to begin. The navigation is not guaranteed to start.</span></dd>
 </dl>
@@ -7208,7 +7208,7 @@ function onFrameScheduledNavigation(res) {
 <p>Fired when frame no longer has a scheduled navigation.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the frame that has cleared its scheduled navigation.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>ID of the frame that has cleared its scheduled navigation.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7308,7 +7308,7 @@ function onScreencastVisibilityChanged(res) {
 <li><a href='#Profiler.ProfileHeader' title="Profiler.ProfileHeader">Profiler.ProfileHeader</a>: Profile header.</li>
 <li><a href='#Profiler.CPUProfileNode' title="Profiler.CPUProfileNode">Profiler.CPUProfileNode</a>: CPU Profile node. Holds callsite information, execution statistics and child nodes.</li>
 <li><a href='#Profiler.CPUProfile' title="Profiler.CPUProfile">Profiler.CPUProfile</a>: Profile.</li>
-<li><a href='#Profiler.HeapSnapshotObjectId' title="Profiler.HeapSnapshotObjectId">Profiler.HeapSnapshotObjectId</a>: Heap snashot object id.</li>
+<li><a href='#Profiler.HeapSnapshotObjectId' title="Profiler.HeapSnapshotObjectId">Profiler.HeapSnapshotObjectId</a>: Heap snashot object ID.</li>
 </ul>
 <span class='label label-success'>Command</span>
 <ul>
@@ -7345,7 +7345,7 @@ function onScreencastVisibilityChanged(res) {
 <dt>functionName</dt>
 <dd>String <span class='text'>Function name.</span></dd>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Script identifier.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>Script identifier.</span></dd>
 <dt>url</dt>
 <dd>String <span class='text'>URL.</span></dd>
 <dt>lineNumber</dt>
@@ -7355,11 +7355,11 @@ function onScreencastVisibilityChanged(res) {
 <dt>callUID</dt>
 <dd>Number <span class='text'>Call UID.</span></dd>
 <dt>children</dt>
-<dd>[<a href='#Profiler.CPUProfileNode'>Profiler.CPUProfileNode</a>] <span class='text'>Child nodes.</span></dd>
+<dd>[<a href='#Profiler.CPUProfileNode' title="Profiler.CPUProfileNode">Profiler.CPUProfileNode</a>] <span class='text'>Child nodes.</span></dd>
 <dt>deoptReason</dt>
 <dd>String <span class='text'>The reason of being not optimized. The function may be deoptimized or marked as don't optimize.</span></dd>
 <dt>id (optional)</dt>
-<dd>Integer <span class='text'>Unique id of the node.</span></dd>
+<dd>Integer <span class='text'>Unique ID of the node.</span></dd>
 </dl>
 </div>
 <div id='Profiler_CPUProfile' class='type'>
@@ -7367,7 +7367,7 @@ function onScreencastVisibilityChanged(res) {
 <p>Profile.</p>
 <dl>
 <dt>head</dt>
-<dd><a href='#Profiler.CPUProfileNode'>Profiler.CPUProfileNode</a></dd>
+<dd><a href='#Profiler.CPUProfileNode' title="Profiler.CPUProfileNode">Profiler.CPUProfileNode</a></dd>
 <dt>startTime</dt>
 <dd>Number <span class='text'>Profiling start time in seconds.</span></dd>
 <dt>endTime</dt>
@@ -7440,7 +7440,7 @@ Profiler.stop(function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>headers</dt>
-<dd>[<a href='#Profiler.ProfileHeader'>Profiler.ProfileHeader</a>]</dd>
+<dd>[<a href='#Profiler.ProfileHeader' title="Profiler.ProfileHeader">Profiler.ProfileHeader</a>]</dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7459,7 +7459,7 @@ Profiler.getProfileHeaders(function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>profile</dt>
-<dd><a href='#Profiler.CPUProfile'>Profiler.CPUProfile</a></dd>
+<dd><a href='#Profiler.CPUProfile' title="Profiler.CPUProfile">Profiler.CPUProfile</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7582,9 +7582,9 @@ function onResetProfiles(res) {
 <dt>description (optional)</dt>
 <dd>String <span class='text'>String representation of the object.</span></dd>
 <dt>objectId (optional)</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Unique object identifier (for non-primitive values).</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>Unique object identifier (for non-primitive values).</span></dd>
 <dt>preview (optional)</dt>
-<dd><a href='#Runtime.ObjectPreview'>Runtime.ObjectPreview</a> <span class='text'>Preview containing abbreviated property values.</span></dd>
+<dd><a href='#Runtime.ObjectPreview' title="Runtime.ObjectPreview">Runtime.ObjectPreview</a> <span class='text'>Preview containing abbreviated property values.</span></dd>
 </dl>
 </div>
 <div id='Runtime_ObjectPreview' class='type'>
@@ -7596,7 +7596,7 @@ function onResetProfiles(res) {
 <dt>overflow</dt>
 <dd>Boolean <span class='text'>True iff some of the properties of the original did not fit.</span></dd>
 <dt>properties</dt>
-<dd>[<a href='#Runtime.PropertyPreview'>Runtime.PropertyPreview</a>] <span class='text'>List of the properties.</span></dd>
+<dd>[<a href='#Runtime.PropertyPreview' title="Runtime.PropertyPreview">Runtime.PropertyPreview</a>] <span class='text'>List of the properties.</span></dd>
 </dl>
 </div>
 <div id='Runtime_PropertyPreview' class='type'>
@@ -7609,7 +7609,7 @@ function onResetProfiles(res) {
 <dt>value (optional)</dt>
 <dd>String <span class='text'>User-friendly property value string.</span></dd>
 <dt>valuePreview (optional)</dt>
-<dd><a href='#Runtime.ObjectPreview'>Runtime.ObjectPreview</a> <span class='text'>Nested value preview.</span></dd>
+<dd><a href='#Runtime.ObjectPreview' title="Runtime.ObjectPreview">Runtime.ObjectPreview</a> <span class='text'>Nested value preview.</span></dd>
 <dt>subtype (optional)</dt>
 <dd>( array | null | node | regexp | date ) <span class='text'>Object subtype hint. Specified for <code>object</code> type values only.</span></dd>
 </dl>
@@ -7621,13 +7621,13 @@ function onResetProfiles(res) {
 <dt>name</dt>
 <dd>String <span class='text'>Property name.</span></dd>
 <dt>value (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>The value associated with the property.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>The value associated with the property.</span></dd>
 <dt>writable (optional)</dt>
 <dd>Boolean <span class='text'>True if the value associated with the property may be changed (data descriptors only).</span></dd>
 <dt>get (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>A function which serves as a getter for the property, or <code>undefined</code> if there is no getter (accessor descriptors only).</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>A function which serves as a getter for the property, or <code>undefined</code> if there is no getter (accessor descriptors only).</span></dd>
 <dt>set (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>A function which serves as a setter for the property, or <code>undefined</code> if there is no setter (accessor descriptors only).</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>A function which serves as a setter for the property, or <code>undefined</code> if there is no setter (accessor descriptors only).</span></dd>
 <dt>configurable</dt>
 <dd>Boolean <span class='text'>True if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</span></dd>
 <dt>enumerable</dt>
@@ -7645,17 +7645,17 @@ function onResetProfiles(res) {
 <dt>name</dt>
 <dd>String <span class='text'>Conventional property name.</span></dd>
 <dt>value (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>The value associated with the property.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>The value associated with the property.</span></dd>
 </dl>
 </div>
 <div id='Runtime_CallArgument' class='type'>
 <h3>Runtime.CallArgument <span class='label'>Type</span></h3>
-<p>Represents function call argument. Either remote object id <code>objectId</code> or primitive <code>value</code> or neither of (for undefined) them should be specified.</p>
+<p>Represents function call argument. Either remote object ID <code>objectId</code> or primitive <code>value</code> or neither of (for undefined) them should be specified.</p>
 <dl>
 <dt>value (optional)</dt>
 <dd>Any <span class='text'>Primitive value.</span></dd>
 <dt>objectId (optional)</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Remote object handle.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>Remote object handle.</span></dd>
 </dl>
 </div>
 <div id='Runtime_ExecutionContextId' class='type'>
@@ -7670,13 +7670,13 @@ function onResetProfiles(res) {
 <p>Description of an isolated world.</p>
 <dl>
 <dt>id</dt>
-<dd><a href='#Runtime.ExecutionContextId'>Runtime.ExecutionContextId</a> <span class='text'>Unique id of the execution context. It can be used to specify in which execution context script evaluation should be performed.</span></dd>
+<dd><a href='#Runtime.ExecutionContextId' title="Runtime.ExecutionContextId">Runtime.ExecutionContextId</a> <span class='text'>Unique ID of the execution context. It can be used to specify in which execution context script evaluation should be performed.</span></dd>
 <dt>isPageContext</dt>
 <dd>Boolean <span class='text'>True if this is a context where inspected web page scripts run. False if it is a content script isolated context.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Human readable name describing given context.</span></dd>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Id of the owning frame.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>ID of the owning frame.</span></dd>
 </dl>
 </div>
 <div id='Runtime_evaluate' class='command'>
@@ -7692,7 +7692,7 @@ function onResetProfiles(res) {
 <dt>doNotPauseOnExceptionsAndMuteConsole (optional)</dt>
 <dd>Boolean <span class='text'>Specifies whether evaluation should stop on exceptions and mute console. Overrides setPauseOnException state.</span></dd>
 <dt>contextId (optional)</dt>
-<dd><a href='#Runtime.ExecutionContextId'>Runtime.ExecutionContextId</a> <span class='text'>Specifies in which isolated context to perform evaluation. Each content script lives in an isolated context and this parameter may be used to specify one of those contexts. If the parameter is omitted or 0 the evaluation will be performed in the context of the inspected page.</span></dd>
+<dd><a href='#Runtime.ExecutionContextId' title="Runtime.ExecutionContextId">Runtime.ExecutionContextId</a> <span class='text'>Specifies in which isolated context to perform evaluation. Each content script lives in an isolated context and this parameter may be used to specify one of those contexts. If the parameter is omitted or 0 the evaluation will be performed in the context of the inspected page.</span></dd>
 <dt>returnByValue (optional)</dt>
 <dd>Boolean <span class='text'>Whether the result is expected to be a JSON object that should be sent by value.</span></dd>
 <dt>generatePreview (optional)</dt>
@@ -7759,9 +7759,9 @@ Runtime.callFunctionOn(objectId, functionDeclaration, arguments, doNotPauseOnExc
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>result</dt>
-<dd>[<a href='#Runtime.PropertyDescriptor'>Runtime.PropertyDescriptor</a>] <span class='text'>Object properties.</span></dd>
+<dd>[<a href='#Runtime.PropertyDescriptor' title="Runtime.PropertyDescriptor">Runtime.PropertyDescriptor</a>] <span class='text'>Object properties.</span></dd>
 <dt>internalProperties (optional)</dt>
-<dd>[<a href='#Runtime.InternalPropertyDescriptor'>Runtime.InternalPropertyDescriptor</a>] <span class='text'>Internal object properties (only of the element itself).</span></dd>
+<dd>[<a href='#Runtime.InternalPropertyDescriptor' title="Runtime.InternalPropertyDescriptor">Runtime.InternalPropertyDescriptor</a>] <span class='text'>Internal object properties (only of the element itself).</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -7951,7 +7951,7 @@ Timeline.stop(function callback(res) {
 <p>Fired for every instrumentation event while timeline is started.</p>
 <dl>
 <dt>record</dt>
-<dd><a href='#Timeline.TimelineEvent'>Timeline.TimelineEvent</a> <span class='text'>Timeline event record data.</span></dd>
+<dd><a href='#Timeline.TimelineEvent' title="Timeline.TimelineEvent">Timeline.TimelineEvent</a> <span class='text'>Timeline event record data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -8216,7 +8216,7 @@ function onDisconnectedFromWorker(res) {
 </div>
 <footer>
 <p>Generated from Inspector.json v1.1 on 2014-12-08 11:14:07-0800</p>
-<p>Implementation by <a href='mailto:jdiehl@adobe.com'>Jonathan Diehl</a></p>
+<p>Implementation by <a href='mailto:jdiehl@adobe.com' title="Jonathan Diehl">Jonathan Diehl</a></p>
 </footer>
 </body>
 </html>
