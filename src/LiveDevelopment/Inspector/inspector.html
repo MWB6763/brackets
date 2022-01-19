@@ -826,7 +826,7 @@ ApplicationCache.enable();
 <p>Returns manifest URL for document in the given frame.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose manifest is retrieved.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose manifest is retrieved.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -1334,7 +1334,7 @@ CSS.getInlineStylesForNode(nodeId, function callback(res) {
 <p>Returns the computed style for a DOM node identified by <code>nodeId</code>.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -1392,7 +1392,7 @@ CSS.getAllStyleSheets(function callback(res) {
 <p>Returns stylesheet data for the specified <code>styleSheetId</code>.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -1625,7 +1625,7 @@ function onMediaQueryResultChanged(res) {
 <p>Fired whenever a stylesheet is changed as a result of the client operation.</p>
 <dl>
 <dt>styleSheetId</dt>
-<dd><a href='#CSS.StyleSheetId'>CSS.StyleSheetId</a></dd>
+<dd><a href='#CSS.StyleSheetId' title="CSS.StyleSheetId">CSS.StyleSheetId</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1670,7 +1670,7 @@ function onStyleSheetRemoved(res) {
 <p>Fires when a Named Flow is created.</p>
 <dl>
 <dt>namedFlow</dt>
-<dd><a href='#CSS.NamedFlow'>CSS.NamedFlow</a> <span class='text'>The new Named Flow.</span></dd>
+<dd><a href='#CSS.NamedFlow' title="CSS.NamedFlow">CSS.NamedFlow</a> <span class='text'>The new Named Flow.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1685,7 +1685,7 @@ function onNamedFlowCreated(res) {
 <p>Fires when a Named Flow is removed: has no associated content nodes and regions.</p>
 <dl>
 <dt>documentNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The document node id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The document node ID.</span></dd>
 <dt>flowName</dt>
 <dd>String <span class='text'>Identifier of the removed Named Flow.</span></dd>
 </dl>
@@ -1702,7 +1702,7 @@ function onNamedFlowRemoved(res) {
 <p>Fires when a Named Flow's layout may have changed.</p>
 <dl>
 <dt>namedFlow</dt>
-<dd><a href='#CSS.NamedFlow'>CSS.NamedFlow</a> <span class='text'>The Named Flow whose layout may have changed.</span></dd>
+<dd><a href='#CSS.NamedFlow' title="CSS.NamedFlow">CSS.NamedFlow</a> <span class='text'>The Named Flow whose layout may have changed.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1717,7 +1717,7 @@ function onRegionLayoutUpdated(res) {
 <p>Fires if any of the regionOverset values changed in a Named Flow's region chain.</p>
 <dl>
 <dt>namedFlow</dt>
-<dd><a href='#CSS.NamedFlow'>CSS.NamedFlow</a> <span class='text'>The Named Flow containing the regions whose regionOverset values changed.</span></dd>
+<dd><a href='#CSS.NamedFlow' title="CSS.NamedFlow">CSS.NamedFlow</a> <span class='text'>The Named Flow containing the regions whose regionOverset values changed.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1776,11 +1776,11 @@ function onRegionOversetChanged(res) {
 <dt>enumValueForName (optional)</dt>
 <dd>String <span class='text'>String representation of the enum value, if <code>name</code> stands for an enum.</span></dd>
 <dt>value (optional)</dt>
-<dd><a href='#Canvas.CallArgument'>Canvas.CallArgument</a> <span class='text'>The value associated with the particular state.</span></dd>
+<dd><a href='#Canvas.CallArgument' title="Canvas.CallArgument">Canvas.CallArgument</a> <span class='text'>The value associated with the particular state.</span></dd>
 <dt>values (optional)</dt>
-<dd>[<a href='#Canvas.ResourceStateDescriptor'>Canvas.ResourceStateDescriptor</a>] <span class='text'>Array of values associated with the particular state. Either <code>value</code> or <code>values</code> will be specified.</span></dd>
+<dd>[<a href='#Canvas.ResourceStateDescriptor' title="Canvas.ResourceStateDescriptor">Canvas.ResourceStateDescriptor</a>] <span class='text'>Array of values associated with the particular state. Either <code>value</code> or <code>values</code> will be specified.</span></dd>
 <dt>isArray (optional)</dt>
-<dd>Boolean <span class='text'>True iff the given <code>values</code> items stand for an array rather than a list of grouped states.</span></dd>
+<dd>Boolean <span class='text'>True if the given <code>values</code> items stand for an array rather than a list of grouped states.</span></dd>
 </dl>
 </div>
 <div id='Canvas_ResourceState' class='type'>
@@ -1788,11 +1788,11 @@ function onRegionOversetChanged(res) {
 <p>Resource state.</p>
 <dl>
 <dt>id</dt>
-<dd><a href='#Canvas.ResourceId'>Canvas.ResourceId</a></dd>
+<dd><a href='#Canvas.ResourceId' title="Canvas.ResourceId">Canvas.ResourceId</a></dd>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 <dt>descriptors (optional)</dt>
-<dd>[<a href='#Canvas.ResourceStateDescriptor'>Canvas.ResourceStateDescriptor</a>] <span class='text'>Describes current <code>Resource</code> state.</span></dd>
+<dd>[<a href='#Canvas.ResourceStateDescriptor' title="Canvas.ResourceStateDescriptor">Canvas.ResourceStateDescriptor</a>] <span class='text'>Describes current <code>Resource</code> state.</span></dd>
 <dt>imageURL (optional)</dt>
 <dd>String <span class='text'>Screenshot image data URL.</span></dd>
 </dl>
@@ -1811,20 +1811,20 @@ function onRegionOversetChanged(res) {
 <dt>subtype (optional)</dt>
 <dd>( array | null | node | regexp | date ) <span class='text'>Object subtype hint. Specified for <code>object</code> type values only.</span></dd>
 <dt>remoteObject (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>The <code>RemoteObject</code>, if requested.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>The <code>RemoteObject</code>, if requested.</span></dd>
 </dl>
 </div>
 <div id='Canvas_Call' class='type'>
 <h3>Canvas.Call <span class='label'>Type</span></h3>
 <dl>
 <dt>contextId</dt>
-<dd><a href='#Canvas.ResourceId'>Canvas.ResourceId</a></dd>
+<dd><a href='#Canvas.ResourceId' title="Canvas.ResourceId">Canvas.ResourceId</a></dd>
 <dt>functionName (optional)</dt>
 <dd>String</dd>
 <dt>arguments (optional)</dt>
-<dd>[<a href='#Canvas.CallArgument'>Canvas.CallArgument</a>]</dd>
+<dd>[<a href='#Canvas.CallArgument' title="Canvas.CallArgument">Canvas.CallArgument</a>]</dd>
 <dt>result (optional)</dt>
-<dd><a href='#Canvas.CallArgument'>Canvas.CallArgument</a></dd>
+<dd><a href='#Canvas.CallArgument' title="Canvas.CallArgument">Canvas.CallArgument</a></dd>
 <dt>isDrawingCall (optional)</dt>
 <dd>Boolean</dd>
 <dt>isFrameEndCall (optional)</dt>
@@ -1832,7 +1832,7 @@ function onRegionOversetChanged(res) {
 <dt>property (optional)</dt>
 <dd>String</dd>
 <dt>value (optional)</dt>
-<dd><a href='#Canvas.CallArgument'>Canvas.CallArgument</a></dd>
+<dd><a href='#Canvas.CallArgument' title="Canvas.CallArgument">Canvas.CallArgument</a></dd>
 <dt>sourceURL (optional)</dt>
 <dd>String</dd>
 <dt>lineNumber (optional)</dt>
@@ -1852,11 +1852,11 @@ function onRegionOversetChanged(res) {
 <h3>Canvas.TraceLog <span class='label'>Type</span></h3>
 <dl>
 <dt>id</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 <dt>calls</dt>
-<dd>[<a href='#Canvas.Call'>Canvas.Call</a>]</dd>
+<dd>[<a href='#Canvas.Call' title="Canvas.Call">Canvas.Call</a>]</dd>
 <dt>contexts</dt>
-<dd>[<a href='#Canvas.CallArgument'>Canvas.CallArgument</a>]</dd>
+<dd>[<a href='#Canvas.CallArgument' title="Canvas.CallArgument">Canvas.CallArgument</a>]</dd>
 <dt>startOffset</dt>
 <dd>Integer</dd>
 <dt>alive</dt>
@@ -1887,7 +1887,7 @@ Canvas.disable();
 <h3>Canvas.dropTraceLog <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1916,12 +1916,12 @@ Canvas.hasUninstrumentedCanvases(function callback(res) {
 <p>Starts (or continues) a canvas frame capturing which will be stopped automatically after the next frame is prepared.</p>
 <dl>
 <dt>frameId (optional)</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose canvases are to be captured. If omitted, main frame is assumed.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose canvases are to be captured. If omitted, main frame is assumed.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a> <span class='text'>Identifier of the trace log containing captured canvas calls.</span></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a> <span class='text'>Identifier of the trace log containing captured canvas calls.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1936,12 +1936,12 @@ Canvas.captureFrame(frameId, function callback(res) {
 <p>Starts (or continues) consecutive canvas frames capturing. The capturing is stopped by the corresponding stopCapturing command.</p>
 <dl>
 <dt>frameId (optional)</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose canvases are to be captured. If omitted, main frame is assumed.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame containing document whose canvases are to be captured. If omitted, main frame is assumed.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a> <span class='text'>Identifier of the trace log containing captured canvas calls.</span></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a> <span class='text'>Identifier of the trace log containing captured canvas calls.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1955,7 +1955,7 @@ Canvas.startCapturing(frameId, function callback(res) {
 <h3>Canvas.stopCapturing <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1967,7 +1967,7 @@ Canvas.stopCapturing(traceLogId);
 <h3>Canvas.getTraceLog <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 <dt>startOffset (optional)</dt>
 <dd>Integer</dd>
 <dt>maxLength (optional)</dt>
@@ -1976,7 +1976,7 @@ Canvas.stopCapturing(traceLogId);
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>traceLog</dt>
-<dd><a href='#Canvas.TraceLog'>Canvas.TraceLog</a></dd>
+<dd><a href='#Canvas.TraceLog' title="Canvas.TraceLog">Canvas.TraceLog</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -1990,14 +1990,14 @@ Canvas.getTraceLog(traceLogId, startOffset, maxLength, function callback(res) {
 <h3>Canvas.replayTraceLog <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 <dt>stepNo</dt>
 <dd>Integer <span class='text'>Last call index in the trace log to replay (zero based).</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>resourceState</dt>
-<dd><a href='#Canvas.ResourceState'>Canvas.ResourceState</a></dd>
+<dd><a href='#Canvas.ResourceState' title="Canvas.ResourceState">Canvas.ResourceState</a></dd>
 <dt>replayTime</dt>
 <dd>Number <span class='text'>Replay time (in milliseconds).</span></dd>
 </dl>
@@ -2013,14 +2013,14 @@ Canvas.replayTraceLog(traceLogId, stepNo, function callback(res) {
 <h3>Canvas.getResourceState <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 <dt>resourceId</dt>
-<dd><a href='#Canvas.ResourceId'>Canvas.ResourceId</a></dd>
+<dd><a href='#Canvas.ResourceId' title="Canvas.ResourceId">Canvas.ResourceId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>resourceState</dt>
-<dd><a href='#Canvas.ResourceState'>Canvas.ResourceState</a></dd>
+<dd><a href='#Canvas.ResourceState' title="Canvas.ResourceState">Canvas.ResourceState</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2035,7 +2035,7 @@ Canvas.getResourceState(traceLogId, resourceId, function callback(res) {
 <p>Evaluates a given trace call argument or its result.</p>
 <dl>
 <dt>traceLogId</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a></dd>
 <dt>callIndex</dt>
 <dd>Integer <span class='text'>Index of the call to evaluate on (zero based).</span></dd>
 <dt>argumentIndex</dt>
@@ -2046,9 +2046,9 @@ Canvas.getResourceState(traceLogId, resourceId, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>result (optional)</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Object wrapper for the evaluation result.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Object wrapper for the evaluation result.</span></dd>
 <dt>resourceState (optional)</dt>
-<dd><a href='#Canvas.ResourceState'>Canvas.ResourceState</a> <span class='text'>State of the <code>Resource</code> object.</span></dd>
+<dd><a href='#Canvas.ResourceState' title="Canvas.ResourceState">Canvas.ResourceState</a> <span class='text'>State of the <code>Resource</code> object.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2063,7 +2063,7 @@ Canvas.evaluateTraceLogCallArgument(traceLogId, callIndex, argumentIndex, object
 <p>Fired when a canvas context has been created in the given frame. The context may not be instrumented (see hasUninstrumentedCanvases command).</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame containing a canvas with a context.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame containing a canvas with a context.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2078,9 +2078,9 @@ function onContextCreated(res) {
 <p>Fired when a set of trace logs were removed from the backend. If no parameters are given, all trace logs were removed.</p>
 <dl>
 <dt>frameId (optional)</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>If given, trace logs from the given frame were removed.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>If given, trace logs from the given frame were removed.</span></dd>
 <dt>traceLogId (optional)</dt>
-<dd><a href='#Canvas.TraceLogId'>Canvas.TraceLogId</a> <span class='text'>If given, trace log with the given ID was removed.</span></dd>
+<dd><a href='#Canvas.TraceLogId' title="Canvas.TraceLogId">Canvas.TraceLogId</a> <span class='text'>If given, trace log with the given ID was removed.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2160,9 +2160,9 @@ function onTraceLogsRemoved(res) {
 <dt>functionName</dt>
 <dd>String <span class='text'>JavaScript function name.</span></dd>
 <dt>scriptId</dt>
-<dd>String <span class='text'>JavaScript script id.</span></dd>
+<dd>String <span class='text'>JavaScript script ID.</span></dd>
 <dt>url</dt>
-<dd>String <span class='text'>JavaScript script name or url.</span></dd>
+<dd>String <span class='text'>JavaScript script name or URL.</span></dd>
 <dt>lineNumber</dt>
 <dd>Integer <span class='text'>JavaScript script line number.</span></dd>
 <dt>columnNumber</dt>
@@ -2221,7 +2221,7 @@ Console.setMonitoringXHREnabled(enabled);
 <p>Enables console to refer to the node with given id via $x (see Command Line API for more details $x functions).</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>DOM node id to be accessible by means of $x command line API.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>DOM node id to be accessible by means of $x command line API.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2246,7 +2246,7 @@ Console.addInspectedHeapObject(heapObjectId);
 <p>Issued when new console message is added.</p>
 <dl>
 <dt>message</dt>
-<dd><a href='#Console.ConsoleMessage'>Console.ConsoleMessage</a> <span class='text'>Console message that has been added.</span></dd>
+<dd><a href='#Console.ConsoleMessage' title="Console.ConsoleMessage">Console.ConsoleMessage</a> <span class='text'>Console message that has been added.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2263,7 +2263,7 @@ function onMessageAdded(res) {
 <dt>count</dt>
 <dd>Integer <span class='text'>New repeat count value.</span></dd>
 <dt>timestamp</dt>
-<dd><a href='#Console.Timestamp'>Console.Timestamp</a> <span class='text'>Timestamp of most recent message in batch.</span></dd>
+<dd><a href='#Console.Timestamp' title="Console.Timestamp">Console.Timestamp</a> <span class='text'>Timestamp of most recent message in batch.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2287,7 +2287,7 @@ function onMessagesCleared(res) {
 </section>
 <section id='DOM' class='domain'>
 <h1>DOM</h1>
-<p>This domain exposes DOM read/write operations. Each DOM Node is represented with its mirror object that has an <code>id</code>. This <code>id</code> can be used to get additional information on the Node, resolve it into the JavaScript object wrapper, etc. It is important that client receives DOM events only for the nodes that are known to the client. Backend keeps track of the nodes that were sent to the client and never sends the same node twice. It is client's responsibility to collect information about the nodes that were sent to the client.<p>Note that <code>iframe</code> owner elements will return corresponding document elements as their child nodes.</p></p>
+<p>This domain exposes DOM read/write operations. Each DOM Node is represented with its mirror object that has an <code>ID</code>. This <code>ID</code> can be used to get additional information on the Node, resolve it into the JavaScript object wrapper, etc. It is important that client receives DOM events only for the nodes that are known to the client. Backend keeps track of the nodes that were sent to the client and never sends the same node twice. It is client's responsibility to collect information about the nodes that were sent to the client.<p>Note that <code>iframe</code> owner elements will return corresponding document elements as their child nodes.</p></p>
 <span class='label'>Type</span>
 <ul>
 <li><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a>: Unique DOM node identifier.</li>
@@ -2312,9 +2312,9 @@ function onMessagesCleared(res) {
 <li><a href='#DOM.setNodeName' title="DOM.setNodeName">DOM.setNodeName</a>: Sets node name for a node with given ID.</li>
 <li><a href='#DOM.setNodeValue' title="DOM.setNodeValue">DOM.setNodeValue</a>: Sets node value for a node with given ID.</li>
 <li><a href='#DOM.removeNode' title="DOM.removeNode">DOM.removeNode</a>: Removes node with given ID.</li>
-<li><a href='#DOM.setAttributeValue' title="DOM.setAttributeValue">DOM.setAttributeValue</a>: Sets attribute for an element with given id.</li>
-<li><a href='#DOM.setAttributesAsText' title="DOM.setAttributesAsText">DOM.setAttributesAsText</a>: Sets attributes on element with given id. This method is useful when user edits some existing attribute value and types in several attribute name/value pairs.</li>
-<li><a href='#DOM.removeAttribute' title="DOM.removeAttribute">DOM.removeAttribute</a>: Removes attribute with given name from an element with given id.</li>
+<li><a href='#DOM.setAttributeValue' title="DOM.setAttributeValue">DOM.setAttributeValue</a>: Sets attribute for an element with given ID.</li>
+<li><a href='#DOM.setAttributesAsText' title="DOM.setAttributesAsText">DOM.setAttributesAsText</a>: Sets attributes on element with given ID. This method is useful when user edits some existing attribute value and types in several attribute name/value pairs.</li>
+<li><a href='#DOM.removeAttribute' title="DOM.removeAttribute">DOM.removeAttribute</a>: Removes attribute with given name from an element with given ID.</li>
 <li><a href='#DOM.getEventListenersForNode' title="DOM.getEventListenersForNode">DOM.getEventListenersForNode</a>: Returns event listeners relevant to the node.</li>
 <li><a href='#DOM.getOuterHTML' title="DOM.getOuterHTML">DOM.getOuterHTML</a>: Returns node's HTML markup.</li>
 <li><a href='#DOM.setOuterHTML' title="DOM.setOuterHTML">DOM.setOuterHTML</a>: Sets node HTML markup, returns new node ID.</li>
@@ -2331,7 +2331,7 @@ function onMessagesCleared(res) {
 <li><a href='#DOM.pushNodeByPathToFrontend' title="DOM.pushNodeByPathToFrontend">DOM.pushNodeByPathToFrontend</a>: Requests that the node is sent to the caller given its path. // FIXME, use XPath</li>
 <li><a href='#DOM.pushNodeByBackendIdToFrontend' title="DOM.pushNodeByBackendIdToFrontend">DOM.pushNodeByBackendIdToFrontend</a>: Requests that the node is sent to the caller given its backend node id.</li>
 <li><a href='#DOM.releaseBackendNodeIds' title="DOM.releaseBackendNodeIds">DOM.releaseBackendNodeIds</a>: Requests that group of BackendNodeIds is released.</li>
-<li><a href='#DOM.resolveNode' title="DOM.resolveNode">DOM.resolveNode</a>: Resolves JavaScript node object for given node id.</li>
+<li><a href='#DOM.resolveNode' title="DOM.resolveNode">DOM.resolveNode</a>: Resolves JavaScript node object for given node ID.</li>
 <li><a href='#DOM.getAttributes' title="DOM.getAttributes">DOM.getAttributes</a>: Returns attributes for the specified node.</li>
 <li><a href='#DOM.moveTo' title="DOM.moveTo">DOM.moveTo</a>: Moves node into the new container, places it before the given anchor.</li>
 <li><a href='#DOM.undo' title="DOM.undo">DOM.undo</a>: Undoes the last performed action.</li>
@@ -2562,7 +2562,7 @@ DOM.getDocument(function callback(res) {
 <p>Requests that children of the node with given id are returned to the caller in form of <code>setChildNodes</code> events where not only immediate children are retrieved, but all children down to the specified depth.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node to get children for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Id of the node to get children for.</span></dd>
 <dt>depth (optional)</dt>
 <dd>Integer <span class='text'>The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the entire subtree or provide an integer larger than 0.</span></dd>
 </dl>
@@ -2671,7 +2671,7 @@ DOM.removeNode(nodeId);
 <p>Sets attribute for an element with given id.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Id of the element to set attribute for.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the element to set attribute for.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Attribute name.</span></dd>
 <dt>value</dt>
@@ -2820,7 +2820,7 @@ DOM.getSearchResults(searchId, fromIndex, toIndex, function callback(res) {
 </div>
 <div id='DOM_discardSearchResults' class='command'>
 <h3>DOM.discardSearchResults <span class='label label-success'>Command</span></h3>
-<p>Discards search results from the session with the given id. <code>getSearchResults</code> should no longer be called for that search.</p>
+<p>Discards search results from the session with the given ID. <code>getSearchResults</code> should no longer be called for that search.</p>
 <dl>
 <dt>searchId</dt>
 <dd>String <span class='text'>Unique search session identifier.</span></dd>
@@ -2841,7 +2841,7 @@ DOM.discardSearchResults(searchId);
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Node id for given object.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Node ID for given object.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2896,11 +2896,11 @@ DOM.highlightRect(x, y, width, height, color, outlineColor);
 <p>Highlights given quad. Coordinates are absolute with respect to the main frame viewport.</p>
 <dl>
 <dt>quad</dt>
-<dd><a href='#DOM.Quad'>DOM.Quad</a> <span class='text'>Quad to highlight</span></dd>
+<dd><a href='#DOM.Quad' title="DOM.Quad">DOM.Quad</a> <span class='text'>Quad to highlight</span></dd>
 <dt>color (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The highlight fill color (default: transparent).</span></dd>
 <dt>outlineColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The highlight outline color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The highlight outline color (default: transparent).</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -2939,11 +2939,11 @@ DOM.hideHighlight();
 <p>Highlights owner element of the frame with given ID.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Identifier of the frame to highlight.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Identifier of the frame to highlight.</span></dd>
 <dt>contentColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The content box highlight fill color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The content box highlight fill color (default: transparent).</span></dd>
 <dt>contentOutlineColor (optional)</dt>
-<dd><a href='#DOM.RGBA'>DOM.RGBA</a> <span class='text'>The content box highlight outline color (default: transparent).</span></dd>
+<dd><a href='#DOM.RGBA' title="DOM.RGBA">DOM.RGBA</a> <span class='text'>The content box highlight outline color (default: transparent).</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3147,7 +3147,7 @@ DOM.getBoxModel(nodeId, function callback(res) {
 </div>
 <div id='DOM_getNodeForLocation' class='command'>
 <h3>DOM.getNodeForLocation <span class='label label-success'>Command</span></h3>
-<p>Returns node id at given location.</p>
+<p>Returns node ID at given location.</p>
 <dl>
 <dt>x</dt>
 <dd>Integer <span class='text'>X coordinate.</span></dd>
@@ -3183,7 +3183,7 @@ function onDocumentUpdated(res) {
 <p>Fired when the node should be inspected. This happens after call to <code>setInspectModeEnabled</code>.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node to inspect.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node to inspect.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3215,7 +3215,7 @@ function onSetChildNodes(res) {
 <p>Fired when <code>Element</code>'s attribute is modified.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>Attribute name.</span></dd>
 <dt>value</dt>
@@ -3234,7 +3234,7 @@ function onAttributeModified(res) {
 <p>Fired when <code>Element</code>'s attribute is removed.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>name</dt>
 <dd>String <span class='text'>A ttribute name.</span></dd>
 </dl>
@@ -3251,7 +3251,7 @@ function onAttributeRemoved(res) {
 <p>Fired when <code>Element</code>'s inline style is modified via a CSS property modification.</p>
 <dl>
 <dt>nodeIds</dt>
-<dd>[<a href='#DOM.NodeId'>DOM.NodeId</a>] <span class='text'>IDs of the nodes for which the inline styles have been invalidated.</span></dd>
+<dd>[<a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a>] <span class='text'>IDs of the nodes for which the inline styles have been invalidated.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3266,7 +3266,7 @@ function onInlineStyleInvalidated(res) {
 <p>Mirrors <code>DOMCharacterDataModified</code> event.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>characterData</dt>
 <dd>String <span class='text'>New text value.</span></dd>
 </dl>
@@ -3283,7 +3283,7 @@ function onCharacterDataModified(res) {
 <p>Fired when <code>Container</code>'s child node count has changed.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>childNodeCount</dt>
 <dd>Integer <span class='text'>New node count.</span></dd>
 </dl>
@@ -3300,11 +3300,11 @@ function onChildNodeCountUpdated(res) {
 <p>Mirrors <code>DOMNodeInserted</code> event.</p>
 <dl>
 <dt>parentNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node that has changed.</span></dd>
 <dt>previousNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>If of the previous siblint.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>If of the previous siblint.</span></dd>
 <dt>node</dt>
-<dd><a href='#DOM.Node'>DOM.Node</a> <span class='text'>Inserted node data.</span></dd>
+<dd><a href='#DOM.Node' title="DOM.Node">DOM.Node</a> <span class='text'>Inserted node data.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3319,9 +3319,9 @@ function onChildNodeInserted(res) {
 <p>Mirrors <code>DOMNodeRemoved</code> event.</p>
 <dl>
 <dt>parentNodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Parent id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Parent ID.</span></dd>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Id of the node that has been removed.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>ID of the node that has been removed.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3336,7 +3336,7 @@ function onChildNodeRemoved(res) {
 <p>Called when shadow root is pushed into the element.</p>
 <dl>
 <dt>hostId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Host element id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Host element ID.</span></dd>
 <dt>root</dt>
 <dd><a href='#DOM.Node'>DOM.Node</a> <span class='text'>Shadow root.</span></dd>
 </dl>
@@ -3353,9 +3353,9 @@ function onShadowRootPushed(res) {
 <p>Called when shadow root is popped from the element.</p>
 <dl>
 <dt>hostId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Host element id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Host element ID.</span></dd>
 <dt>rootId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Shadow root id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Shadow root ID.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3370,9 +3370,9 @@ function onShadowRootPopped(res) {
 <p>Called when a pseudo element is added to an element.</p>
 <dl>
 <dt>parentId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Pseudo element's parent element id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Pseudo element's parent element ID.</span></dd>
 <dt>pseudoElement</dt>
-<dd><a href='#DOM.Node'>DOM.Node</a> <span class='text'>The added pseudo element.</span></dd>
+<dd><a href='#DOM.Node' title="DOM.Node">DOM.Node</a> <span class='text'>The added pseudo element.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3387,9 +3387,9 @@ function onPseudoElementAdded(res) {
 <p>Called when a pseudo element is removed from an element.</p>
 <dl>
 <dt>parentId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Pseudo element's parent element id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Pseudo element's parent element id.</span></dd>
 <dt>pseudoElementId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>The removed pseudo element id.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>The removed pseudo element id.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3430,7 +3430,7 @@ function onPseudoElementRemoved(res) {
 <p>Sets breakpoint on particular operation with DOM.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Identifier of the node to set breakpoint on.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Identifier of the node to set breakpoint on.</span></dd>
 <dt>type</dt>
 <dd><a href='#DOMDebugger.DOMBreakpointType'>DOMDebugger.DOMBreakpointType</a> <span class='text'>Type of the operation to stop upon.</span></dd>
 </dl>
@@ -3445,9 +3445,9 @@ DOMDebugger.setDOMBreakpoint(nodeId, type);
 <p>Removes DOM breakpoint that was set using <code>setDOMBreakpoint</code>.</p>
 <dl>
 <dt>nodeId</dt>
-<dd><a href='#DOM.NodeId'>DOM.NodeId</a> <span class='text'>Identifier of the node to remove breakpoint from.</span></dd>
+<dd><a href='#DOM.NodeId' title="DOM.NodeId">DOM.NodeId</a> <span class='text'>Identifier of the node to remove breakpoint from.</span></dd>
 <dt>type</dt>
-<dd><a href='#DOMDebugger.DOMBreakpointType'>DOMDebugger.DOMBreakpointType</a> <span class='text'>Type of the breakpoint to remove.</span></dd>
+<dd><a href='#DOMDebugger.DOMBreakpointType' title="DOMDebugger.DOMBreakpointType">DOMDebugger.DOMBreakpointType</a> <span class='text'>Type of the breakpoint to remove.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3596,12 +3596,12 @@ DOMStorage.disable();
 <h3>DOMStorage.getDOMStorageItems <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StoreageId">DOMStorage.StorageId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>entries</dt>
-<dd>[<a href='#DOMStorage.Item'>DOMStorage.Item</a>]</dd>
+<dd>[<a href='#DOMStorage.Item' title="DOMStorage.Item">DOMStorage.Item</a>]</dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3615,7 +3615,7 @@ DOMStorage.getDOMStorageItems(storageId, function callback(res) {
 <h3>DOMStorage.setDOMStorageItem <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a></dd>
 <dt>key</dt>
 <dd>String</dd>
 <dt>value</dt>
@@ -3631,7 +3631,7 @@ DOMStorage.setDOMStorageItem(storageId, key, value);
 <h3>DOMStorage.removeDOMStorageItem <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a></dd>
 <dt>key</dt>
 <dd>String</dd>
 </dl>
@@ -3645,7 +3645,7 @@ DOMStorage.removeDOMStorageItem(storageId, key);
 <h3>DOMStorage.domStorageItemsCleared <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3659,7 +3659,7 @@ function onDomStorageItemsCleared(res) {
 <h3>DOMStorage.domStorageItemRemoved <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a></dd>
 <dt>key</dt>
 <dd>String</dd>
 </dl>
@@ -3675,7 +3675,7 @@ function onDomStorageItemRemoved(res) {
 <h3>DOMStorage.domStorageItemAdded <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a></dd>
 <dt>key</dt>
 <dd>String</dd>
 <dt>newValue</dt>
@@ -3693,7 +3693,7 @@ function onDomStorageItemAdded(res) {
 <h3>DOMStorage.domStorageItemUpdated <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>storageId</dt>
-<dd><a href='#DOMStorage.StorageId'>DOMStorage.StorageId</a></dd>
+<dd><a href='#DOMStorage.StorageId' title="DOMStorage.StorageId">DOMStorage.StorageId</a></dd>
 <dt>key</dt>
 <dd>String</dd>
 <dt>oldValue</dt>
@@ -3728,7 +3728,7 @@ function onDomStorageItemUpdated(res) {
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#Database.addDatabase'>Database.addDatabase</a></li>
+<li><a href='#Database.addDatabase' title="Database.addDatabase">Database.addDatabase</a></li>
 </ul>
 <div id='Database_DatabaseId' class='type'>
 <h3>Database.DatabaseId <span class='label'>Type</span></h3>
@@ -3783,7 +3783,7 @@ Database.disable();
 <h3>Database.getDatabaseTableNames <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>databaseId</dt>
-<dd><a href='#Database.DatabaseId'>Database.DatabaseId</a></dd>
+<dd><a href='#Database.DatabaseId' title="Database.DatabaseId">Database.DatabaseId</a></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -3802,7 +3802,7 @@ Database.getDatabaseTableNames(databaseId, function callback(res) {
 <h3>Database.executeSQL <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>databaseId</dt>
-<dd><a href='#Database.DatabaseId'>Database.DatabaseId</a></dd>
+<dd><a href='#Database.DatabaseId' title="Database.DatabaseId">Database.DatabaseId</a></dd>
 <dt>query</dt>
 <dd>String</dd>
 </dl>
@@ -3813,7 +3813,7 @@ Database.getDatabaseTableNames(databaseId, function callback(res) {
 <dt>values (optional)</dt>
 <dd>[Any]</dd>
 <dt>sqlError (optional)</dt>
-<dd><a href='#Database.Error'>Database.Error</a></dd>
+<dd><a href='#Database.Error' title="Database.Error">Database.Error</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3827,7 +3827,7 @@ Database.executeSQL(databaseId, query, function callback(res) {
 <h3>Database.addDatabase <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>database</dt>
-<dd><a href='#Database.Database'>Database.Database</a></dd>
+<dd><a href='#Database.Database' title="Database.Database">Database.Database</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -3918,7 +3918,7 @@ function onAddDatabase(res) {
 <p>Location in the source code.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Script identifier as reported in the <code>Debugger.scriptParsed</code>.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>Script identifier as reported in the <code>Debugger.scriptParsed</code>.</span></dd>
 <dt>lineNumber</dt>
 <dd>Integer <span class='text'>Line number in the script (0-based).</span></dd>
 <dt>columnNumber (optional)</dt>
@@ -3930,7 +3930,7 @@ function onAddDatabase(res) {
 <p>Information about the function.</p>
 <dl>
 <dt>location</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Location of the function.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Location of the function.</span></dd>
 <dt>name (optional)</dt>
 <dd>String <span class='text'>Name of the function. Not present for anonymous functions.</span></dd>
 <dt>displayName (optional)</dt>
@@ -3938,7 +3938,7 @@ function onAddDatabase(res) {
 <dt>inferredName (optional)</dt>
 <dd>String <span class='text'>Name of the function inferred from its initial assignment.</span></dd>
 <dt>scopeChain (optional)</dt>
-<dd>[<a href='#Debugger.Scope'>Debugger.Scope</a>] <span class='text'>Scope chain for this closure.</span></dd>
+<dd>[<a href='#Debugger.Scope' title="Debugger.Scope">Debugger.Scope</a>] <span class='text'>Scope chain for this closure.</span></dd>
 </dl>
 </div>
 <div id='Debugger_CallFrame' class='type'>
@@ -3946,15 +3946,15 @@ function onAddDatabase(res) {
 <p>JavaScript call frame. Array of call frames form the call stack.</p>
 <dl>
 <dt>callFrameId</dt>
-<dd><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a> <span class='text'>Call frame identifier. This identifier is only valid while the virtual machine is paused.</span></dd>
+<dd><a href='#Debugger.CallFrameId' title="Debugger.CallFrameId">Debugger.CallFrameId</a> <span class='text'>Call frame identifier. This identifier is only valid while the virtual machine is paused.</span></dd>
 <dt>functionName</dt>
 <dd>String <span class='text'>Name of the JavaScript function called on this call frame.</span></dd>
 <dt>location</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Location in the source code.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Location in the source code.</span></dd>
 <dt>scopeChain</dt>
-<dd>[<a href='#Debugger.Scope'>Debugger.Scope</a>] <span class='text'>Scope chain for this call frame.</span></dd>
+<dd>[<a href='#Debugger.Scope' title="Debugger.Scope">Debugger.Scope</a>] <span class='text'>Scope chain for this call frame.</span></dd>
 <dt>this</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'><code>this</code> object for this call frame.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'><code>this</code> object for this call frame.</span></dd>
 </dl>
 </div>
 <div id='Debugger_Scope' class='type'>
@@ -3964,7 +3964,7 @@ function onAddDatabase(res) {
 <dt>type</dt>
 <dd>( global | local | with | closure | catch ) <span class='text'>Scope type.</span></dd>
 <dt>object</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Object representing the scope. For <code>global</code> and <code>with</code> scopes it represents the actual object; for the rest of the scopes, it is artificial transient object enumerating scope variables as its properties.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Object representing the scope. For <code>global</code> and <code>with</code> scopes it represents the actual object; for the rest of the scopes, it is artificial transient object enumerating scope variables as its properties.</span></dd>
 </dl>
 </div>
 <div id='Debugger_SetScriptSourceError' class='type'>
@@ -4041,9 +4041,9 @@ Debugger.setSkipAllPauses(skipped, untilReload);
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>breakpointId</dt>
-<dd><a href='#Debugger.BreakpointId'>Debugger.BreakpointId</a> <span class='text'>Id of the created breakpoint for further reference.</span></dd>
+<dd><a href='#Debugger.BreakpointId' title="Debugger.BreakpointId">Debugger.BreakpointId</a> <span class='text'>ID of the created breakpoint for further reference.</span></dd>
 <dt>locations</dt>
-<dd>[<a href='#Debugger.Location'>Debugger.Location</a>] <span class='text'>List of the locations this breakpoint resolved into upon addition.</span></dd>
+<dd>[<a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a>] <span class='text'>List of the locations this breakpoint resolved into upon addition.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4058,16 +4058,16 @@ Debugger.setBreakpointByUrl(lineNumber, url, urlRegex, columnNumber, condition, 
 <p>Sets JavaScript breakpoint at a given location.</p>
 <dl>
 <dt>location</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Location to set breakpoint in.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Location to set breakpoint in.</span></dd>
 <dt>condition (optional)</dt>
 <dd>String <span class='text'>Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>breakpointId</dt>
-<dd><a href='#Debugger.BreakpointId'>Debugger.BreakpointId</a> <span class='text'>Id of the created breakpoint for further reference.</span></dd>
+<dd><a href='#Debugger.BreakpointId' title="Debugger.BreakpointId">Debugger.BreakpointId</a> <span class='text'>Id of the created breakpoint for further reference.</span></dd>
 <dt>actualLocation</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Location this breakpoint resolved into.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Location this breakpoint resolved into.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4095,7 +4095,7 @@ Debugger.removeBreakpoint(breakpointId);
 <p>Continues execution until specific location is reached.</p>
 <dl>
 <dt>location</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Location to continue to.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Location to continue to.</span></dd>
 <dt>interstatementLocation (optional)</dt>
 <dd>Boolean <span class='text'>Allows breakpoints at the intemediate positions inside statements.</span></dd>
 </dl>
@@ -4155,7 +4155,7 @@ Debugger.resume();
 <p>Searches for given string in script content.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Id of the script to search in.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>ID of the script to search in.</span></dd>
 <dt>query</dt>
 <dd>String <span class='text'>String to search for.</span></dd>
 <dt>caseSensitive (optional)</dt>
@@ -4166,7 +4166,7 @@ Debugger.resume();
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>result</dt>
-<dd>[<a href='#Page.SearchMatch'>Page.SearchMatch</a>] <span class='text'>List of search matches.</span></dd>
+<dd>[<a href='#Page.SearchMatch' title="Page.SearchMatch">Page.SearchMatch</a>] <span class='text'>List of search matches.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4197,7 +4197,7 @@ Debugger.canSetScriptSource(function callback(res) {
 <p>Edits JavaScript source live.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>ID of the script to edit.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>ID of the script to edit.</span></dd>
 <dt>scriptSource</dt>
 <dd>String <span class='text'>New content of the script.</span></dd>
 <dt>preview (optional)</dt>
@@ -4206,7 +4206,7 @@ Debugger.canSetScriptSource(function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>callFrames (optional)</dt>
-<dd>[<a href='#Debugger.CallFrame'>Debugger.CallFrame</a>] <span class='text'>New stack trace in case editing has happened while VM was stopped.</span></dd>
+<dd>[<a href='#Debugger.CallFrame' title="Debugger.CallFrame">Debugger.CallFrame</a>] <span class='text'>New stack trace in case editing has happened while VM was stopped.</span></dd>
 <dt>result (optional)</dt>
 <dd>Object <span class='text'>VM-specific description of the changes applied.</span></dd>
 </dl>
@@ -4223,12 +4223,12 @@ Debugger.setScriptSource(scriptId, scriptSource, preview, function callback(res)
 <p>Restarts particular call frame from the beginning.</p>
 <dl>
 <dt>callFrameId</dt>
-<dd><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a> <span class='text'>Call frame identifier to evaluate on.</span></dd>
+<dd><a href='#Debugger.CallFrameId' title="Debugger.CallFrameId">Debugger.CallFrameId</a> <span class='text'>Call frame identifier to evaluate on.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>callFrames</dt>
-<dd>[<a href='#Debugger.CallFrame'>Debugger.CallFrame</a>] <span class='text'>New stack trace.</span></dd>
+<dd>[<a href='#Debugger.CallFrame' title="Debugger.CallFrame">Debugger.CallFrame</a>] <span class='text'>New stack trace.</span></dd>
 <dt>result</dt>
 <dd>Object <span class='text'>VM-specific description.</span></dd>
 </dl>
@@ -4265,12 +4265,12 @@ Debugger.getScriptSource(scriptId, function callback(res) {
 <p>Returns detailed informtation on given function.</p>
 <dl>
 <dt>functionId</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Id of the function to get location for.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>ID of the function to get location for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>details</dt>
-<dd><a href='#Debugger.FunctionDetails'>Debugger.FunctionDetails</a> <span class='text'>Information about the function.</span></dd>
+<dd><a href='#Debugger.FunctionDetails' title="Debugger.FunctionDetails">Debugger.FunctionDetails</a> <span class='text'>Information about the function.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4315,7 +4315,7 @@ Debugger.setPauseOnExceptions(state);
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>result</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Object wrapper for the evaluation result.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Object wrapper for the evaluation result.</span></dd>
 <dt>wasThrown (optional)</dt>
 <dd>Boolean <span class='text'>True if the result was thrown during the evaluation.</span></dd>
 </dl>
@@ -4339,7 +4339,7 @@ Debugger.evaluateOnCallFrame(callFrameId, expression, objectGroup, includeComman
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>scriptId (optional)</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>ID of the script.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>ID of the script.</span></dd>
 <dt>syntaxErrorMessage (optional)</dt>
 <dd>String <span class='text'>Syntax error message if compilation failed.</span></dd>
 </dl>
@@ -4356,9 +4356,9 @@ Debugger.compileScript(expression, sourceURL, function callback(res) {
 <p>Runs script with given id in a given context.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>ID of the script to run.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>ID of the script to run.</span></dd>
 <dt>contextId (optional)</dt>
-<dd><a href='#Runtime.ExecutionContextId'>Runtime.ExecutionContextId</a> <span class='text'>Specifies in which isolated context to perform script run. Each content script lives in an isolated context and this parameter may be used to specify one of those contexts. If the parameter is omitted or 0 the evaluation will be performed in the context of the inspected page.</span></dd>
+<dd><a href='#Runtime.ExecutionContextId' title="Runtime.ExecutionContextId">Runtime.ExecutionContextId</a> <span class='text'>Specifies in which isolated context to perform script run. Each content script lives in an isolated context and this parameter may be used to specify one of those contexts. If the parameter is omitted or 0 the evaluation will be performed in the context of the inspected page.</span></dd>
 <dt>objectGroup (optional)</dt>
 <dd>String <span class='text'>Symbolic group name that can be used to release multiple objects.</span></dd>
 <dt>doNotPauseOnExceptionsAndMuteConsole (optional)</dt>
@@ -4367,7 +4367,7 @@ Debugger.compileScript(expression, sourceURL, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>result</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Run result.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Run result.</span></dd>
 <dt>wasThrown (optional)</dt>
 <dd>Boolean <span class='text'>True if the result was thrown during the script run.</span></dd>
 </dl>
@@ -4401,11 +4401,11 @@ Debugger.setOverlayMessage(message);
 <dt>variableName</dt>
 <dd>String <span class='text'>Variable name.</span></dd>
 <dt>newValue</dt>
-<dd><a href='#Runtime.CallArgument'>Runtime.CallArgument</a> <span class='text'>New variable value.</span></dd>
+<dd><a href='#Runtime.CallArgument' title="Runtime.CallArgument">Runtime.CallArgument</a> <span class='text'>New variable value.</span></dd>
 <dt>callFrameId (optional)</dt>
-<dd><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a> <span class='text'>ID of callframe that holds variable.</span></dd>
+<dd><a href='#Debugger.CallFrameId' title="Debugger.CallFrameId">Debugger.CallFrameId</a> <span class='text'>ID of callframe that holds variable.</span></dd>
 <dt>functionObjectId (optional)</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Object ID of closure (function) that holds variable.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>Object ID of closure (function) that holds variable.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4418,12 +4418,12 @@ Debugger.setVariableValue(scopeNumber, variableName, newValue, callFrameId, func
 <p>Lists all positions where step-in is possible for a current statement in a specified call frame</p>
 <dl>
 <dt>callFrameId</dt>
-<dd><a href='#Debugger.CallFrameId'>Debugger.CallFrameId</a> <span class='text'>Id of a call frame where the current statement should be analized</span></dd>
+<dd><a href='#Debugger.CallFrameId' title="Debugger.CallFrameId">Debugger.CallFrameId</a> <span class='text'>ID of a call frame where the current statement should be analized</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>stepInPositions (optional)</dt>
-<dd>[<a href='#Debugger.Location'>Debugger.Location</a>] <span class='text'>experimental</span></dd>
+<dd>[<a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a>] <span class='text'>experimental</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4439,7 +4439,7 @@ Debugger.getStepInPositions(callFrameId, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>callFrames</dt>
-<dd>[<a href='#Debugger.CallFrame'>Debugger.CallFrame</a>] <span class='text'>Call stack the virtual machine stopped on.</span></dd>
+<dd>[<a href='#Debugger.CallFrame' title="Debugger.CallFrame">Debugger.CallFrame</a>] <span class='text'>Call stack the virtual machine stopped on.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4478,7 +4478,7 @@ function onGlobalObjectCleared(res) {
 <p>Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger.</p>
 <dl>
 <dt>scriptId</dt>
-<dd><a href='#Debugger.ScriptId'>Debugger.ScriptId</a> <span class='text'>Identifier of the script parsed.</span></dd>
+<dd><a href='#Debugger.ScriptId' title="Debugger.ScriptId">Debugger.ScriptId</a> <span class='text'>Identifier of the script parsed.</span></dd>
 <dt>url</dt>
 <dd>String <span class='text'>URL or name of the script parsed (if any).</span></dd>
 <dt>startLine</dt>
@@ -4532,9 +4532,9 @@ function onScriptFailedToParse(res) {
 <p>Fired when breakpoint is resolved to an actual script and location.</p>
 <dl>
 <dt>breakpointId</dt>
-<dd><a href='#Debugger.BreakpointId'>Debugger.BreakpointId</a> <span class='text'>Breakpoint unique identifier.</span></dd>
+<dd><a href='#Debugger.BreakpointId' title="Debugger.BreakpointId">Debugger.BreakpointId</a> <span class='text'>Breakpoint unique identifier.</span></dd>
 <dt>location</dt>
-<dd><a href='#Debugger.Location'>Debugger.Location</a> <span class='text'>Actual breakpoint location.</span></dd>
+<dd><a href='#Debugger.Location' title="Debugger.Location">Debugger.Location</a> <span class='text'>Actual breakpoint location.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4549,7 +4549,7 @@ function onBreakpointResolved(res) {
 <p>Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria.</p>
 <dl>
 <dt>callFrames</dt>
-<dd>[<a href='#Debugger.CallFrame'>Debugger.CallFrame</a>] <span class='text'>Call stack the virtual machine stopped on.</span></dd>
+<dd>[<a href='#Debugger.CallFrame' title="Debugger.CallFrame">Debugger.CallFrame</a>] <span class='text'>Call stack the virtual machine stopped on.</span></dd>
 <dt>reason</dt>
 <dd>( XHR | DOM | EventListener | exception | assert | CSPViolation | debugCommand | other ) <span class='text'>Pause reason.</span></dd>
 <dt>data (optional)</dt>
@@ -4608,7 +4608,7 @@ function onResumed(res) {
 <dt>mimeType (optional)</dt>
 <dd>String <span class='text'>MIME type of the entry, available for a file only.</span></dd>
 <dt>resourceType (optional)</dt>
-<dd><a href='#Page.ResourceType'>Page.ResourceType</a> <span class='text'>ResourceType of the entry, available for a file only.</span></dd>
+<dd><a href='#Page.ResourceType' title="Page.ResourceType">Page.ResourceType</a> <span class='text'>ResourceType of the entry, available for a file only.</span></dd>
 <dt>isTextFile (optional)</dt>
 <dd>Boolean <span class='text'>True if the entry is a text file.</span></dd>
 </dl>
@@ -4620,7 +4620,7 @@ function onResumed(res) {
 <dt>modificationTime</dt>
 <dd>Number <span class='text'>Modification time.</span></dd>
 <dt>size</dt>
-<dd>Number <span class='text'>File size. This field is always zero for directories.</span></dd>
+<dd>Number <span class='text'>File size. This field is always 0 for directories.</span></dd>
 </dl>
 </div>
 <div id='FileSystem_enable' class='command'>
@@ -4655,7 +4655,7 @@ FileSystem.disable();
 <dt>errorCode</dt>
 <dd>Integer <span class='text'>0, if no error. Otherwise, errorCode is set to FileError::ErrorCode value.</span></dd>
 <dt>root (optional)</dt>
-<dd><a href='#FileSystem.Entry'>FileSystem.Entry</a> <span class='text'>Contains root of the requested FileSystem if the command completed successfully.</span></dd>
+<dd><a href='#FileSystem.Entry' title="FileSystem.Entry">FileSystem.Entry</a> <span class='text'>Contains root of the requested FileSystem if the command completed successfully.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4677,7 +4677,7 @@ FileSystem.requestFileSystemRoot(origin, type, function callback(res) {
 <dt>errorCode</dt>
 <dd>Integer <span class='text'>0, if no error. Otherwise, errorCode is set to FileError::ErrorCode value.</span></dd>
 <dt>entries (optional)</dt>
-<dd>[<a href='#FileSystem.Entry'>FileSystem.Entry</a>] <span class='text'>Contains all entries on directory if the command completed successfully.</span></dd>
+<dd>[<a href='#FileSystem.Entry' title="FileSystem.Entry">FileSystem.Entry</a>] <span class='text'>Contains all entries on directory if the command completed successfully.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4699,7 +4699,7 @@ FileSystem.requestDirectoryContent(url, function callback(res) {
 <dt>errorCode</dt>
 <dd>Integer <span class='text'>0, if no error. Otherwise, errorCode is set to FileError::ErrorCode value.</span></dd>
 <dt>metadata (optional)</dt>
-<dd><a href='#FileSystem.Metadata'>FileSystem.Metadata</a> <span class='text'>Contains metadata of the entry if the command completed successfully.</span></dd>
+<dd><a href='#FileSystem.Metadata' title="FileSystem.Metadata">FileSystem.Metadata</a> <span class='text'>Contains metadata of the entry if the command completed successfully.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4807,7 +4807,7 @@ FileSystem.deleteEntry(url, function callback(res) {
 </div>
 <div id='HeapProfiler_HeapSnapshotObjectId' class='type'>
 <h3>HeapProfiler.HeapSnapshotObjectId <span class='label'>Type</span></h3>
-<p>Heap snashot object id.</p>
+<p>Heap snashot object ID.</p>
 <dl>
 <dd>String</dd>
 </dl>
@@ -4817,7 +4817,7 @@ FileSystem.deleteEntry(url, function callback(res) {
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>headers</dt>
-<dd>[<a href='#HeapProfiler.ProfileHeader'>HeapProfiler.ProfileHeader</a>]</dd>
+<dd>[<a href='#HeapProfiler.ProfileHeader' title="HeapProfiler.ProfileHeader">HeapProfiler.ProfileHeader</a>]</dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4899,7 +4899,7 @@ HeapProfiler.collectGarbage();
 <h3>HeapProfiler.getObjectByHeapObjectId <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>objectId</dt>
-<dd><a href='#HeapProfiler.HeapSnapshotObjectId'>HeapProfiler.HeapSnapshotObjectId</a></dd>
+<dd><a href='#HeapProfiler.HeapSnapshotObjectId' title="HeapProfiler.HeapSnapshotObjectId">HeapProfiler.HeapSnapshotObjectId</a></dd>
 <dt>objectGroup (optional)</dt>
 <dd>String <span class='text'>Symbolic group name that can be used to release multiple objects.</span></dd>
 </dl>
@@ -4920,12 +4920,12 @@ HeapProfiler.getObjectByHeapObjectId(objectId, objectGroup, function callback(re
 <h3>HeapProfiler.getHeapObjectId <span class='label label-success'>Command</span></h3>
 <dl>
 <dt>objectId</dt>
-<dd><a href='#Runtime.RemoteObjectId'>Runtime.RemoteObjectId</a> <span class='text'>Identifier of the object to get heap object id for.</span></dd>
+<dd><a href='#Runtime.RemoteObjectId' title="Runtime.RemoteObjectId">Runtime.RemoteObjectId</a> <span class='text'>Identifier of the object to get heap object ID for.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>heapSnapshotObjectId</dt>
-<dd><a href='#HeapProfiler.HeapSnapshotObjectId'>HeapProfiler.HeapSnapshotObjectId</a> <span class='text'>Id of the heap snapshot object corresponding to the passed remote object id.</span></dd>
+<dd><a href='#HeapProfiler.HeapSnapshotObjectId' title="HeapProfiler.HeapSnapshotObjectId">HeapProfiler.HeapSnapshotObjectId</a> <span class='text'>ID of the heap snapshot object corresponding to the passed remote object ID.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -4939,7 +4939,7 @@ HeapProfiler.getHeapObjectId(objectId, function callback(res) {
 <h3>HeapProfiler.addProfileHeader <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>header</dt>
-<dd><a href='#HeapProfiler.ProfileHeader'>HeapProfiler.ProfileHeader</a></dd>
+<dd><a href='#HeapProfiler.ProfileHeader' title="HeapProfiler.ProfileHeader">HeapProfiler.ProfileHeader</a></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -5007,7 +5007,7 @@ function onReportHeapSnapshotProgress(res) {
 </div>
 <div id='HeapProfiler_lastSeenObjectId' class='command'>
 <h3>HeapProfiler.lastSeenObjectId <span class='label label-info'>Event</span></h3>
-<p>If heap objects tracking has been started then backend regulary sends a current value for last seen object id and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</p>
+<p>If heap objects tracking has been started then backend regulary sends a current value for last seen object ID and corresponding timestamp. If the were changes in the heap since last event then one or more heapStatsUpdate events will be sent before a new lastSeenObjectId event.</p>
 <dl>
 <dt>lastSeenObjectId</dt>
 <dd>Integer</dd>
@@ -5027,7 +5027,7 @@ function onLastSeenObjectId(res) {
 <p>If heap objects tracking has been started then backend may send update for one or more fragments</p>
 <dl>
 <dt>statsUpdate</dt>
-<dd>[Integer] <span class='text'>An array of triplets. Each triplet describes a fragment. The first integer is the fragment index, the second integer is a total count of objects for the fragment, the third integer is a total size of the objects for the fragment.</span></dd>
+<dd>[Integer] <span class='text'>An array of triplets. Each triplet describes a fragment. The 1st integer is the fragment index, the 2nd integer is a total count of objects for the fragment, the 3rd integer is a total size of the objects for the fragment.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -5071,7 +5071,7 @@ function onHeapStatsUpdate(res) {
 <dt>intVersion</dt>
 <dd>Integer <span class='text'>Integer database version.</span></dd>
 <dt>objectStores</dt>
-<dd>[<a href='#IndexedDB.ObjectStore'>IndexedDB.ObjectStore</a>] <span class='text'>Object stores in this database.</span></dd>
+<dd>[<a href='#IndexedDB.ObjectStore' title="IndexedDB.ObjectStore">IndexedDB.ObjectStore</a>] <span class='text'>Object stores in this database.</span></dd>
 </dl>
 </div>
 <div id='IndexedDB_ObjectStore' class='type'>
@@ -5081,11 +5081,11 @@ function onHeapStatsUpdate(res) {
 <dt>name</dt>
 <dd>String <span class='text'>Object store name.</span></dd>
 <dt>keyPath</dt>
-<dd><a href='#IndexedDB.KeyPath'>IndexedDB.KeyPath</a> <span class='text'>Object store key path.</span></dd>
+<dd><a href='#IndexedDB.KeyPath' title="IndexedDB.KeyPath">IndexedDB.KeyPath</a> <span class='text'>Object store key path.</span></dd>
 <dt>autoIncrement</dt>
 <dd>Boolean <span class='text'>If true, object store has auto increment flag set.</span></dd>
 <dt>indexes</dt>
-<dd>[<a href='#IndexedDB.ObjectStoreIndex'>IndexedDB.ObjectStoreIndex</a>] <span class='text'>Indexes in this object store.</span></dd>
+<dd>[<a href='#IndexedDB.ObjectStoreIndex' title="IndexedDB.ObjectStoreIndex">IndexedDB.ObjectStoreIndex</a>] <span class='text'>Indexes in this object store.</span></dd>
 </dl>
 </div>
 <div id='IndexedDB_ObjectStoreIndex' class='type'>
@@ -5095,7 +5095,7 @@ function onHeapStatsUpdate(res) {
 <dt>name</dt>
 <dd>String <span class='text'>Index name.</span></dd>
 <dt>keyPath</dt>
-<dd><a href='#IndexedDB.KeyPath'>IndexedDB.KeyPath</a> <span class='text'>Index key path.</span></dd>
+<dd><a href='#IndexedDB.KeyPath' title="IndexedDB.KeyPath">IndexedDB.KeyPath</a> <span class='text'>Index key path.</span></dd>
 <dt>unique</dt>
 <dd>Boolean <span class='text'>If true, index is unique.</span></dd>
 <dt>multiEntry</dt>
@@ -5115,7 +5115,7 @@ function onHeapStatsUpdate(res) {
 <dt>date (optional)</dt>
 <dd>Number <span class='text'>Date value.</span></dd>
 <dt>array (optional)</dt>
-<dd>[<a href='#IndexedDB.Key'>IndexedDB.Key</a>] <span class='text'>Array value.</span></dd>
+<dd>[<a href='#IndexedDB.Key' title="IndexedDB.Key">IndexedDB.Key</a>] <span class='text'>Array value.</span></dd>
 </dl>
 </div>
 <div id='IndexedDB_KeyRange' class='type'>
@@ -5123,9 +5123,9 @@ function onHeapStatsUpdate(res) {
 <p>Key range.</p>
 <dl>
 <dt>lower (optional)</dt>
-<dd><a href='#IndexedDB.Key'>IndexedDB.Key</a> <span class='text'>Lower bound.</span></dd>
+<dd><a href='#IndexedDB.Key' title="IndexedDB.Key">IndexedDB.Key</a> <span class='text'>Lower bound.</span></dd>
 <dt>upper (optional)</dt>
-<dd><a href='#IndexedDB.Key'>IndexedDB.Key</a> <span class='text'>Upper bound.</span></dd>
+<dd><a href='#IndexedDB.Key' title="IndexedDB.Key">IndexedDB.Key</a> <span class='text'>Upper bound.</span></dd>
 <dt>lowerOpen</dt>
 <dd>Boolean <span class='text'>If true lower bound is open.</span></dd>
 <dt>upperOpen</dt>
@@ -5137,11 +5137,11 @@ function onHeapStatsUpdate(res) {
 <p>Data entry.</p>
 <dl>
 <dt>key</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Key.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Key.</span></dd>
 <dt>primaryKey</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Primary key.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Primary key.</span></dd>
 <dt>value</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a> <span class='text'>Value.</span></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a> <span class='text'>Value.</span></dd>
 </dl>
 </div>
 <div id='IndexedDB_KeyPath' class='type'>
@@ -5233,12 +5233,12 @@ IndexedDB.requestDatabase(securityOrigin, databaseName, function callback(res) {
 <dt>pageSize</dt>
 <dd>Integer <span class='text'>Number of records to fetch.</span></dd>
 <dt>keyRange (optional)</dt>
-<dd><a href='#IndexedDB.KeyRange'>IndexedDB.KeyRange</a> <span class='text'>Key range.</span></dd>
+<dd><a href='#IndexedDB.KeyRange' title="IndexedDB.KeyRange">IndexedDB.KeyRange</a> <span class='text'>Key range.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>objectStoreDataEntries</dt>
-<dd>[<a href='#IndexedDB.DataEntry'>IndexedDB.DataEntry</a>] <span class='text'>Array of object store data entries.</span></dd>
+<dd>[<a href='#IndexedDB.DataEntry' title="IndexedDB.DataEntry">IndexedDB.DataEntry</a>] <span class='text'>Array of object store data entries.</span></dd>
 <dt>hasMore</dt>
 <dd>Boolean <span class='text'>If true, there are more entries to fetch in the given range.</span></dd>
 </dl>
@@ -5478,7 +5478,7 @@ function onEvaluateForTestInFrontend(res) {
 <h3>Inspector.inspect <span class='label label-info'>Event</span></h3>
 <dl>
 <dt>object</dt>
-<dd><a href='#Runtime.RemoteObject'>Runtime.RemoteObject</a></dd>
+<dd><a href='#Runtime.RemoteObject' title="Runtime.RemoteObject">Runtime.RemoteObject</a></dd>
 <dt>hints</dt>
 <dd>Object</dd>
 </dl>
@@ -5534,7 +5534,7 @@ function onTargetCrashed(res) {
 </ul>
 <span class='label label-info'>Event</span>
 <ul>
-<li><a href='#LayerTree.layerTreeDidChange'>LayerTree.layerTreeDidChange</a></li>
+<li><a href='#LayerTree.layerTreeDidChange' title="LayerTree.layerTreeDidChange">LayerTree.layerTreeDidChange</a></li>
 </ul>
 <div id='LayerTree_LayerId' class='type'>
 <h3>LayerTree.LayerId <span class='label'>Type</span></h3>
@@ -5618,7 +5618,7 @@ LayerTree.getLayers(nodeId, function callback(res) {
 <p>Provides the reasons why the given layer was composited.</p>
 <dl>
 <dt>layerId</dt>
-<dd><a href='#LayerTree.LayerId'>LayerTree.LayerId</a> <span class='text'>The ID of the layer for which we want to get the reasons it was composited.</span></dd>
+<dd><a href='#LayerTree.LayerId' title="LayerTree.LayerId">LayerTree.LayerId</a> <span class='text'>The ID of the layer for which we want to get the reasons it was composited.</span></dd>
 </dl>
 <h4>Callback Parameters:</h4>
 <dl>
@@ -5831,7 +5831,7 @@ function onAddNativeSnapshotChunk(res) {
 <dt>method</dt>
 <dd>String <span class='text'>HTTP request method.</span></dd>
 <dt>headers</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>HTTP request headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>HTTP request headers.</span></dd>
 <dt>postData (optional)</dt>
 <dd>String <span class='text'>HTTP POST request data.</span></dd>
 </dl>
@@ -5847,13 +5847,13 @@ function onAddNativeSnapshotChunk(res) {
 <dt>statusText</dt>
 <dd>String <span class='text'>HTTP response status text.</span></dd>
 <dt>headers</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>HTTP response headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>HTTP response headers.</span></dd>
 <dt>headersText (optional)</dt>
 <dd>String <span class='text'>HTTP response headers text.</span></dd>
 <dt>mimeType</dt>
 <dd>String <span class='text'>Resource mimeType as determined by the browser.</span></dd>
 <dt>requestHeaders (optional)</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>Refined HTTP request headers that were actually transmitted over the network.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>Refined HTTP request headers that were actually transmitted over the network.</span></dd>
 <dt>requestHeadersText (optional)</dt>
 <dd>String <span class='text'>HTTP request headers text.</span></dd>
 <dt>connectionReused</dt>
@@ -5863,7 +5863,7 @@ function onAddNativeSnapshotChunk(res) {
 <dt>fromDiskCache (optional)</dt>
 <dd>Boolean <span class='text'>Specifies that the request was served from the disk cache.</span></dd>
 <dt>timing (optional)</dt>
-<dd><a href='#Network.ResourceTiming'>Network.ResourceTiming</a> <span class='text'>Timing information for the given request.</span></dd>
+<dd><a href='#Network.ResourceTiming' title="Network.ResourceTiming">Network.ResourceTiming</a> <span class='text'>Timing information for the given request.</span></dd>
 </dl>
 </div>
 <div id='Network_WebSocketRequest' class='type'>
@@ -5962,7 +5962,7 @@ Network.setUserAgentOverride(userAgent);
 <p>Specifies whether to always send extra HTTP headers with the requests from this page.</p>
 <dl>
 <dt>headers</dt>
-<dd><a href='#Network.Headers'>Network.Headers</a> <span class='text'>Map with extra HTTP headers.</span></dd>
+<dd><a href='#Network.Headers' title="Network.Headers">Network.Headers</a> <span class='text'>Map with extra HTTP headers.</span></dd>
 </dl>
 <h4>Code Example:</h4>
 <pre>
@@ -6528,7 +6528,7 @@ function onWebSocketFrameSent(res) {
 <p>Navigation history entry.</p>
 <dl>
 <dt>id</dt>
-<dd>Integer <span class='text'>Unique id of the navigation history entry.</span></dd>
+<dd>Integer <span class='text'>Unique ID of the navigation history entry.</span></dd>
 <dt>url</dt>
 <dd>String <span class='text'>URL of the navigation history entry.</span></dd>
 <dt>title</dt>
@@ -6653,7 +6653,7 @@ Page.navigateToHistoryEntry(entryId);
 <h4>Callback Parameters:</h4>
 <dl>
 <dt>cookies</dt>
-<dd>[<a href='#Page.Cookie'>Page.Cookie</a>] <span class='text'>Array of cookie objects.</span></dd>
+<dd>[<a href='#Page.Cookie' title="Page.Cookie">Page.Cookie</a>] <span class='text'>Array of cookie objects.</span></dd>
 <dt>cookiesString</dt>
 <dd>String <span class='text'>document.cookie string representation of the cookies.</span></dd>
 </dl>
@@ -6777,7 +6777,7 @@ Page.searchInResources(text, caseSensitive, isRegex, function callback(res) {
 <p>Sets given markup as the document's HTML.</p>
 <dl>
 <dt>frameId</dt>
-<dd><a href='#Page.FrameId'>Page.FrameId</a> <span class='text'>Frame id to set HTML for.</span></dd>
+<dd><a href='#Page.FrameId' title="Page.FrameId">Page.FrameId</a> <span class='text'>Frame ID to set HTML for.</span></dd>
 <dt>html</dt>
 <dd>String <span class='text'>HTML content to set.</span></dd>
 </dl>
@@ -6985,7 +6985,7 @@ Page.setEmulatedMedia(media);
 <dt>format (optional)</dt>
 <dd>( jpeg | png ) <span class='text'>Image compression format.</span></dd>
 <dt>quality (optional)</dt>
-<dd>Integer <span class='text'>Compression quality from range [0..100].</span></dd>
+<dd>Integer <span class='text'>Compression quality from range [0-100].</span></dd>
 <dt>maxWidth (optional)</dt>
 <dd>Integer <span class='text'>Maximum screenshot width.</span></dd>
 <dt>maxHeight (optional)</dt>
@@ -7017,7 +7017,7 @@ Page.captureScreenshot(format, quality, maxWidth, maxHeight, function callback(r
 <dt>format (optional)</dt>
 <dd>( jpeg | png ) <span class='text'>Image compression format.</span></dd>
 <dt>quality (optional)</dt>
-<dd>Integer <span class='text'>Compression quality from range [0..100].</span></dd>
+<dd>Integer <span class='text'>Compression quality from range [0-100].</span></dd>
 <dt>maxWidth (optional)</dt>
 <dd>Integer <span class='text'>Maximum screenshot width.</span></dd>
 <dt>maxHeight (optional)</dt>
@@ -8213,8 +8213,9 @@ function onDisconnectedFromWorker(res) {
 </section>
 </div>
 <footer>
-<p>Generated from Inspector.json v1.1 on 2014-12-08 11:14:07-0800</p>
+<p>Generated from Inspector.json v1.1 on January 19, 2022</p>
 <p>Implementation by <a href='mailto:jdiehl@adobe.com' title="Jonathan Diehl">Jonathan Diehl</a></p>
+<p>Tooltips and spelling fixes by <a href="https://github.com/MWB6763" title="MWB6763">MWB6763</a></p>
 </footer>
 </body>
 </html>
